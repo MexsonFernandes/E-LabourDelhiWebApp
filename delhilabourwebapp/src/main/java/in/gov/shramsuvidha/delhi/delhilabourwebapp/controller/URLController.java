@@ -24,6 +24,21 @@ public class URLController {
     public String admin(){
         return "admin";
     }
+
+    @RequestMapping("/faqs")
+    public String faqs(){
+        return "static/faqs";
+    }
+
+    @RequestMapping("/help")
+    public String help(){
+        return "static/help";
+    }
+
+    @RequestMapping("/careers")
+    public String career(){
+        return "static/career";
+    }
 }
 
 

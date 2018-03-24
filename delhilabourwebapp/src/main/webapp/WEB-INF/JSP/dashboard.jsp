@@ -14,6 +14,7 @@
     <link href="dashboard/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="dashboard/css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
 </head>
 
 <body class="grey lighten-3">
@@ -27,7 +28,7 @@
 
             <!-- Brand -->
             <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
-                <strong class="blue-text">MDB</strong>
+                <img src="homepage/img/labor-man.png" width="50px" height="50px"/>
             </a>
 
             <!-- Collapse -->
@@ -87,7 +88,7 @@
     <div class="sidebar-fixed position-fixed">
 
         <a class="logo-wrapper waves-effect">
-            <img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="">
+
         </a>
 
         <div class="list-group list-group-flush">

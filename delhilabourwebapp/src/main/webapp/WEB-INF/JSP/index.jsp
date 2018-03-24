@@ -14,6 +14,7 @@
     <link href="homepage/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="homepage/css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
 </head>
 
 <body>
@@ -23,8 +24,9 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
-        <strong>DEPARTMENT OF LABOUR DELHI</strong>
+      <a class="navbar-brand" href="/">
+          <img src="homepage/img/labor-man-white.png" width="50px" height="50px"/>
+        <strong>E-LABOUR DELHI</strong>
       </a>
 
       <!-- Collapse -->
@@ -47,16 +49,16 @@
             <a class="nav-link" href="#aboutus">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQs</a>
+            <a class="nav-link" href="faqs">FAQs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="help">Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Careers</a>
+            <a class="nav-link" href="careers">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link" href="#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
           </li>
         </ul>
 
@@ -92,7 +94,7 @@
 
       <!--First slide-->
       <div class="carousel-item active">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('homepage/img/SLIDE1.png'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -125,7 +127,7 @@
 
       <!--Second slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/94.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('homepage/img/SLIDE2.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -137,7 +139,7 @@
               </h1>
 
               <p>
-                <strong>Login/Register to our website to start filling annual return</strong>
+                <strong>Login/Register to website to start filling annual return</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
@@ -158,7 +160,7 @@
 
       <!--Third slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/92.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view" style="background-image: url('homepage/img/SLIDE3.jpg'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -178,7 +180,7 @@
                 you are free to send us some suggestions. We will be happy to process your request.</strong>
               </p>
 
-              <a href="" class="btn btn-outline-white btn-lg">FEEDBACK US
+              <a href="#contact" class="btn btn-outline-white btn-lg" onclick="document.getElementById('changeFormText').innerText='Feedback Us';">FEEDBACK US
               </a>
             </div>
             <!-- Content -->
@@ -220,7 +222,7 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
+            <img src="homepage/img/Labour.jpg" class="img-fluid z-depth-1-half" alt="">
 
           </div>
           <!--Grid column-->
@@ -245,7 +247,7 @@
                     Each district is headed by a Joint/Deputy Labour Commissioner who is assisted by Asstt. Labour Commissioners and Labour Officers.
                 </p>
             <!-- CTA -->
-            <a href="#service" class="btn btn-indigo btn-md">Services
+            <a href="#labouracts" class="btn btn-indigo btn-md">Labour Acts
             </a>
             <a href="login" class="btn btn-indigo btn-md">Start Filling
             </a>
@@ -313,9 +315,9 @@
           <!--Grid column-->
           <div class="col-lg-6 col-md-12">
 
-            <p class="h5 text-center mb-4">Shram Suvidha Portal</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=vPSIiM-Vc7s"></iframe>
+            <p class="h5 text-center mb-4">We are against Child Labour</p>
+            <div class="row features-small mb-5 mt-3 wow fadeIn">
+              <img src="homepage/img/childlabour.png"/>
             </div>
           </div>
           <!--/Grid column-->
@@ -329,9 +331,9 @@
       <hr class="my-5">
 
       <!--Section: Not enough-->
-      <section id="service">
-          <div style="height:50px"></div>
-        <h2 class="my-5 h3 text-center">SERVICES</h2>
+      <section id="labouracts">
+          <div style="height:30px"></div>
+        <h2 class="my-5 h3 text-center">LABOUR ACTS</h2>
 
         <!--First row-->
         <div class="row features-small mb-5 mt-3 wow fadeIn">
@@ -344,9 +346,9 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Free for personal and commercial use</h6>
-                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
-                </p>
+                <h6 class="feature-title">	Employees State Insurance Act, 1948 (the "ESI Act")</h6>
+                  <p class="grey-text">The ESI Act provides for certain benefits to employees in case of sickness, maternity and employment injury.
+                  </p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -358,8 +360,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">400+ UI elements</h6>
-                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
+                <h6 class="feature-title">	The Minimum Wages Act, 1948 (the "MW Act")</h6>
+                <p class="grey-text">Under the MW Act, the State and Central Governments are empowered to notify the minimum wages payable to employees.
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -372,8 +374,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">600+ icons</h6>
-                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
+                <h6 class="feature-title">Contract Labour (Regulation and Abolition) Act, 1970 (the "CLRA Act")</h6>
+                <p class="grey-text">The CLRA Act regulates the employment of contract labour in certain establishment</p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -385,9 +387,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Fully responsive</h6>
-                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
-                  looks great on each screen.</p>
+                <h6 class="feature-title">	The Payment of Bonus Act, 1965 (the "PB Act")</h6>
+                <p class="grey-text">The PB Act as amended provides for payment of bonus on the basis of profit or on the basis of production or productivity</p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -397,7 +398,7 @@
 
           <!--Second column-->
           <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+            <img src="homepage/img/labouracts.jpg" alt="Labour law acts description." class="z-depth-0 img-fluid">
           </div>
           <!--/Second column-->
 
@@ -409,8 +410,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">70+ CSS animations</h6>
-                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
+                <h6 class="feature-title">Sexual Harassment of Women at Workplace Act, 2013 (the "SE Act")</h6>
+                <p class="grey-text">The SE Act prescribes a mechanism for prevention and prohibition of workplace
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -423,8 +424,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
+                <h6 class="feature-title">The Equal Remuneration Act, 1976 (the "ER Act")</h6>
+                <p class="grey-text">The ER Act provides for the payment of equal remuneration to men and women workers for same or similar nature of work.</p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -436,8 +437,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Easy installation</h6>
-                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
+                <h6 class="feature-title">Child Labour (Prohibition and Regulation) Act, 1986</h6>
+                <p class="grey-text">Prohibits the engagement of children in certain occupations and to prohibit the engagement of adolescents in hazardous occupations.
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -450,9 +451,8 @@
                 <i class="fa fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Easy to use and customize</h6>
-                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will
-                  easily adjust each component to suit your needs.</p>
+                <h6 class="feature-title">The Payment of Wages Act, 1936 the "PW Act")</h6>
+                <p class="grey-text">The PW Act has been enacted to regulate the payment of wages in a particular form at regular intervals.</p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -471,7 +471,7 @@
       <!--Section: More-->
       <section id="contact">
 
-        <h2 class="my-5 h3 text-center">CONTACT US</h2>
+        <h2 class="my-5 h3 text-center" id="changeFormText">CONTACT US</h2>
 
           <p class="section-description">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
             matter of hours to help you.</p>
