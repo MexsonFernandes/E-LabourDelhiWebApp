@@ -11,7 +11,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@EnableWebMvc
 @ComponentScan("in.gov.shramsuvidha.delhi.delhilabourwebapp")
 public class WebConfig extends WebMvcConfigurerAdapter{
 

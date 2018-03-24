@@ -15,6 +15,15 @@ public class URLController {
         return "index";
     }
 
+    @RequestMapping("/dashboard")
+    public String dashboard(){
+        return "dashboard";
+    }
+
+    @RequestMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
 }
 
 
