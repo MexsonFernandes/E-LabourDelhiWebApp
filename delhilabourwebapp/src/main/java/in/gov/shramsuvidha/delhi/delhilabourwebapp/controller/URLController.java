@@ -1,10 +1,10 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.controller;
 
 import java.util.Map;
+
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 
 @Controller
 public class URLController {
@@ -14,13 +14,16 @@ public class URLController {
         model.put("message", "HowToDoInJava Reader !!");
         return "index";
     }
-}
 
-@RestController
-class RestControl{
+    @RequestMapping("/dashboard")
+    public String dashboard(){
+        return "dashboard";
+    }
 
-    @RequestMapping("/test")
-    public String home(){
-        return "test";
+    @RequestMapping("/admin")
+    public String admin(){
+        return "admin";
     }
 }
+
+
