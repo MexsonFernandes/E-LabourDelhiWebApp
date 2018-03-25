@@ -211,7 +211,7 @@
                 <!--Grid column-->
                 <div class="col-md-6 mb-4">
 
-                    <img src="homepage/img/Labour.jpg" class="img-fluid z-depth-1-half" alt="">
+                    <img src="homepage/img/help1.png" class="img-fluid z-depth-1-half" alt="">
 
                 </div>
                 <!--Grid column-->
@@ -220,7 +220,7 @@
                 <div class="col-md-6 mb-4">
 
                     <!-- Main heading -->
-                    <h3 class="h3 mb-3">NEED HELP?</h3>
+                    <h3 class="h3 mb-3">MISCLLANEOUS</h3>
 
                     <br>There is a provision to register new representative of the already registered establishments and new
                         enforcement agency user. There is also a link is provided to generate the password for first time use for
@@ -231,15 +231,20 @@
                         A login window is available at the portal through which the users can login and perform their tasks.
                         Upon giving the wrong login / passwords, system gives proper message and user has to try again.
                     </br>
+                        <li>GET YOUR LIN HERE ALSO:</li>
+                    <a href="www.shramsuvidha.gov.in">SHRAM-SUVIDHA-PORTAL</a>
 
                     </p>
-                    </br>
+
                     <p>
                         With a view to make the administration responsive to the needs of the people and bring governance to their doorsteps,
                         the department has been organized on territorial basis into nine districts.<br/>
 
                         Each district is headed by a Joint/Deputy Labour Commissioner who is assisted by Asstt. Labour Commissioners and Labour Officers.
                     </p>
+
+
+
                     <!-- CTA -->
                     <a href="#labouracts" class="btn btn-indigo btn-md">Labour Acts
                     </a>
@@ -248,8 +253,80 @@
                 </div>
                 <!--Grid column-->
 
-            </div>
-            <!--Grid row-->
+
+                <div class="col-md-6 mb-4">
+
+                    <img src="homepage/img/help2.png" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <h3 class="h3 mb-3">FORM FILLING GUIDE</h3>
+
+               </br>
+                <p>
+                   <LI>Please click on the link Create a e-labour account to register a new representative. Following
+                form will come on your screen and you have to fill it with correct informations.</LI>
+
+                <LI>Once you submit the above signup form, system sends an OTP on registered mobile number for user
+                    verification. Fill the received OTP in below form:</LI>
+
+                <LI>Once your OTP is verified, you will see below message to check your mail.</LI>
+
+                <LI> System sends the below mail on registered email id for e-labour delhi User Id and Password creation:</LI>
+
+                <LI>  Once you click the link provided in your mail below screen appears to set the user id and password.</LI>
+
+                <LI>  Now you can login e-labour delhi Portal with created User Id and Password.</LI>
+
+                </p>
+
+
+                <div class="col-md-6 mb-4">
+
+                    <img src="homepage/img/ee.png" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <h3 class="h3 mb-3"> Verify Establishment Identifiers</h3>
+
+              <li>  Here you can verify/reject modifications made to establishment identifiers by employer/ establishment representative.
+                   View Verification Summary</li>
+                I. You can view the verification summary by choosing Establishment Verification option from menu at left hand side.</br>
+                II. Click pending number to view the list of establishments whose data verification is pending.</br>
+                III. View Pending List</br>
+                Click on the Pending Status option to view the submitted data and approve or reject the same.</br>
+                IV. Submit Verification Form</br>
+                View the revised data, provide the remarks and choose the reject or verify button. If you choose reject option, remark field is mandatory.
+                V. View Identifier Verification List</br>
+            <li>   Click on the verified number at the verification summary screen to view the verification list. View the verification status under status column.</br>
+                This ends the process of LIN data verification by Regional Head.</li>
+
+                <div class="col-md-6 mb-4">
+
+                    <img src="homepage/img/thor.png" class="img-fluid z-depth-1-half" alt="">
+
+                </div>
+                <h3 class="h3 mb-3"> ONE STEP TO STOP CHILD LABOUR</h3>
+                <li>   You need to consider below points while filling the forms at portal to validate the accuracy.</li>
+                <li>   Form fields marked * are mandatory.</li>
+                <li>   Special Characters not allowed except "." (Dot) and space.</li>
+                <li>  Valid alphanumeric character includes special characters- Dot [.], Slash [/], At [@], Comma [,], Hyphen [-], Brackets [(and)] and Space.</li>
+                <li>  Date Validation Criteria</li>
+                <li> a. Should accept in Day, Month and Year format.</li>
+                <li> b. Day, Month and Year should be numeric.</li>
+                <li>  Email- Alphanumeric, DOT, @, hyphen, underscores.</li>
+                <li> USSP- LIN Data Verification by Regional Head-User Manual</li>
+                <li> Page 9 of 9 https://shramsuvidha.gov.in</li>
+                <li> B. Send feedback</li>
+                <li> Here you can give us your feedback and suggestions which can be used as basis of improvement and help.</li>
+                <li> 1. Once you are logged into your USSP account, at the top most bar you will see the Feedback option.</li>
+                <li> 2. Click the feedback option; you will see Feedback & Suggestion form. Fill and submit the form.</li>
+                <li> C. Contact us</li>
+                <li> You can also send your feedback to Shram Suvidha Portal Team at websupport-mol@nic.in .</li>
+
+
+
+
+
+        <!--Grid row-->
 
         </section>
         <!--Section: Main info-->

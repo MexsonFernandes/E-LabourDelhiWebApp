@@ -316,7 +316,7 @@
                         5th Floor, Chanderlok Building, 36, Janpath,</br>
                         New Delhi - 110 001</p>
                         <a href="#" class="card-link">complaints.ncpcr@gmail.com</a>
-                        <a href="#" class="card-link">Another link</a>
+
                     </div>
                 </div>
 
