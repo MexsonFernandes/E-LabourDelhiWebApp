@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Delhi Labour Department</title>
+    <title>E-Labour Delhi</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -110,7 +110,7 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>Use different option available on top bar to navigate to various page available. Use HELP tab to know more.</strong>
+                <strong>Use different options available on top bar to navigate to various pages available. Use HELP tab to know more.</strong>
               </p>
 
               <a href="login" class="btn btn-outline-white btn-lg">GET STARTED
@@ -265,7 +265,7 @@
       <!--Section: Main features & Quick Start-->
       <section>
 
-        <h3 class="h3 text-center mb-5" id="aboutus"><div style="height:50px"></div>
+        <h3 class="h3 text-center mb-5" id="aboutus"><div style="height:70px"></div>
             ABOUT US</h3>
 
         <!--Grid row-->
