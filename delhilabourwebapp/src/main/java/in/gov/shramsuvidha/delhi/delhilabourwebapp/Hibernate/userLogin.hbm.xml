@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="userLogin" table="users">
+        <id name="intUserId" column="uid" type="int">
+            <generator class="increement"/>
+        </id>
+        <property name="strUserName" type="java.lang.String" column="username"/>
+        <property name="strFullName" type="java.lang.String" column="fullname"/>
+        <property name="strEmailId" type="java.lang.String" column="emailid"/>
+        <property name="longMobileNo" type="Long" column="mobileno"/>
+    </class>
+</hibernate-mapping>
