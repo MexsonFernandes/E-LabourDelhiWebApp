@@ -34,6 +34,11 @@ public class URLController {
     public String help(){
         return "static/help";
     }
+
+    @RequestMapping("/careers")
+    public String career(){
+        return "static/career";
+    }
 }
 
 

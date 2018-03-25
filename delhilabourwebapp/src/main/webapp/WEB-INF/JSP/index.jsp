@@ -55,7 +55,7 @@
             <a class="nav-link" href="help">Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Careers</a>
+            <a class="nav-link" href="careers">Careers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>

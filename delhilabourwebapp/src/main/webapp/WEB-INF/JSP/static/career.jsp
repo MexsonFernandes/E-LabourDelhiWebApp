@@ -47,17 +47,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/#aboutus">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faqs">FAQs
-                    </a>
-                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="faqs">Help
+                    <a class="nav-link" href="faqs">FAQs
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="careers">Careers</a>
+                    <a class="nav-link" href="help">Help</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="faqs">Careers
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
@@ -79,63 +80,12 @@
     </div>
 </nav>
 <!-- Navbar -->
-<div style="height:50px;"></div>
 
-<!--Main layout-->
-<main>
-    <div class="container">
 
-        <!--Section: Main info-->
-        <section class="mt-5 wow fadeIn">
 
-            <!--Grid row-->
-            <div class="row">
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
 
-                    <img src="homepage/img/Labour.jpg" class="img-fluid z-depth-1-half" alt="">
 
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                    <!-- Main heading -->
-                    <h3 class="h3 mb-3">INTRODUCTION</h3>
-
-                    <p>The Labour Department, Government of N.C.T. of Delhi is headed by Secretary (Labour), who is assisted by Commissioner,
-                        Special Labour Commissioner,Addl. Labour Commissioner, Joint Labour Commissioner, Deputy Labour Commissioners,
-                        Assistant Labour Commissioners, Chief Inspector of Factories, Electrical Inspector,
-                        Chief Inspector of Boilers, Chief Inspector of Shops and Establishments, Labour Officers, Welfare Officer and
-                        other supporting staff.
-                    </p>
-                    <hr>
-                    <p>
-                        With a view to make the administration responsive to the needs of the people and bring governance to their doorsteps,
-                        the department has been organized on territorial basis into nine districts.<br/>
-
-                        Each district is headed by a Joint/Deputy Labour Commissioner who is assisted by Asstt. Labour Commissioners and Labour Officers.
-                    </p>
-                    <!-- CTA -->
-                    <a href="#labouracts" class="btn btn-indigo btn-md">Labour Acts
-                    </a>
-                    <a href="login" class="btn btn-indigo btn-md">Start Filling
-                    </a>
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
-        </section>
-        <!--Section: Main info-->
-
-        <hr class="my-5">
-
-    </div>
-</main>
 
 
 <!--Footer-->
@@ -215,7 +165,14 @@
 <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-
+    $(function() {
+        // Since there's no list-group/tab integration in Bootstrap
+        $('.list-group-item').on('click',function(e){
+            var previous = $(this).closest(".list-group").children(".active");
+            previous.removeClass('active'); // previous list-item
+            $(e.target).addClass('active'); // activated list-item
+        });
+    });
 </script>
 <style type="text/css">
     .facebook{
