@@ -105,11 +105,9 @@
                     <!-- Main heading -->
                     <h3 class="h3 mb-3">NEED HELP?</h3>
 
-                    <p>The Labour Department, Government of N.C.T. of Delhi is headed by Secretary (Labour), who is assisted by Commissioner,
-                        Special Labour Commissioner,Addl. Labour Commissioner, Joint Labour Commissioner, Deputy Labour Commissioners,
-                        Assistant Labour Commissioners, Chief Inspector of Factories, Electrical Inspector,
-                        Chief Inspector of Boilers, Chief Inspector of Shops and Establishments, Labour Officers, Welfare Officer and
-                        other supporting staff.
+                    <p>There is a provision to register new representative of the already registered establishments and new
+                        enforcement agency user. There is also a link is provided to generate the password for first time use for
+                        an establishment whose LIN is generated.
                     </p>
                     <hr>
                     <p>
