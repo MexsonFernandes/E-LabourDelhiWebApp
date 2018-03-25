@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
 </head>
 
-<body>
+<br>
 
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -81,11 +81,64 @@
 </nav>
 <!-- Navbar -->
 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<div class="card" >
+    <div class="card-body">
+      BACHPAN BACHAO ANDOLAN
+    </div>
+  <a href="http://www.bba.org.in/"> http://www.bba.org.in/</a>
+</div>
+
+
+<div class="card" >
+    <div class="card-body">
+        PURPOSE
+    </div>
+    The stated vision of Bachpan Bachao Andolan (BBA) is "to create a child friendly society where all children are free from exploitation and receive free and quality education. It aims to identify, liberate, rehabilitate and educate children in servitude through direct intervention, child and community participation, coalition building, consumer action, promoting ethical trade practices and mass gaming."
+</div>
+
+<div class="card" >
+    <div class="card-body">
+        <h1>OUR SUPPORT TO STOP CHILD LABOUR:</h1>
+    </div>
+    <a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.deccanherald.com/content/255374/campaign-right-education-begins.html</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://articles.timesofindia.indiatimes.com/2012-06-06/delhi/32078061_1_child-labourers-ngo-bachpan-bachao-andolan-rice-export</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://articles.timesofindia.indiatimes.com/2012-05-29/delhi/31886872_1_child-workers-child-labour-sealing-order</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.deccanherald.com/content/256322/seventeen-kids-rescued.html</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.utsandiego.com/news/2012/jun/12/factory-raids-reveal-child-labor-persists-in-india/</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.deccanherald.com/content/255374/campaign-right-education-begins.html</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-RTI/Article1-869623.aspx</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.cosmeticsdesign.com/Market-Trends/Cosmetics-industry-accused-of-using-child-labor-to-source-ingredients</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">https://www.nytimes.com/2007/10/10/world/asia/10iht-letter.1.7832563.html</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://india.blogs.nytimes.com/2011/10/12/where-are-the-children/</a>
+    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">https://www.nytimes.com/2007/11/15/business/worldbusiness/15iht-gap.1.8349422.html</a>
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Panel title</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Panel subtitle</h6>
+        <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
+        <a href="#" class="card-link">Panel link</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
 
 
 
 
-
+}
 
 
 <!--Footer-->
