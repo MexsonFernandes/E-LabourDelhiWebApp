@@ -17,7 +17,7 @@
     <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
 </head>
 
-<body>
+<body background="homepage/img/labourFaqs.jpg">
 
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -67,9 +67,7 @@
             <ul class="navbar-nav nav-flex-icons">
 
                 <li class="nav-item">
-                    <a href="login" class="nav-link border border-light rounded">
-                        LOGIN/SIGNUP
-                    </a>
+                    <a href="" class="btn btn-indigo btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
                 </li>
             </ul>
 
@@ -82,117 +80,322 @@
 
 
 
-<div class="container">
-    <div class="col-md-4">
-        <ul class="list-group help-group">
-            <div class="faq-list list-group nav nav-tabs">
-                <a href="#tab1" class="list-group-item active" role="tab" data-toggle="tab">Frequently Asked Questions</a>
-                <a href="#tab2" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-account"></i> My profile</a>
-                <a href="#tab3" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-account-settings"></i> My account</a>
-                <a href="#tab4" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-star"></i> My favorites</a>
-                <a href="#tab5" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-cart"></i> Checkout</a>
-                <a href="#tab6" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-heart"></i> Lorem ipsum</a>
-                <a href="#tab7" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-check"></i> Dolor sit amet</a>
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-phone prefix"></i>
+                                <input type="number" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your mobile number</label>
+                            </div>
+                            <div align="center">Or</div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput18" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10" >Your email id</label>
+                            </div>
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="number" id="modalLRInput11" class="form-control form-control-sm validate" disabled>
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">OTP</label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-user-circle-o prefix"></i>
+                                <input type="text" id="modalLRInput19" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Username</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-address-book prefix"></i>
+                                <input type="text" id="modalLRInput20" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Full Name</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" disabled>
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">OTP</label>
+                            </div>
+
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
             </div>
-        </ul>
+        </div>
+        <!--/.Content-->
     </div>
-    <div class="col-md-8">
-        <div class="tab-content panels-faq">
-            <div class="tab-pane active" id="tab1">
-                <div class="panel-group" id="help-accordion-1">
-                    <div class="panel panel-default panel-help">
-                        <a href="#opret-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>How do I edit my profile?</h2>
-                            </div>
-                        </a>
-                        <div id="opret-produkt" class="collapse in">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+
+
+
+
+
+
+<main>
+    <div class="container">
+
+        <!--Section: Main info-->
+        <section class="mt-5 wow fadeIn" style=" padding-top: 50px; padding-bottom: 20px;">
+
+            <!--Grid row-->
+            <div class="row">
+
+<div class="card card-body">
+<section class="mbr-section article mbr-section__container" id="content2-3" data-rv-view="8" >
+
+    <div class="container">
+
+        <div class="panel-group" id="accordion" style="background-color: transparent;">
+            <h2 class="h1 text-center py-5">Frequently Asked Questions</h2>
+
+            <div class="card card-body">
+            <h3>
+                <strong>General Questions</strong>
+            </h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsei">How the Compliance of the Provisions are ensured?</a>
+                    </h4>
+                </div>
+                <div id="collapsei" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        The owner, agent or manager of the mine is required to comply with the provisions of health and safety provisions of the Mines Act and the rules framed thereunder, as required under Section 18 of the Mines Act, 1952.</div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseo">Who can raise an Industrial Dispute?</a>
+                    </h4>
+                </div>
+                <div id="collapseo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Any person who is a workman employed in an industry can raise an industrial dispute.  A workman includes any person (including an apprentice) employed in an industry to do manual, unskilled, skilled, technical, operational, clerical or supervisory work for hire or reward.  It excludes those employed in the Army, Navy, Air Force and in the police service, in managerial or administrative capacity.  Industry means any business, trade, undertaking, manufacture or calling of employers and includes any calling, service, employment, handicraft, or industrial occupation or avocation of workmen.
                     </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#rediger-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>How do I upload a new profile picture?</h2>
-                            </div>
-                        </a>
-                        <div id="rediger-produkt" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#ret-pris" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>Can I change my phone number?</h2>
-                            </div>
-                        </a>
-                        <div id="ret-pris" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#slet-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>Where do I change my privacy settings?</h2>
-                            </div>
-                        </a>
-                        <div id="slet-produkt" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#opret-kampagne" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>What is this?</h2>
-                            </div>
-                        </a>
-                        <div id="opret-kampagne" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
+                </div>
+                <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsek">Can the applicant pay the fee through online payment mode or treasury challan to apply for registration and license under the Motor Transport Workers Act, 1961 ?</a>
+                    </h4>
+                </div>
+                <div id="collapsek" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Yes, the applicant can use online/ offline payment mode.
                     </div>
                 </div>
             </div>
-            <div class="tab-pane" id="tab2">
-                <div class="panel-group" id="help-accordion-2">
-                    <div class="panel panel-default panel-help">
-                        <a href="#help-three" data-toggle="collapse" data-parent="#help-accordion-2">
-                            <div class="panel-heading">
-                                <h2>Lorem ipsum?</h2>
-                            </div>
-                        </a>
-                        <div id="help-three" class="collapse in">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
+            <br/>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseh">Can third party verify the certificate issued by the Department ?</a>
+                    </h4>
+                </div>
+                <div id="collapseh" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Yes, the third party can verify the certificate by visiting the department's website www.labour.delhi.gov.in and enter the details of license at “Verify License Details”
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseop">Is there any fine for delay in the submission of fee or application ?</a>
+                    </h4>
+                </div>
+                <div id="collapseop" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Yes.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            </div>
+            </div>
+            <br/><br/>
+            <div class="card card-body">
+            <h3>
+                <strong> Labour Laws </strong>
+            </h3>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How to apply for approval of factory building plan under Factory Act, 1948</a>
+                        </h4>
+                    </div>
+                    <ul id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Already registered factory owner will visit the website and login to his/her id.<br/></li>
+                                <li>After login there is an option of Factory Building Plan at the top of the page<br/></li>
+                                <li>After logging the user has to fill the FORM 1.<br/></li>
+                                <li>After filling the form 1, the user has to fill the Form-1A.<br/></li>
+                                <li>After filling the form 1A, the user has to fill the Form-1B.<br/></li>
+                                <li>Blue Prints hard copy will be submitted to the department by hand or by courier.<br/></li>
+                                Documents required<br/>
+                                <li>Flow chart of manufacturing process<br/></li>
+                                <li>Site of factory and surroundings<br/></li>
+                                <li>Plan and elevation and necessary cross-sections of the various buildings indicating all relevant
+                                    details</li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <br/>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">How do I send to the department the layout and detailed plan blue print and track the
+                                same?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Applicant have to provide the blue print by hand or can send to department through courier.
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsen">How to apply for registration of establishment engaged in Building and Other Construction activities under the Building and Other Construction Workers (RE & CS) Act, 1996 ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapsen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>The User has to create his/her Login ID on the Department's Web Portal by Using his/her   operational e-mail ID and password.</li>
+
+                                <li>After using his/her login ID , the user has to fill the Basic Information Performa(BIP).This performa  contains all the basic information of the factory like address, workers, amount of power used, details of the occupier/manager, manufacturing process & declaration etc.</li>
+
+                                <li>Applicant has to fill Form 1 for registration certificate</li>
+
+                                <li>The system at these steps shows the calculation of fee and enables you to make the payment of the balance fee online using Debit/Credit cards.</li>
+
+                                <li>Applicant has to fill the form where he/she has to provide details of  commencement</li>
+
+                                <li>Applicant has to fill Form 1 CESS rules.</li><br/>
+
+                                Documents<br/>
+
+                                <li>Project report
+                                <li>Article of association/ MOA/ Partnership deed</li>
+                                <li>List of partners</li>
+                                <li>Approval of factory building plan</li>
+                                <li>Allotment letter</li>
+                                <li>Copy of agreement of contractor</li>
+                                <li>Notice of commencement</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+        .faqHeader {
+            font-size: 27px;
+            margin: 20px;
+        }
+
+        .panel-heading [data-toggle="collapse"]:after {
+            font-family: 'Glyphicons Halflings';
+            content: "\2212"; /* "play" icon */
+            float: right;
+            src: url('../fonts/glyphicons-halflings-regular.eot');
+            src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+            color: #F58723;
+            font-size: 18px;
+            line-height: 22px;
+            /* rotate "play" icon from > (right arrow) to down arrow */
+
+        }
+
+        .panel-heading [data-toggle="collapse"].collapsed:after {
+            /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+            content: "\002b";
+            color: #454444;
+        }
+    </style>
+
+</section>
 </div>
-
-
-
-
-
-
+            </div></section></div></main>
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <hr class="my-4">
@@ -286,110 +489,23 @@
     .twitter{
         color:#55acee !important;
     }
-
-
-    // Custom shit
-       body {
-           margin-top: 30px;
-           background-color: #eee;
-       }
-
-    .list-group.help-group {
-        margin-bottom: 20px;
-        padding-left: 0;
-        margin: 0;
-    .faq-list {
-        display: block;
-        top: auto;
-        margin: 0 0 32px;
-        border-radius: 2px;
-        border: 1px solid #ddd;
-        box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
-    .list-group-item {
-        position: relative;
-        display: block;
-        margin: 0;
-        padding: 13px 16px;
-        background-color: #fff;
-        border: 0;
-        border-bottom: 1px solid #ddd;
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
-        color: #616161;
-        transition: background-color .2s;
-    i.mdi {
-        margin-right: 5px;
-        font-size: 18px;
-        position: relative;
-        top: 2px;
-    }
-    &:hover {
-         background-color: #f6f6f6;
-     }
-    &.active {
-         background-color: #f6f6f6;
-         font-weight: 700;
-         color: rgba(0,0,0,.87);
-     }
-    &:last-of-type {
-         border-bottom-left-radius: 2px;
-         border-bottom-right-radius: 2px;
-         border-bottom: 0;
-     }
-    }
-    }
+    .light-blue.darken-3 {
+        background-color: #a7bbc7!important;
     }
 
-    .tab-content.panels-faq {
-        padding: 0;
-        border: 0;
+    element.style {
     }
-
-    .panel.panel-help {
-        box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
-        padding-bottom: 0;
-        border-radius: 2px;
-        overflow: hidden;
-        background-color: #fff;
-        margin: 0 0 16px;
-    a[href^="#"],
-    a[href^="#"]:hover,
-    a[href^="#"]:focus {
-        outline: none;
-        cursor: pointer;
-        text-decoration: none;
+    .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs {
+        margin: -1.5rem 1rem 0 1rem;
     }
-    .panel-heading {
-        background-color: #f6f6f6;
-        padding: 0 16px;
-        line-height: 48px;
-        border-top-right-radius: 2px;
-        border-top-left-radius: 2px;
-        color: rgba(0,0,0,.87);
-    h2 {
-        margin: 0;
-        padding: 14px 0 14px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0;
-        text-transform: none;
+    #toast-container>div, .badge, .btn, .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:focus, .btn:disabled:hover, .card, .card-wrapper .back, .card-wrapper .front, .card.card-cascade.wider .card-body, .counter, .dropdown-content, .jumbotron, .md-form input[type=date].input-alternate, .md-form input[type=datetime-local].input-alternate, .md-form input[type=email].input-alternate, .md-form input[type=number].input-alternate, .md-form input[type=password].input-alternate, .md-form input[type=search-md].input-alternate, .md-form input[type=search].input-alternate, .md-form input[type=tel].input-alternate, .md-form input[type=text].input-alternate, .md-form input[type=time].input-alternate, .md-form input[type=url].input-alternate, .md-form textarea.md-textarea.input-alternate, .md-pills .nav-link.active, .md-pills .show>.nav-link, .mdb-autocomplete-wrap, .media .media-left img, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .page-item.active .page-link, .pricing-card .price .version, .side-nav, .z-depth-1 {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     }
-    }
-    .panel-body {
-        background-color: #fff;
-        border-top: 1px solid #ddd;
-        border-radius: 2px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        margin-top: 0;
-    p {
-        margin: 0 0 16px;
-    &:last-of-type {
-         margin: 0;
-     }
-    }
-    }
+    .modal-dialog.cascading-modal .nav-tabs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
     }
 </style>
 </body>
