@@ -89,55 +89,109 @@
 </br>
 
 
-<div class="card" >
-    <div class="card-body">
-      BACHPAN BACHAO ANDOLAN
-    </div>
-  <a href="http://www.bba.org.in/"> http://www.bba.org.in/</a>
-</div>
 
-
-<div class="card" >
+<div class="card">
     <div class="card-body">
-        PURPOSE
-    </div>
-    The stated vision of Bachpan Bachao Andolan (BBA) is "to create a child friendly society where all children are free from exploitation and receive free and quality education. It aims to identify, liberate, rehabilitate and educate children in servitude through direct intervention, child and community participation, coalition building, consumer action, promoting ethical trade practices and mass gaming."
-</div>
-
-<div class="card" >
-    <div class="card-body">
-        <h1>OUR SUPPORT TO STOP CHILD LABOUR:</h1>
-    </div>
-    <a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.deccanherald.com/content/255374/campaign-right-education-begins.html</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://articles.timesofindia.indiatimes.com/2012-06-06/delhi/32078061_1_child-labourers-ngo-bachpan-bachao-andolan-rice-export</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://articles.timesofindia.indiatimes.com/2012-05-29/delhi/31886872_1_child-workers-child-labour-sealing-order</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.deccanherald.com/content/256322/seventeen-kids-rescued.html</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.utsandiego.com/news/2012/jun/12/factory-raids-reveal-child-labor-persists-in-india/</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.deccanherald.com/content/255374/campaign-right-education-begins.html</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-RTI/Article1-869623.aspx</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.cosmeticsdesign.com/Market-Trends/Cosmetics-industry-accused-of-using-child-labor-to-source-ingredients</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">https://www.nytimes.com/2007/10/10/world/asia/10iht-letter.1.7832563.html</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://india.blogs.nytimes.com/2011/10/12/where-are-the-children/</a>
-    <a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">https://www.nytimes.com/2007/11/15/business/worldbusiness/15iht-gap.1.8349422.html</a>
+        <h4 class="card-title">BACHPAN BACHAO ANDOLAN</h4>
+        <h6 class="card-subtitle mb-2 text-muted">EDUCATE CHILD, ONE STEP AHEAD TO DEVELOPMENT COUNTRY </h6>
+        <p class="card-text">PURPOSE: The stated vision of Bachpan Bachao Andolan (BBA) is "to create a child friendly society where all children are free from exploitation and receive free and quality education. It aims to identify, liberate, rehabilitate and educate children in servitude through direct intervention, child and community participation, coalition building, consumer action, promoting ethical trade practices and mass gaming."</p>
+        <a href="#" class="card-link"><a href="http://www.bba.org.in/"> http://www.bba.org.in/</a></a>
+        </div>
 </div>
 
 
 <div class="card">
     <div class="card-body">
-        <h4 class="card-title">Panel title</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Panel subtitle</h6>
-        <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
-        <a href="#" class="card-link">Panel link</a>
-        <a href="#" class="card-link">Another link</a>
+        <h4 class="card-title">Campaigns</h4>
+        <h6 class="card-subtitle mb-2 text-muted">BBA has led the largest civil society initiative in the world against child labour in the form of the Global March Against Child Labour in 1998, leading to ILO Convention 182 on Worst Forms of Child Labour</h6>
+        <p class="card-text">One of the recent campaigns of BBA include:
+
+        <li>Child Labour Free India Campaign: for an amendment in Child Labour (Prohibition & Regulation) Act, 1986 for total abolition on child labour till the age of 14 yrs., in line with ILO Convention 138.[6]</li>
+
+        <li> Right to Education Campaign: </li>
+
+        <li>In 2001, BBA had led the campaign demanding Fundamental Right to Education, with over 180 Members of Parliament and a 15,000 km. long march across the country, resulting in a constitutional amendment and the Right of Children to Free and Compulsory Education Act.</li>
+        <li>Child Domestic Labour campaign</li>
+
+        <li>6487 Letters sent to all judges in High Court, Supreme Court, Education department, social welfare department, Commissions, members Lok Sabha, Rajya Sabha etc. to create awareness</li>
+        <li>  16140 Stickers pasted in total 320 villages and RWAs across the country.</li>
+        <li>In Delhi, 225 Resident Welfare Associations pledged to make their home child labour free.</li>
+        <li>Mukti Caravan (campaign against child trafficking for forced labour)</li>
+
+        <li> Covered 158 villages in UP, Bihar, Delhi and Rajasthan</li>
+        <li>750 street plays, approx. 3500 wall writings, rallies, Public Vigilance Committees 70 formed, 250 schools reached</li>
+        <li>Follow up of 137 child labourers, 2 child marriages stopped</li>
+        <li>Complaint received – 350 approx</li>
+        <li>Missing Children Campaign: biggest ever research undertaken on missing children, resulting in Supreme Court issuing notice to all states and union territories on missing children.</li></p>
+        <a href="http://bba.org.in/mindtropes/how-we-work/" class="card-link">HOW-WE-WORK</a>
+        <a href="http://bba.org.in/mindtropes/get-involved/" class="card-link">GET-ENVOLVED</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">BE-A-MAN</h4>
+        <h6 class="card-subtitle mb-2 text-muted">If you see anykind of child abuse:</h6>
+        <p class="card-text">
+        <li>Call 1098(Toll-Free) :A toll free 24-hour telephone help line 1098 for children in distress can be accessed in 72 cities of the country.</li>
+
+        <li>Contact to local police station.</li>
+
+        <li>Contact local NGO’s for help.</li>
+
+        <li>Complain to National Commission for the Protection of Child Rights (NCPCR) and State Commissions for the Protection of Child Rights (SCPCRs)</li>
+
+        <li>A complaint alleging the commission of any act amounting to abuse of a child can be made to the police. The Police helpline number is 100.</li>
+
+        <li>In case the police fails to register a FIR or does not investigate the case, then the aggrieved party can write an application to the Superintendent of Police under Section 154(3) of CrPC.</li>
+
+        <li>Even if there is failure on the part of the Superintendent of police to take action, or that even after registering it no proper investigation is held, the aggrieved party can file an application under Section 156(3) of CrPC before the learned Magistrate concerned. In such cases the Magistrate can direct the FIR to be registered and also can direct a proper investigation to be made, in a case where, according to the aggrieved person, no proper investigation was made. The Magistrate can also under the same provision monitor the investigation to ensure a proper investigation.</li>
+
+        <li>An online complaint can be made at the website of the National Commission for Protection of Children’s Rights by clicking on the following link: </li></li></p>
+        <a href="http://ncpcr.gov.in/" class="card-link">National-Commission-for-protection-of-child-right</a>
+        <a href="http://unicef.in/Story/190/Child-Protection-In-India" class="card-link">U-N-I-C-E-F I-N-D-I-A</a>
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">OUR SUPPORT TO STOP CHILD LABOUR:</h4>
+        <a href="#" class="card-link"></a><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a>c
+        <a href="#" class="card-link"><a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece</a></a></br>
+        <a href="#" class="card-link"><a href="http://www.deccanherald.com/content/255374/campaign-right-education-begins.html">http://www.deccanherald.com/content/255374/campaign-right-education-begins.html</a></a></br>
+        <a href="#" class="card-link"><a href="http://articles.timesofindia.indiatimes.com/2012-06-06/delhi/32078061_1_child-labourers-ngo-bachpan-bachao-andolan-rice-export">http://articles.timesofindia.indiatimes.com/2012-06-06/delhi/32078061_1_child-labourers-ngo-bachpan-bachao-andolan-rice-export</a></a></br>
+        <a href="#" class="card-link"><a href="http://articles.timesofindia.indiatimes.com/2012-05-29/delhi/31886872_1_child-workers-child-labour-sealing-order">http://articles.timesofindia.indiatimes.com/2012-05-29/delhi/31886872_1_child-workers-child-labour-sealing-order</a></a></br>
+        <a href="#" class="card-link"><a href="http://www.deccanherald.com/content/256322/seventeen-kids-rescued.html">http://www.deccanherald.com/content/256322/seventeen-kids-rescued.html</a></a></br>
+        <a href="#" class="card-link"><a href="">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
+        <a href="#" class="card-link"><a href="http://www.utsandiego.com/news/2012/jun/12/factory-raids-reveal-child-labor-persists-in-india">hhttp://www.utsandiego.com/news/2012/jun/12/factory-raids-reveal-child-labor-persists-in-india</a></a></br>
+        <a href="#" class="card-link"><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
+        <a href="#" class="card-link"><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
+        <a href="#" class="card-link"><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
+
     </div>
 </div>
 
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--Footer-->
