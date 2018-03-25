@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="faqs">Help
+                    <a class="nav-link" href="help">Help
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -208,7 +208,7 @@
             <!--Grid row-->
             <div class="row">
 
-                <!--Grid column-->
+                 <!--Grid column-->
                 <div class="col-md-6 mb-4">
 
                     <img src="homepage/img/help1.png" class="img-fluid z-depth-1-half" alt="">
@@ -220,18 +220,18 @@
                 <div class="col-md-6 mb-4">
 
                     <!-- Main heading -->
-                    <h3 class="h3 mb-3">MISCLLANEOUS</h3>
+                    <h3 class="h3 mb-3">We are providing Help & Support</h3>
 
-                    <br>There is a provision to register new representative of the already registered establishments and new
-                        enforcement agency user. There is also a link is provided to generate the password for first time use for
-                        an establishment whose LIN is generated.
+                    <p>There is a provision to register new representative of the already registered establishments and new
+                    enforcement agency user. There is also a link is provided to generate the password for first time use for
+                    an establishment whose LIN is generated.
+                    </p>
+                    New users can be created, passwords can be changed. There is convention followed for creation of the
+                    password for the pre populated user ids.
+                    A login window is available at the portal through which the users can login and perform their tasks.
+                    Upon giving the wrong login / passwords, system gives proper message and user has to try again.
                     </br>
-                        New users can be created, passwords can be changed. There is convention followed for creation of the
-                        password for the pre populated user ids.
-                        A login window is available at the portal through which the users can login and perform their tasks.
-                        Upon giving the wrong login / passwords, system gives proper message and user has to try again.
-                    </br>
-                        <li>GET YOUR LIN HERE ALSO:</li>
+                    <li>GET YOUR LIN HERE ALSO:</li>
                     <a href="www.shramsuvidha.gov.in">SHRAM-SUVIDHA-PORTAL</a>
 
                     </p>
@@ -243,22 +243,20 @@
                         Each district is headed by a Joint/Deputy Labour Commissioner who is assisted by Asstt. Labour Commissioners and Labour Officers.
                     </p>
 
-
-
                     <!-- CTA -->
-                    <a href="#labouracts" class="btn btn-indigo btn-md">Labour Acts
+                    <a href="/#labouracts" class="btn btn-indigo btn-md">Labour Acts
                     </a>
                     <a href="login" class="btn btn-indigo btn-md">Start Filling
                     </a>
                 </div>
                 <!--Grid column-->
+            </div>
+            <!--Grid row-->
+                <!--Grid column-->
+            <hr class="my-5">
+                <div class="row">
 
-
-                <div class="col-md-6 mb-4">
-
-                    <img src="homepage/img/help2.png" class="img-fluid z-depth-1-half" alt="">
-
-                </div>
+                    <div class="col-md-6 mb-4">
                 <h3 class="h3 mb-3">FORM FILLING GUIDE</h3>
 
                </br>
@@ -278,13 +276,24 @@
                 <LI>  Now you can login e-labour delhi Portal with created User Id and Password.</LI>
 
                 </p>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+
+                        <img src="homepage/img/help2.png" class="img-fluid z-depth-1-half" alt="">
+
+                    </div>
+                </div>
 
 
+            <hr class="my-5">
+                <div class="row">
                 <div class="col-md-6 mb-4">
 
                     <img src="homepage/img/ee.png" class="img-fluid z-depth-1-half" alt="">
 
                 </div>
+                    <div class="col-md-6 mb-4">
                 <h3 class="h3 mb-3"> Verify Establishment Identifiers</h3>
 
               <li>  Here you can verify/reject modifications made to establishment identifiers by employer/ establishment representative.
@@ -298,12 +307,14 @@
                 V. View Identifier Verification List</br>
             <li>   Click on the verified number at the verification summary screen to view the verification list. View the verification status under status column.</br>
                 This ends the process of LIN data verification by Regional Head.</li>
+                    </div></div>
 
-                <div class="col-md-6 mb-4">
 
-                    <img src="homepage/img/thor.png" class="img-fluid z-depth-1-half" alt="">
+            <hr class="my-5">
+                <div class="row">
 
-                </div>
+
+                    <div class="col-md-6 mb-4">
                 <h3 class="h3 mb-3"> ONE STEP TO STOP CHILD LABOUR</h3>
                 <li>   You need to consider below points while filling the forms at portal to validate the accuracy.</li>
                 <li>   Form fields marked * are mandatory.</li>
@@ -321,17 +332,20 @@
                 <li> 2. Click the feedback option; you will see Feedback & Suggestion form. Fill and submit the form.</li>
                 <li> C. Contact us</li>
                 <li> You can also send your feedback to Shram Suvidha Portal Team at websupport-mol@nic.in .</li>
+                    </div>
+                    <div class="col-md-6 mb-4">
 
+                        <img src="homepage/img/thor.png" class="img-fluid z-depth-1-half" alt="">
 
-
-
+                    </div>
+                </div>
 
         <!--Grid row-->
 
         </section>
         <!--Section: Main info-->
 
-        <hr class="my-5">
+
 
     </div>
 </main>

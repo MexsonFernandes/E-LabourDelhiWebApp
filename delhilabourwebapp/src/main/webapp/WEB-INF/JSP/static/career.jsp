@@ -54,7 +54,7 @@
                     <a class="nav-link" href="help">Help</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="faqs">Careers
+                    <a class="nav-link" href="careers">Careers
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
