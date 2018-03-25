@@ -316,22 +316,17 @@
 
                     <div class="col-md-6 mb-4">
                 <h3 class="h3 mb-3"> ONE STEP TO STOP CHILD LABOUR</h3>
-                <li>   You need to consider below points while filling the forms at portal to validate the accuracy.</li>
-                <li>   Form fields marked * are mandatory.</li>
-                <li>   Special Characters not allowed except "." (Dot) and space.</li>
-                <li>  Valid alphanumeric character includes special characters- Dot [.], Slash [/], At [@], Comma [,], Hyphen [-], Brackets [(and)] and Space.</li>
-                <li>  Date Validation Criteria</li>
-                <li> a. Should accept in Day, Month and Year format.</li>
-                <li> b. Day, Month and Year should be numeric.</li>
-                <li>  Email- Alphanumeric, DOT, @, hyphen, underscores.</li>
-                <li> USSP- LIN Data Verification by Regional Head-User Manual</li>
-                <li> Page 9 of 9 https://shramsuvidha.gov.in</li>
-                <li> B. Send feedback</li>
-                <li> Here you can give us your feedback and suggestions which can be used as basis of improvement and help.</li>
-                <li> 1. Once you are logged into your USSP account, at the top most bar you will see the Feedback option.</li>
-                <li> 2. Click the feedback option; you will see Feedback & Suggestion form. Fill and submit the form.</li>
-                <li> C. Contact us</li>
-                <li> You can also send your feedback to Shram Suvidha Portal Team at websupport-mol@nic.in .</li>
+                        <p>According to recent estimates, there are 168 million children around the world who are forced to work, and much of this work is hazardous or harmful to their physical and mental development. There are many ways to join in the fight to end child labor injustices. Whichever method you chose, know that you are making a difference and helping to make the world a better place!
+                        </p>
+                        Use the internet to find out which organizations support anti-child labor initiatives. Browse their mission statements and events pages to get a sense of their stance on the issues, and how they plan to help exploited children workers. Here are a couple of websites to start with:
+                      <li>  United Nations Children's Fund UNICEF</li>
+                        <li>The Stop Child Labor Coalition</li>
+                        <li>International Initiative to End Child Labor</li>
+                        <li>National Child Labor Committee</li>
+                        <li>International Program on the Elimination of Child Labour (IPEC)</li>
+                        <LI> <a href="https://www.wikihow.com/Take-Action-to-End-Child-Labor">TAKE-ACTION-TO-END-CHILD-LABOUR</a></BR></LI>
+                          <LI>  <a href="https://www.thebetterindia.com/69863/ten-ways-can-stop-child-labour/">10-WAYS-TO-STOP-CHILD-LABOUR</a></LI>
+
                     </div>
                     <div class="col-md-6 mb-4">
 
