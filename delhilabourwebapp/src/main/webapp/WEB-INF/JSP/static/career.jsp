@@ -153,6 +153,18 @@
     </div>
 </div>
 
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">A complaint can also be addressed to:</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Chairperson</h6>
+        <br class="card-text">National Commission for Protection of Child Rights,</br>
+            5th Floor, Chanderlok Building, 36, Janpath,</br>
+            New Delhi - 110 001</p>
+        <a href="#" class="card-link">complaints.ncpcr@gmail.com</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+
 
 
 <div class="card">
