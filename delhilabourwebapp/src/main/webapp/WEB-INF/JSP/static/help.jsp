@@ -105,11 +105,18 @@
                     <!-- Main heading -->
                     <h3 class="h3 mb-3">NEED HELP?</h3>
 
-                    <p>There is a provision to register new representative of the already registered establishments and new
+                    <br>There is a provision to register new representative of the already registered establishments and new
                         enforcement agency user. There is also a link is provided to generate the password for first time use for
                         an establishment whose LIN is generated.
+                    </br>
+                        New users can be created, passwords can be changed. There is convention followed for creation of the
+                        password for the pre populated user ids.
+                        A login window is available at the portal through which the users can login and perform their tasks.
+                        Upon giving the wrong login / passwords, system gives proper message and user has to try again.
+                    </br>
+
                     </p>
-                    <hr>
+                    </br>
                     <p>
                         With a view to make the administration responsive to the needs of the people and bring governance to their doorsteps,
                         the department has been organized on territorial basis into nine districts.<br/>
