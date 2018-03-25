@@ -265,7 +265,7 @@
       <!--Section: Main features & Quick Start-->
       <section>
 
-        <h3 class="h3 text-center mb-5" id="aboutus"><div style="height:50px"></div>
+        <h3 class="h3 text-center mb-5" id="aboutus"><div style="height:70px"></div>
             ABOUT US</h3>
 
         <!--Grid row-->

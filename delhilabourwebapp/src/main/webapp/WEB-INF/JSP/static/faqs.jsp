@@ -79,118 +79,259 @@
 </nav>
 <!-- Navbar -->
 
+<section class="mbr-section article mbr-section__container" id="content2-3" data-rv-view="8" style="background-image: url('homepage/img/faqsPic.jpg'); padding-top: 50px; padding-bottom: 20px;">
 
+    <div class="container">
 
-
-<div class="container">
-    <div class="col-md-4">
-        <ul class="list-group help-group">
-            <div class="faq-list list-group nav nav-tabs">
-                <a href="#tab1" class="list-group-item active" role="tab" data-toggle="tab">Frequently Asked Questions</a>
-                <a href="#tab2" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-account"></i> My profile</a>
-                <a href="#tab3" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-account-settings"></i> My account</a>
-                <a href="#tab4" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-star"></i> My favorites</a>
-                <a href="#tab5" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-cart"></i> Checkout</a>
-                <a href="#tab6" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-heart"></i> Lorem ipsum</a>
-                <a href="#tab7" class="list-group-item" role="tab" data-toggle="tab"><i class="mdi mdi-check"></i> Dolor sit amet</a>
-            </div>
-        </ul>
-    </div>
-    <div class="col-md-8">
-        <div class="tab-content panels-faq">
-            <div class="tab-pane active" id="tab1">
-                <div class="panel-group" id="help-accordion-1">
-                    <div class="panel panel-default panel-help">
-                        <a href="#opret-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>How do I edit my profile?</h2>
-                            </div>
-                        </a>
-                        <div id="opret-produkt" class="collapse in">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#rediger-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>How do I upload a new profile picture?</h2>
-                            </div>
-                        </a>
-                        <div id="rediger-produkt" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#ret-pris" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>Can I change my phone number?</h2>
-                            </div>
-                        </a>
-                        <div id="ret-pris" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#slet-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>Where do I change my privacy settings?</h2>
-                            </div>
-                        </a>
-                        <div id="slet-produkt" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-help">
-                        <a href="#opret-kampagne" data-toggle="collapse" data-parent="#help-accordion-1">
-                            <div class="panel-heading">
-                                <h2>What is this?</h2>
-                            </div>
-                        </a>
-                        <div id="opret-kampagne" class="collapse">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
+        <div class="panel-group" id="accordion">
+            <h2 class="h1 text-center py-5">Frequently Asked Questions</h2>
+            <h3>
+                <strong>General Questions</strong>
+            </h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What are Points and Should I pay them?</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Paying points is a way to reduce your interest rate when you purchase or refinance your home. You are paying points up front to get a reduction on your interest rate to reduce your monthly payment over the life of your loan term. One point is equivalent to one percent of your loan amount, one point on a $100,000 loan amount is equal to $1,000.
+                        As a general rule of thumb it really doesn’t make sense to pay over 1% or 1-1/2% in points to reduce your interest rate.
                     </div>
                 </div>
             </div>
-            <div class="tab-pane" id="tab2">
-                <div class="panel-group" id="help-accordion-2">
-                    <div class="panel panel-default panel-help">
-                        <a href="#help-three" data-toggle="collapse" data-parent="#help-accordion-2">
-                            <div class="panel-heading">
-                                <h2>Lorem ipsum?</h2>
-                            </div>
-                        </a>
-                        <div id="help-three" class="collapse in">
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam est!</p>
-                                <p><strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-                            </div>
-                        </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What does Loan to Value Mean?</a>
+                    </h4>
+                </div>
+                <div id="collapseTen" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Loan to Value refers to the amount of the loan as a percentage of the current market value of your home. You can calculate your LTV fairly by dividing your existing loan amount by current value of your home. If you borrow $100,000 and your home is worth $200,000 your loan to value is 50%. This is an extremely important calculation in the mortgage underwriting process. If your loan to value exceeds 80% you will be required to pay PMI. See PMI.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsen">What is a rate lock?</a>
+                    </h4>
+                </div>
+                <div id="collapsen" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        What is a rate A rate lock is a lender's guarantee of an interest rate for a set time period? A lock period ranges between 12 to 90 days. During this time period if your loan officer locks your loan you will be protected from market driven rate fluctuations.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsek">What is a reverse mortgage?</a>
+                    </h4>
+                </div>
+                <div id="collapsek" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        A reverse mortgage is a home loan that you do not have to pay back for as long as you live in your home. It can be paid to you in one lump sum, as a regular monthly income, or at the times and in the amounts you want. The loan and interest are repaid only when you sell your home, permanently move away, or die. All homeowners must be at least be 62 years old, at least one homeowner must live in the house most of the year. Eligible homes are the single family, one unit dwellings, two to four units, owner occupied dwellings and some condominiums. Please check with one of our qualified lenders or more information.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseh">What is an Agreement of Sale?</a>
+                    </h4>
+                </div>
+                <div id="collapseh" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        A contract signed by buyer and seller stating the terms and conditions under which a property will be sold.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseop">What is Mortgage Amortization?</a>
+                    </h4>
+                </div>
+                <div id="collapseop" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        An amortization is the repayment of principal from scheduled mortgage payments that exceed the interest due. The scheduled payment less the interest equals amortization. The loan balance declines by the amount of the scheduled payment, plus the amount of any extra payment.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsei">What is an Annual Percentage Rate?</a>
+                    </h4>
+                </div>
+                <div id="collapsei" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        The Annual Percentage Rate, which must be reported by lenders under the Fair Truth in Lending regulations. It is a measure of credit cost to the borrower that takes account of the interest rate, points, and flat dollar charges by the lender. The charges covered by the APR also include mortgage insurance premiums, but no other payments to third parties, such as payments to title insurers or appraisers. The APR is adjusted for the time value of money so that dollars paid by the borrower up-front carry a heavier weight than dollars paid in the future. However, the APR is calculated on the assumption that the loan runs to term, and is therefore potentially deceptive for borrowers with short time horizons.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseo">What do I do if I have trouble filling out a section of the forms in order to receive my mortgage prequalification number at: prequalquote.com?</a>
+                    </h4>
+                </div>
+                <div id="collapseo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        You can email all of your questions that you may have to: info@prequalquote.com and one of our experienced knowledgeable mortgage underwriters will get back to you.</div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseu">What happens after I fill out all of the forms on www.PrequalQuote.com?</a>
+                    </h4>
+                </div>
+                <div id="collapseu" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        After you fill out the forms on www.PrequalQuote.com you will notice that there is enough information obtained for us to come up with a Magic qualifying number for you. That number is the number that you qualify for. With that number, you go out and you look for a house. For example: If that magic number is $100,000 then you will be looking for a $100,000 dollar house. If you have $10,000 to put down then you will be looking for a house in the amount of $110,000. The more money you have to put down the more you add to that magic number.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsey">At what point will the lenders appear so I can see what rates they have to offer?</a>
+                    </h4>
+                </div>
+                <div id="collapsey" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        After you have completed all of the required fields on all of the forms you will than hitting the submit button at that time a box will appear with five different lenders.
+                        <br/>
+                        The information you will see will be the interest rates for all 5 lenders. These lenders will be competing for your business. You will have access to their information such as their phone numbers and you can make the choice as to whether you want to call all five or just two. But please remember that these lenders are hand selected by www.PrequalQuote.com so you can be sure that we did everything in our power to make sure you are only dealing with reputable banks, lenders, and brokers with the utmost integrity. Our lending clients are the best of the best.
+
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapset">What kinds of security does www.PrequalQuote.com have so that I know my information will not be stolen?</a>
+                    </h4>
+                </div>
+                <div id="collapset" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        www.PrequalQuote.com is a certified VeriSign Secure Site. You will see that sign everywhere on our site. Protecting your personal information is extremely important to us and as a sign of that, you will see this sign everywhere. We do our best to protect you like we do ourselves. Verisign is the leading provider of Internet Trust services. With nearly 15 million registrations they are a widely recognized and trusted name in the securities industry. The Secure Server Ids issued by Verisign are based on the strongest encryption technology available. For more information please visit them at www.verisign.com
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapser">What are my options as far as low down payments?</a>
+                    </h4>
+                </div>
+                <div id="collapser" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        The only options in today’s market (2008) would be an FHA or VA loan FHA stands for Federal Housing Administration and VA stands for Veterans Administration. The Federal Housing Administration is an agency of the Department of Housing and Urban Development (HUD). FHA insures loans made to all U.S. citizens, permanent residents, and noncitizens with work permits who meet their financial qualification rules. Under an FHA program, if the buyer defaults on their mortgage and the lender foreclose, the FHA pays 100% of the amount insured. This loan insurance lets qualified people buy affordable houses. FHA will allow for only 3% down this means if you have a $100,000 purchase of a house you will only be required to put down $3,000. This does NOT include closing costs. FHA also allows lower credit scores such as 580 and above and they also require at least 12 months of good clean credit. For more information about FHA loans please contact one of our qualified FHA lenders.
+                        <br/>VA stands for U.S. Department of Veterans Affairs (VA) and will finance 100% of the loan. These are available to men and women who are now in the military and to veterans with honorable discharges who meet specific eligibility rules, most of which relate to the length of service. The VA doesn’t make mortgage loans but guarantees part of the house loan you get from a bank, savings, and loans, or another private lender. If you default, the VA pays the lender the amount guaranteed and you, in turn, will owe the VA. This guarantee makes it easier for veterans to get favorable loan terms with a low down payment. For more information please contact one of our VA lenders.
+                        <br/>There are also programs available for first-time homebuyers through local state money called the State Bond Money.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsee">Could you explain to me what Freddie Mac and Fannie Mae are and what do they do?</a>
+                    </h4>
+                </div>
+                <div id="collapsee" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Freddie Mac stands for Federal Home Loan Mortgage Corporation. Fannie Mae stands for Federal National Mortgage Association. Mortgages made by lenders and banks are generally sold on the secondary market to produce cash so lenders can make more mortgages, the largest purchasers on the secondary market are called Freddie Mac and Fannie Mae. These two organizations are government sponsored and were created by the government to make mortgages available to more people with low and moderate incomes, although both organizations are now privately run.
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsew">What is PMI?</a>
+                    </h4>
+                </div>
+                <div id="collapsew" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        PMI stands for Private Mortgage Insurance these are policies designed to reimburse a mortgage lender up to a certain amount if you default on your loan and your house isn’t worth enough to entirely repay the lender through a foreclosure sale. Most lenders require PMI on loans where the borrower makes a down payment of less than 20%. For example if you purchase a house for $100,000 and you do not put at least 20% down which amounts to $20,000 the lender will require PMI (private mortgage insurance) and the premium is paid monthly. The fee is typically around one-half of one percent of the mortgage loan. You can cancel the PMI once your equity in the house reaches 20% as long as you have a good monthly mortgage payment history with the lender.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseq">What is better? An adjustable rate mortgage or a fixed rate mortgage?</a>
+                    </h4>
+                </div>
+                <div id="collapseq" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        www.PrequalQuote.com only recommends a 10, 15, 20, 25, or 30 year FIXED loans. If you plan on only staying in your home for 5 years it would be ok to obtain a 5 year adjustable as long as the loan adjusts after the 5 year period and that there is NO prepayment penalty.
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseol">How do I know what my credit scores are and where can I pull my credit?</a>
+                    </h4>
+                </div>
+                <div id="collapseol" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        A++ Credit is what is known as the best credit rating. With an A++ credit rating you should have no problem getting a house that you qualify for and with A++ credit you will be entitled to the best rate that any mortgage banker, mortgage broker or mortgage lender has to offer so don’t forget to shop for the best rate and do not give out your social security number to just anyone. Find someone you trust. You can go to the following websites to see what your scores are: www.equifax.com, www.transunion.com and the last one is www.experien.com. You can also check out my FICO.com but from our experience, they all charge a fee. You could also try www.freeannualcreditreport.com that is through the Federal Government and they allow you one free credit report per year but be careful because we found that these sites do try to sign you up for a membership with a monthly fee.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <style>
+        .faqHeader {
+            font-size: 27px;
+            margin: 20px;
+        }
 
+        .panel-heading [data-toggle="collapse"]:after {
+            font-family: 'Glyphicons Halflings';
+            content: "\2212"; /* "play" icon */
+            float: right;
+            src: url('../fonts/glyphicons-halflings-regular.eot');
+            src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 
+            color: #F58723;
+            font-size: 18px;
+            line-height: 22px;
+            /* rotate "play" icon from > (right arrow) to down arrow */
 
+        }
+
+        .panel-heading [data-toggle="collapse"].collapsed:after {
+            /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+            content: "\002b";
+            color: #454444;
+        }
+    </style>
+
+</section>
 
 
 <!--Footer-->
