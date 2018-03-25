@@ -154,7 +154,11 @@
                   <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
                 </div>
-
+                <div class="md-form form-sm mb-5">
+                  <i class="fa fa-envelope prefix"></i>
+                  <input type="number" id="modalLRInput16" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Phone No</label>
+                </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-lock prefix"></i>
                   <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" disabled>

@@ -17,8 +17,7 @@
     <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
 </head>
 
-<br>
-
+<body>
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
@@ -68,9 +67,7 @@
             <ul class="navbar-nav nav-flex-icons">
 
                 <li class="nav-item">
-                    <a href="login" class="nav-link border border-light rounded">
-                        LOGIN/SIGNUP
-                    </a>
+                    <a href="" class="btn btn-indigo btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
                 </li>
             </ul>
 
@@ -79,16 +76,139 @@
     </div>
 </nav>
 <!-- Navbar -->
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<br/>
 
 
+
+
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-phone prefix"></i>
+                                <input type="number" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your mobile number</label>
+                            </div>
+                            <div align="center">Or</div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput18" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10" >Your email id</label>
+                            </div>
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="number" id="modalLRInput11" class="form-control form-control-sm validate" disabled>
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">OTP</label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-user-circle-o prefix"></i>
+                                <input type="text" id="modalLRInput19" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Username</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-address-book prefix"></i>
+                                <input type="text" id="modalLRInput20" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Full Name</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="number" id="modalLRInput16" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Phone No</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" disabled>
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">OTP</label>
+                            </div>
+
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+
+
+
+
+
+
+
+<main>
+    <div class="container">
+
+        <!--Section: Main info-->
+        <section class="mt-5 wow fadeIn">
+
+            <!--Grid row-->
+            <div class="row">
 
 <div class="card">
     <div class="card-body">
@@ -98,8 +218,9 @@
         <a href="#" class="card-link"><a href="http://www.bba.org.in/"> http://www.bba.org.in/</a></a>
         </div>
 </div>
-
-
+            </div>
+                <br/><br/>
+            <div class="row">
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">Campaigns</h4>
@@ -126,12 +247,13 @@
         <a href="http://bba.org.in/mindtropes/how-we-work/" class="card-link">HOW-WE-WORK</a>
         <a href="http://bba.org.in/mindtropes/get-involved/" class="card-link">GET-ENVOLVED</a>
     </div>
-</div>
-
+</div> </div>
+            <br/><br/>
+            <div class="row">
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">BE-A-MAN</h4>
-        <h6 class="card-subtitle mb-2 text-muted">If you see anykind of child abuse:</h6>
+        <h6 class="card-subtitle mb-2 text-muted">If you see any kind of child abuse:</h6>
         <p class="card-text">
         <li>Call 1098(Toll-Free) :A toll free 24-hour telephone help line 1098 for children in distress can be accessed in 72 cities of the country.</li>
 
@@ -153,46 +275,56 @@
     </div>
 </div>
 
-<div class="card">
-    <div class="card-body">
-        <h4 class="card-title">A complaint can also be addressed to:</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Chairperson</h6>
-        <br class="card-text">National Commission for Protection of Child Rights,</br>
-            5th Floor, Chanderlok Building, 36, Janpath,</br>
-            New Delhi - 110 001</p>
-        <a href="#" class="card-link">complaints.ncpcr@gmail.com</a>
-        <a href="#" class="card-link">Another link</a>
-    </div>
-</div>
+            </div>
+            <br/><br/>
 
-
-
+                <div class="row">
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">OUR SUPPORT TO STOP CHILD LABOUR:</h4>
-        <a href="#" class="card-link"></a><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a>c
-        <a href="#" class="card-link"><a href="http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece">http://www.thehindu.com/todays-paper/tp-national/tp-newdelhi/article3503347.ece</a></a></br>
-        <a href="#" class="card-link"><a href="http://www.deccanherald.com/content/255374/campaign-right-education-begins.html">http://www.deccanherald.com/content/255374/campaign-right-education-begins.html</a></a></br>
-        <a href="#" class="card-link"><a href="http://articles.timesofindia.indiatimes.com/2012-06-06/delhi/32078061_1_child-labourers-ngo-bachpan-bachao-andolan-rice-export">http://articles.timesofindia.indiatimes.com/2012-06-06/delhi/32078061_1_child-labourers-ngo-bachpan-bachao-andolan-rice-export</a></a></br>
-        <a href="#" class="card-link"><a href="http://articles.timesofindia.indiatimes.com/2012-05-29/delhi/31886872_1_child-workers-child-labour-sealing-order">http://articles.timesofindia.indiatimes.com/2012-05-29/delhi/31886872_1_child-workers-child-labour-sealing-order</a></a></br>
-        <a href="#" class="card-link"><a href="http://www.deccanherald.com/content/256322/seventeen-kids-rescued.html">http://www.deccanherald.com/content/256322/seventeen-kids-rescued.html</a></a></br>
-        <a href="#" class="card-link"><a href="">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
-        <a href="#" class="card-link"><a href="http://www.utsandiego.com/news/2012/jun/12/factory-raids-reveal-child-labor-persists-in-india">hhttp://www.utsandiego.com/news/2012/jun/12/factory-raids-reveal-child-labor-persists-in-india</a></a></br>
-        <a href="#" class="card-link"><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
-        <a href="#" class="card-link"><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
-        <a href="#" class="card-link"><a href="http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx">http://www.hindustantimes.com/India-news/NewDelhi/Govt-slow-in-enforcing-child-labour-law-reveals-a-RTI-reply/Article1-869623.aspx</a></a></br>
-
+        <ol style="margin-left: -5px;"><li><a href="http://conscious-reality.com/wp-admin/www.alison.com" target="_blank">ALISON</a> -  over 60 million lessons and records 1.2 million unique visitors per month</li>
+            <li><a href="http://conscious-reality.com/wp-admin/www.coursera.org" target="_blank">COURSERA</a> - Educational website that works with universities to get their courses on the Internet, free for you to use. Learn from over 542 courses.</li>
+            <li><a href="http://ureddit.com/" target="_blank">The University of Reddit</a> - The free university of Reddit.</li>
+            <li><a href="https://www.udacity.com/" target="_blank">UDACITY</a> - Advance your education and career through project-based online classes, mainly focused around computer, data science and mathematics.</li>
+            <li><a href="http://ocw.mit.edu/index.htm" target="_blank">MIT Open CourseWare</a> - Free access to quite a few MIT courses that are on par with what you'd expect from MIT.</li>
+            <li><a href="http://www.openculture.com/" target="_blank">Open Culture</A> - Compendium of free learning resources, including courses, textbooks, and videos/films.</li>
+            <li><a href="http://noexcuselist.com/testing/" target="_blank">No Excuse List</a> - Huge list of websites to learn from.</li>
+            <li><a href="http://oyc.yale.edu/" target="_blank">Open YALE Courses</a> - Open Yale Courses provides free and open access to a selection of introductory courses taught by distinguished teachers and scholars at Yale University All lectures were recorded in the Yale College classroom and are available in video, audio, and text transcript formats. Registration is not required.</li>
+            <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> &#8211; Watch thousands of micro-lectures on topics ranging from history and medicine to chemistry and computer science.</li>
+            <li><a href="https://www.zooniverse.org/" target="_blank">Zooniverse</a> - Take part in a huge variety of interesting studies of nature, science, and culture.</li>
+            <li><a href="http://ocw.tufts.edu/" target="_blank">TUFTS Open CourseWare</a> - Tufts OpenCourseWare is part of a new educational movement initiated by MIT that provides free access to course content for everyone online. Tufts' course offerings demonstrate the University's strength in the life sciences in addition to its multidisciplinary approach, international perspective and underlying ethic of service to its local, national and international communities.</li>
+            <li><a href="http://science.howstuffworks.com/" target="_blank">How Stuff Works?</a> - More scientific lessons and explanations than you could sort through in an entire year.</li>
+            <li><a href="http://www.freelearningtools.org/harvard-medical-school-open-courseware-initiative/" target="_blank">Harvard Medical School Open Courseware</a> - The mission of the Harvard Medical School Open Courseware Initiative is to exchange knowledge from the Harvard community of scholars to other academic institutions, prospective students, and the general public.</li>
+            <li><a href="http://videolectures.net/" target="_blank">VideoLectures.NET</a> - the title says it all - amazing video lectures on many topics.</li>
+            <li><a href="http://www.ted.com/" target="_blank">TED</a> - Motivational and educational lectures from noteworthy professionals around the world.</li>
+            <li><a href="http://www.shodor.org/" target="_blank">Shodor</a> - A non-profit research and education organisation dedicated to the advancement of science and math education, specifically trough the use of modeling and simulation technologies. Included in this site are instructional resources, software, interactive lessons, explorations and information about workshops for students, teachers and learners of all ages on mathematics and science. Make sure you check Shodor Interactive - a great collection of interactive math, geometry, fractal, probability, algebra and statistics activities.</li>
+            <li><a href="https://www.udemy.com/courses/top-free" target="_blank">Udemy FREE Courses</A> - hundreds of experts teach on Udemy every month including New York Times best-selling authors, CEOs, Ivy League professionals and celebrity instructors. Courses include video, live lectures and tools to help teachers interact with students and track their progress. There are many free courses that can teach you business, law, programming, design, mathematics, science, photography, yoga and many more.</li>
+            <li><a href="http://mathsandscience.com/" target="_blank">Maths & Science</a> - Courses, tests and learning materials about mathematics and science for students from 1 to 12 grade.</li>
+            <li><a href="https://www.edx.org/" target="_blank">edX.org</a> - Free courses designed specifically for interactive study via the web, provided by MIT, Harvard, Barkley, Georgetown, Boston University, University of Washington, Karolinska Institute, Kyoto University and many more.</li>
+        </ol>
     </div>
 </div>
+                </div>
+            <br/><br/>
+                    <div class="row">
+
+                <div class="card" align="left">
+                    <div class="card-body">
+                        <h4 class="card-title">A complaint can also be addressed to:</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Chairperson</h6>
+                        <br class="card-text">National Commission for Protection of Child Rights,</br>
+                        5th Floor, Chanderlok Building, 36, Janpath,</br>
+                        New Delhi - 110 001</p>
+                        <a href="#" class="card-link">complaints.ncpcr@gmail.com</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
 
 
-
-
-
-
-
-
-
+            </div>
+        </section>
+    </div>
+</main>
 
 
 
@@ -299,7 +431,31 @@
     .twitter{
         color:#55acee !important;
     }
+    body{
+        background: url('homepage/img/careerbackg.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .light-blue.darken-3 {
+        background-color: #a7bbc7!important;
+    }
 
+    element.style {
+    }
+    .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs {
+        margin: -1.5rem 1rem 0 1rem;
+    }
+    #toast-container>div, .badge, .btn, .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:focus, .btn:disabled:hover, .card, .card-wrapper .back, .card-wrapper .front, .card.card-cascade.wider .card-body, .counter, .dropdown-content, .jumbotron, .md-form input[type=date].input-alternate, .md-form input[type=datetime-local].input-alternate, .md-form input[type=email].input-alternate, .md-form input[type=number].input-alternate, .md-form input[type=password].input-alternate, .md-form input[type=search-md].input-alternate, .md-form input[type=search].input-alternate, .md-form input[type=tel].input-alternate, .md-form input[type=text].input-alternate, .md-form input[type=time].input-alternate, .md-form input[type=url].input-alternate, .md-form textarea.md-textarea.input-alternate, .md-pills .nav-link.active, .md-pills .show>.nav-link, .mdb-autocomplete-wrap, .media .media-left img, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .page-item.active .page-link, .pricing-card .price .version, .side-nav, .z-depth-1 {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+    .modal-dialog.cascading-modal .nav-tabs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
 </style>
 </body>
 
