@@ -103,7 +103,7 @@
                 <div class="col-md-6 mb-4">
 
                     <!-- Main heading -->
-                    <h3 class="h3 mb-3">INTRODUCTION</h3>
+                    <h3 class="h3 mb-3">NEED HELP?</h3>
 
                     <p>The Labour Department, Government of N.C.T. of Delhi is headed by Secretary (Labour), who is assisted by Commissioner,
                         Special Labour Commissioner,Addl. Labour Commissioner, Joint Labour Commissioner, Deputy Labour Commissioners,
