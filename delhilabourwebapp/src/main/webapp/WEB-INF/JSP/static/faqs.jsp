@@ -67,9 +67,7 @@
             <ul class="navbar-nav nav-flex-icons">
 
                 <li class="nav-item">
-                    <a href="login" class="nav-link border border-light rounded">
-                        LOGIN/SIGNUP
-                    </a>
+                    <a href="" class="btn btn-indigo btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
                 </li>
             </ul>
 
@@ -78,6 +76,124 @@
     </div>
 </nav>
 <!-- Navbar -->
+
+
+
+
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-phone prefix"></i>
+                                <input type="number" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your mobile number</label>
+                            </div>
+                            <div align="center">Or</div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput18" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10" >Your email id</label>
+                            </div>
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="number" id="modalLRInput11" class="form-control form-control-sm validate" disabled>
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">OTP</label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-user-circle-o prefix"></i>
+                                <input type="text" id="modalLRInput19" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Username</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-address-book prefix"></i>
+                                <input type="text" id="modalLRInput20" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Full Name</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" disabled>
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">OTP</label>
+                            </div>
+
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+
+
+
+
+
+
 <main>
     <div class="container">
 
@@ -92,86 +208,37 @@
 
     <div class="container">
 
-        <div class="panel-group" id="accordion">
+        <div class="panel-group" id="accordion" style="background-color: transparent;">
             <h2 class="h1 text-center py-5">Frequently Asked Questions</h2>
+
+            <div class="card card-body">
             <h3>
                 <strong>General Questions</strong>
             </h3>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How to apply for approval of factory building plan under Factory Act, 1948</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsei">How the Compliance of the Provisions are ensured?</a>
                     </h4>
                 </div>
-                <ul id="collapseOne" class="panel-collapse collapse in">
+                <div id="collapsei" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <ul>
-                        <li>Already registered factory owner will visit the website and login to his/her id.<br/></li>
-                        <li>After login there is an option of Factory Building Plan at the top of the page<br/></li>
-                        <li>After logging the user has to fill the FORM 1.<br/></li>
-                        <li>After filling the form 1, the user has to fill the Form-1A.<br/></li>
-                        <li>After filling the form 1A, the user has to fill the Form-1B.<br/></li>
-                        <li>Blue Prints hard copy will be submitted to the department by hand or by courier.<br/></li>
-                        Documents required<br/>
-                    <li>Flow chart of manufacturing process<br/></li>
-                    <li>Site of factory and surroundings<br/></li>
-                        <li>Plan and elevation and necessary cross-sections of the various buildings indicating all relevant
-                            details</li>
-                </ul>
-                    </div>
-                </ul>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">How do I send to the department the layout and detailed plan blue print and track the
-                            same?</a>
-                    </h4>
-                </div>
-                <div id="collapseTen" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Applicant have to provide the blue print by hand or can send to department through courier.
-                    </div>
+                        The owner, agent or manager of the mine is required to comply with the provisions of health and safety provisions of the Mines Act and the rules framed thereunder, as required under Section 18 of the Mines Act, 1952.</div>
                 </div>
             </div>
             <br/>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsen">How to apply for registration of establishment engaged in Building and Other Construction activities under the Building and Other Construction Workers (RE & CS) Act, 1996 ?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseo">Who can raise an Industrial Dispute?</a>
                     </h4>
                 </div>
-                <div id="collapsen" class="panel-collapse collapse">
+                <div id="collapseo" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <ul>
-                            <li>The User has to create his/her Login ID on the Department's Web Portal by Using his/her   operational e-mail ID and password.</li>
-
-                            <li>After using his/her login ID , the user has to fill the Basic Information Performa(BIP).This performa  contains all the basic information of the factory like address, workers, amount of power used, details of the occupier/manager, manufacturing process & declaration etc.</li>
-
-                            <li>Applicant has to fill Form 1 for registration certificate</li>
-
-                            <li>The system at these steps shows the calculation of fee and enables you to make the payment of the balance fee online using Debit/Credit cards.</li>
-
-                            <li>Applicant has to fill the form where he/she has to provide details of  commencement</li>
-
-                            <li>Applicant has to fill Form 1 CESS rules.</li><br/>
-
-                            Documents<br/>
-
-                            <li>Project report
-                            <li>Article of association/ MOA/ Partnership deed</li>
-                            <li>List of partners</li>
-                            <li>Approval of factory building plan</li>
-                            <li>Allotment letter</li>
-                            <li>Copy of agreement of contractor</li>
-                            <li>Notice of commencement</li>
-                        </ul>
-
+                        Any person who is a workman employed in an industry can raise an industrial dispute.  A workman includes any person (including an apprentice) employed in an industry to do manual, unskilled, skilled, technical, operational, clerical or supervisory work for hire or reward.  It excludes those employed in the Army, Navy, Air Force and in the police service, in managerial or administrative capacity.  Industry means any business, trade, undertaking, manufacture or calling of employers and includes any calling, service, employment, handicraft, or industrial occupation or avocation of workmen.
                     </div>
                 </div>
-            </div>
-            <br/>
+                <br/>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -185,6 +252,7 @@
                 </div>
             </div>
             <br/>
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -211,140 +279,87 @@
                 </div>
             </div>
             <br/>
+            </div>
+            </div>
+            <br/><br/>
+            <div class="card card-body">
             <h3>
-                <strong> Labour  </strong>
+                <strong> Labour Laws </strong>
             </h3>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsei">What is an Annual Percentage Rate?</a>
-                    </h4>
-                </div>
-                <div id="collapsei" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        The Annual Percentage Rate, which must be reported by lenders under the Fair Truth in Lending regulations. It is a measure of credit cost to the borrower that takes account of the interest rate, points, and flat dollar charges by the lender. The charges covered by the APR also include mortgage insurance premiums, but no other payments to third parties, such as payments to title insurers or appraisers. The APR is adjusted for the time value of money so that dollars paid by the borrower up-front carry a heavier weight than dollars paid in the future. However, the APR is calculated on the assumption that the loan runs to term, and is therefore potentially deceptive for borrowers with short time horizons.
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseo">What do I do if I have trouble filling out a section of the forms in order to receive my mortgage prequalification number at: prequalquote.com?</a>
-                    </h4>
-                </div>
-                <div id="collapseo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        You can email all of your questions that you may have to: info@prequalquote.com and one of our experienced knowledgeable mortgage underwriters will get back to you.</div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseu">What happens after I fill out all of the forms on www.PrequalQuote.com?</a>
-                    </h4>
-                </div>
-                <div id="collapseu" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        After you fill out the forms on www.PrequalQuote.com you will notice that there is enough information obtained for us to come up with a Magic qualifying number for you. That number is the number that you qualify for. With that number, you go out and you look for a house. For example: If that magic number is $100,000 then you will be looking for a $100,000 dollar house. If you have $10,000 to put down then you will be looking for a house in the amount of $110,000. The more money you have to put down the more you add to that magic number.
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsey">At what point will the lenders appear so I can see what rates they have to offer?</a>
-                    </h4>
-                </div>
-                <div id="collapsey" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        After you have completed all of the required fields on all of the forms you will than hitting the submit button at that time a box will appear with five different lenders.
-                        <br/>
-                        The information you will see will be the interest rates for all 5 lenders. These lenders will be competing for your business. You will have access to their information such as their phone numbers and you can make the choice as to whether you want to call all five or just two. But please remember that these lenders are hand selected by www.PrequalQuote.com so you can be sure that we did everything in our power to make sure you are only dealing with reputable banks, lenders, and brokers with the utmost integrity. Our lending clients are the best of the best.
 
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapset">What kinds of security does www.PrequalQuote.com have so that I know my information will not be stolen?</a>
-                    </h4>
-                </div>
-                <div id="collapset" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        www.PrequalQuote.com is a certified VeriSign Secure Site. You will see that sign everywhere on our site. Protecting your personal information is extremely important to us and as a sign of that, you will see this sign everywhere. We do our best to protect you like we do ourselves. Verisign is the leading provider of Internet Trust services. With nearly 15 million registrations they are a widely recognized and trusted name in the securities industry. The Secure Server Ids issued by Verisign are based on the strongest encryption technology available. For more information please visit them at www.verisign.com
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapser">What are my options as far as low down payments?</a>
-                    </h4>
-                </div>
-                <div id="collapser" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        The only options in today’s market (2008) would be an FHA or VA loan FHA stands for Federal Housing Administration and VA stands for Veterans Administration. The Federal Housing Administration is an agency of the Department of Housing and Urban Development (HUD). FHA insures loans made to all U.S. citizens, permanent residents, and noncitizens with work permits who meet their financial qualification rules. Under an FHA program, if the buyer defaults on their mortgage and the lender foreclose, the FHA pays 100% of the amount insured. This loan insurance lets qualified people buy affordable houses. FHA will allow for only 3% down this means if you have a $100,000 purchase of a house you will only be required to put down $3,000. This does NOT include closing costs. FHA also allows lower credit scores such as 580 and above and they also require at least 12 months of good clean credit. For more information about FHA loans please contact one of our qualified FHA lenders.
-                        <br/>VA stands for U.S. Department of Veterans Affairs (VA) and will finance 100% of the loan. These are available to men and women who are now in the military and to veterans with honorable discharges who meet specific eligibility rules, most of which relate to the length of service. The VA doesn’t make mortgage loans but guarantees part of the house loan you get from a bank, savings, and loans, or another private lender. If you default, the VA pays the lender the amount guaranteed and you, in turn, will owe the VA. This guarantee makes it easier for veterans to get favorable loan terms with a low down payment. For more information please contact one of our VA lenders.
-                        <br/>There are also programs available for first-time homebuyers through local state money called the State Bond Money.
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsee">Could you explain to me what Freddie Mac and Fannie Mae are and what do they do?</a>
-                    </h4>
-                </div>
-                <div id="collapsee" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Freddie Mac stands for Federal Home Loan Mortgage Corporation. Fannie Mae stands for Federal National Mortgage Association. Mortgages made by lenders and banks are generally sold on the secondary market to produce cash so lenders can make more mortgages, the largest purchasers on the secondary market are called Freddie Mac and Fannie Mae. These two organizations are government sponsored and were created by the government to make mortgages available to more people with low and moderate incomes, although both organizations are now privately run.
-                    </div>
-                </div>
-            </div>
 
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsew">What is PMI?</a>
-                    </h4>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How to apply for approval of factory building plan under Factory Act, 1948</a>
+                        </h4>
+                    </div>
+                    <ul id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Already registered factory owner will visit the website and login to his/her id.<br/></li>
+                                <li>After login there is an option of Factory Building Plan at the top of the page<br/></li>
+                                <li>After logging the user has to fill the FORM 1.<br/></li>
+                                <li>After filling the form 1, the user has to fill the Form-1A.<br/></li>
+                                <li>After filling the form 1A, the user has to fill the Form-1B.<br/></li>
+                                <li>Blue Prints hard copy will be submitted to the department by hand or by courier.<br/></li>
+                                Documents required<br/>
+                                <li>Flow chart of manufacturing process<br/></li>
+                                <li>Site of factory and surroundings<br/></li>
+                                <li>Plan and elevation and necessary cross-sections of the various buildings indicating all relevant
+                                    details</li>
+                            </ul>
+                        </div>
+                    </ul>
                 </div>
-                <div id="collapsew" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        PMI stands for Private Mortgage Insurance these are policies designed to reimburse a mortgage lender up to a certain amount if you default on your loan and your house isn’t worth enough to entirely repay the lender through a foreclosure sale. Most lenders require PMI on loans where the borrower makes a down payment of less than 20%. For example if you purchase a house for $100,000 and you do not put at least 20% down which amounts to $20,000 the lender will require PMI (private mortgage insurance) and the premium is paid monthly. The fee is typically around one-half of one percent of the mortgage loan. You can cancel the PMI once your equity in the house reaches 20% as long as you have a good monthly mortgage payment history with the lender.
+                <br/>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">How do I send to the department the layout and detailed plan blue print and track the
+                                same?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Applicant have to provide the blue print by hand or can send to department through courier.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseq">What is better? An adjustable rate mortgage or a fixed rate mortgage?</a>
-                    </h4>
-                </div>
-                <div id="collapseq" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        www.PrequalQuote.com only recommends a 10, 15, 20, 25, or 30 year FIXED loans. If you plan on only staying in your home for 5 years it would be ok to obtain a 5 year adjustable as long as the loan adjusts after the 5 year period and that there is NO prepayment penalty.
+                <br/>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsen">How to apply for registration of establishment engaged in Building and Other Construction activities under the Building and Other Construction Workers (RE & CS) Act, 1996 ?</a>
+                        </h4>
                     </div>
-                </div>
-            </div>
-            <br/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseol">How do I know what my credit scores are and where can I pull my credit?</a>
-                    </h4>
-                </div>
-                <div id="collapseol" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        A++ Credit is what is known as the best credit rating. With an A++ credit rating you should have no problem getting a house that you qualify for and with A++ credit you will be entitled to the best rate that any mortgage banker, mortgage broker or mortgage lender has to offer so don’t forget to shop for the best rate and do not give out your social security number to just anyone. Find someone you trust. You can go to the following websites to see what your scores are: www.equifax.com, www.transunion.com and the last one is www.experien.com. You can also check out my FICO.com but from our experience, they all charge a fee. You could also try www.freeannualcreditreport.com that is through the Federal Government and they allow you one free credit report per year but be careful because we found that these sites do try to sign you up for a membership with a monthly fee.
+                    <div id="collapsen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>The User has to create his/her Login ID on the Department's Web Portal by Using his/her   operational e-mail ID and password.</li>
+
+                                <li>After using his/her login ID , the user has to fill the Basic Information Performa(BIP).This performa  contains all the basic information of the factory like address, workers, amount of power used, details of the occupier/manager, manufacturing process & declaration etc.</li>
+
+                                <li>Applicant has to fill Form 1 for registration certificate</li>
+
+                                <li>The system at these steps shows the calculation of fee and enables you to make the payment of the balance fee online using Debit/Credit cards.</li>
+
+                                <li>Applicant has to fill the form where he/she has to provide details of  commencement</li>
+
+                                <li>Applicant has to fill Form 1 CESS rules.</li><br/>
+
+                                Documents<br/>
+
+                                <li>Project report
+                                <li>Article of association/ MOA/ Partnership deed</li>
+                                <li>List of partners</li>
+                                <li>Approval of factory building plan</li>
+                                <li>Allotment letter</li>
+                                <li>Copy of agreement of contractor</li>
+                                <li>Notice of commencement</li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -474,7 +489,24 @@
     .twitter{
         color:#55acee !important;
     }
+    .light-blue.darken-3 {
+        background-color: #a7bbc7!important;
+    }
 
+    element.style {
+    }
+    .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs {
+        margin: -1.5rem 1rem 0 1rem;
+    }
+    #toast-container>div, .badge, .btn, .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:focus, .btn:disabled:hover, .card, .card-wrapper .back, .card-wrapper .front, .card.card-cascade.wider .card-body, .counter, .dropdown-content, .jumbotron, .md-form input[type=date].input-alternate, .md-form input[type=datetime-local].input-alternate, .md-form input[type=email].input-alternate, .md-form input[type=number].input-alternate, .md-form input[type=password].input-alternate, .md-form input[type=search-md].input-alternate, .md-form input[type=search].input-alternate, .md-form input[type=tel].input-alternate, .md-form input[type=text].input-alternate, .md-form input[type=time].input-alternate, .md-form input[type=url].input-alternate, .md-form textarea.md-textarea.input-alternate, .md-pills .nav-link.active, .md-pills .show>.nav-link, .mdb-autocomplete-wrap, .media .media-left img, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .page-item.active .page-link, .pricing-card .price .version, .side-nav, .z-depth-1 {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+    .modal-dialog.cascading-modal .nav-tabs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
 </style>
 </body>
 

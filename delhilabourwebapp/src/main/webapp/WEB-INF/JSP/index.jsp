@@ -104,16 +104,22 @@
 
               <!--Body-->
               <div class="modal-body mb-1">
-                <div class="md-form form-sm mb-5">
-                  <i class="fa fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
-                </div>
 
+                <div class="md-form form-sm mb-5">
+                  <i class="fa fa-phone prefix"></i>
+                  <input type="number" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your mobile number</label>
+                </div>
+                  <div align="center">Or</div>
+                  <div class="md-form form-sm mb-5">
+                      <i class="fa fa-envelope prefix"></i>
+                      <input type="email" id="modalLRInput18" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput10" >Your email id</label>
+                  </div>
                 <div class="md-form form-sm mb-4">
                   <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                  <input type="number" id="modalLRInput11" class="form-control form-control-sm validate" disabled>
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">OTP</label>
                 </div>
                 <div class="text-center mt-2">
                   <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
@@ -121,10 +127,7 @@
               </div>
               <!--Footer-->
               <div class="modal-footer">
-                <div class="options text-center text-md-right mt-1">
-                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-                </div>
+
                 <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
               </div>
 
@@ -136,23 +139,28 @@
 
               <!--Body-->
               <div class="modal-body">
+                  <div class="md-form form-sm mb-5">
+                      <i class="fa fa-user-circle-o prefix"></i>
+                      <input type="text" id="modalLRInput19" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput12">Username</label>
+                  </div>
+                  <div class="md-form form-sm mb-5">
+                      <i class="fa fa-address-book prefix"></i>
+                      <input type="text" id="modalLRInput20" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput12">Full Name</label>
+                  </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-envelope prefix"></i>
                   <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
                 </div>
 
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" disabled>
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">OTP</label>
                 </div>
 
-                <div class="md-form form-sm mb-4">
-                  <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
-                </div>
 
                 <div class="text-center form-sm mt-2">
                   <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
@@ -162,7 +170,7 @@
               <!--Footer-->
               <div class="modal-footer">
                 <div class="options text-right">
-                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+
                 </div>
                 <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
               </div>
@@ -792,6 +800,24 @@
     }
     .twitter{
         color:#55acee !important;
+    }
+    .light-blue.darken-3 {
+      background-color: #a7bbc7!important;
+    }
+
+    element.style {
+    }
+    .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs {
+      margin: -1.5rem 1rem 0 1rem;
+    }
+    #toast-container>div, .badge, .btn, .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:focus, .btn:disabled:hover, .card, .card-wrapper .back, .card-wrapper .front, .card.card-cascade.wider .card-body, .counter, .dropdown-content, .jumbotron, .md-form input[type=date].input-alternate, .md-form input[type=datetime-local].input-alternate, .md-form input[type=email].input-alternate, .md-form input[type=number].input-alternate, .md-form input[type=password].input-alternate, .md-form input[type=search-md].input-alternate, .md-form input[type=search].input-alternate, .md-form input[type=tel].input-alternate, .md-form input[type=text].input-alternate, .md-form input[type=time].input-alternate, .md-form input[type=url].input-alternate, .md-form textarea.md-textarea.input-alternate, .md-pills .nav-link.active, .md-pills .show>.nav-link, .mdb-autocomplete-wrap, .media .media-left img, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .page-item.active .page-link, .pricing-card .price .version, .side-nav, .z-depth-1 {
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+    .modal-dialog.cascading-modal .nav-tabs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
     }
 </style>
 </body>
