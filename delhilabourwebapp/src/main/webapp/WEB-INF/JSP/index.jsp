@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Delhi Labour Department</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -23,8 +23,8 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
-        <strong>MDB</strong>
+      <a class="navbar-brand" href="#">
+        <strong>DEPARTMENT OF LABOUR DELHI</strong>
       </a>
 
       <!-- Collapse -->
@@ -38,38 +38,34 @@
 
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item active" id="hometab">
             <a class="nav-link" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+            <a class="nav-link" href="#aboutus">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+            <a class="nav-link" href="#">FAQs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
+            <a class="nav-link" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
+
           <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
-              target="_blank">
-              <i class="fa fa-github mr-2"></i>MDB GitHub
+            <a href="login" class="nav-link border border-light rounded">
+              LOGIN/SIGNUP
             </a>
           </li>
         </ul>
@@ -104,20 +100,18 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>WELCOME TO DELHI LABOUR WEBSITE</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>Get familiar with our website</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>Use different option available on top bar to navigate to various page available. Use HELP tab to know more.</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
-                <i class="fa fa-graduation-cap ml-2"></i>
+              <a href="login" class="btn btn-outline-white btn-lg">GET STARTED
               </a>
             </div>
             <!-- Content -->
@@ -139,20 +133,18 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>Start applying for annual return form</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>Login/Register to our website to start filling annual return</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>We have used user-friendly form navigation so that any normal user will find ease in filling</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
-                <i class="fa fa-graduation-cap ml-2"></i>
+              <a href="login" class="btn btn-outline-white btn-lg">START FILLING
               </a>
             </div>
             <!-- Content -->
@@ -174,20 +166,19 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
+                <strong>Help and Support</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>Use HELP, FAQs and Contact Us option available on navbar to get started with our website.</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>We have build user-oriented website containing all the required information to get going. If you want some changes then
+                you are free to send us some suggestions. We will be happy to process your request.</strong>
               </p>
 
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
-                <i class="fa fa-graduation-cap ml-2"></i>
+              <a href="" class="btn btn-outline-white btn-lg">FEEDBACK US
               </a>
             </div>
             <!-- Content -->
@@ -238,29 +229,26 @@
           <div class="col-md-6 mb-4">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p>
-            <!-- Main heading -->
+            <h3 class="h3 mb-3">INTRODUCTION</h3>
 
-            <hr>
-
-            <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
+            <p>The Labour Department, Government of N.C.T. of Delhi is headed by Secretary (Labour), who is assisted by Commissioner,
+                Special Labour Commissioner,Addl. Labour Commissioner, Joint Labour Commissioner, Deputy Labour Commissioners,
+                Assistant Labour Commissioners, Chief Inspector of Factories, Electrical Inspector,
+                Chief Inspector of Boilers, Chief Inspector of Shops and Establishments, Labour Officers, Welfare Officer and
+                other supporting staff.
             </p>
+            <hr>
+                <p>
+                    With a view to make the administration responsive to the needs of the people and bring governance to their doorsteps,
+                    the department has been organized on territorial basis into nine districts.<br/>
 
+                    Each district is headed by a Joint/Deputy Labour Commissioner who is assisted by Asstt. Labour Commissioners and Labour Officers.
+                </p>
             <!-- CTA -->
-            <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-indigo btn-md">Download
-              <i class="fa fa-download ml-1"></i>
+            <a href="#service" class="btn btn-indigo btn-md">Services
             </a>
-            <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-indigo btn-md">Live demo
-              <i class="fa fa-image ml-1"></i>
+            <a href="login" class="btn btn-indigo btn-md">Start Filling
             </a>
-
           </div>
           <!--Grid column-->
 
@@ -275,7 +263,8 @@
       <!--Section: Main features & Quick Start-->
       <section>
 
-        <h3 class="h3 text-center mb-5">About MDB</h3>
+        <h3 class="h3 text-center mb-5" id="aboutus"><div style="height:50px"></div>
+            ABOUT US</h3>
 
         <!--Grid row-->
         <div class="row wow fadeIn">
@@ -286,11 +275,14 @@
             <!--First row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fa fa-code fa-2x indigo-text"></i>
+
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
+                <h5 class="feature-title"></h5>
+                <p class="grey-text">The Labour Department, Government of N.C.T. of Delhi is headed by Secretary (Labour), who is assisted by
+                    Commissioner,Special  Labour Commissioner, Additional Labour Commissioner, Joint Labour Commissioners, Deputy Labour Commissioners,
+                    Assistant Labour Commissioners, Chief Inspector of Factories, Electrical Inspector, Chief Inspector of Boilers,
+                    Chief Inspector of Shops and Establishments, Labour Officers, Welfare Officer and other supporting staff. </p>
               </div>
             </div>
             <!--/First row-->
@@ -300,31 +292,20 @@
             <!--Second row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fa fa-book fa-2x blue-text"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas
-                  easily.
+                <h5 class="feature-title"></h5>
+                <p class="grey-text">To enable the industrial workers and their families to visit the places of historical and
+                   religious importance, the Labour Department, Govt. of NCT of Delhi has set up Holiday Homes at Haridwar, Mussoorie,
+                   Allahabad and Shimla.
+
+                   The Department thus has a very wide spectrum of Labour oriented activities. This charter is a summarized information
+                   on crucial activities. The Department would welcome suggestions for improvement of this website from the stake holders
+                   and beneficiaries.
                 </p>
               </div>
             </div>
             <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fa fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn
-                  how to use MDB as well as other technologies.</p>
-              </div>
-            </div>
-            <!--/Third row-->
 
           </div>
           <!--/Grid column-->
@@ -332,9 +313,9 @@
           <!--Grid column-->
           <div class="col-lg-6 col-md-12">
 
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
+            <p class="h5 text-center mb-4">Shram Suvidha Portal</p>
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=vPSIiM-Vc7s"></iframe>
             </div>
           </div>
           <!--/Grid column-->
@@ -348,9 +329,9 @@
       <hr class="my-5">
 
       <!--Section: Not enough-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Not enough?</h2>
+      <section id="service">
+          <div style="height:50px"></div>
+        <h2 class="my-5 h3 text-center">SERVICES</h2>
 
         <!--First row-->
         <div class="row features-small mb-5 mt-3 wow fadeIn">
@@ -488,156 +469,100 @@
       <hr class="mb-5">
 
       <!--Section: More-->
-      <section>
+      <section id="contact">
 
-        <h2 class="my-5 h3 text-center">...and even more</h2>
+        <h2 class="my-5 h3 text-center">CONTACT US</h2>
 
-        <!--First row-->
-        <div class="row features-small mt-5 wow fadeIn">
+          <p class="section-description">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            matter of hours to help you.</p>
 
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-firefox fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-8 col-xl-9">
+              <form id="contact-form" name="contact-form" action="" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <input type="text" id="name" name="name" class="form-control">
+                      <label for="name" class="">Your name</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                    <div class="md-form">
+                      <input type="text" id="email" name="email" class="form-control">
+                      <label for="email" class="">Your email</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <input type="text" id="subject" name="subject" class="form-control">
+                      <label for="subject" class="">Subject</label>
+                    </div>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                    <div class="md-form">
+                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="message">Your message</label>
+                    </div>
+
+                  </div>
+                </div>
+                <!--Grid row-->
+
+              </form>
+
+              <div class="center-on-small-only">
+                <a class="btn btn-primary" onclick="validateForm();">Send</a>
               </div>
-              <div class="col-10 mb-2 pl-3">
-                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
-                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.
-                </p>
-              </div>
+              <div id="status" style="color:red;"></div>
             </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
+            <!--Grid column-->
 
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-level-up fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
-                <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as possible.
-                </p>
-              </div>
+            <!--Grid column-->
+            <div class="col-md-4 col-xl-3" align="center">
+              <ul class="contact-icons">
+                <li   style="list-style-type:none;"><i class="fa fa-map-marker fa-2x"></i>
+                  <p>OFFICE OF THE LABOUR COMMISSIONER<br/>
+                    GOVERNMENT OF N.C.T. OF DELHI<br/>
+                    5, SHAM NATH MARG,<br/>
+                    DELHI - 110054.</p>
+                </li>
+
+                <li  style="list-style-type:none;"><i class="fa fa-phone fa-2x"></i>
+                  <p>155214</p>
+                </li>
+
+                <li style="list-style-type:none;"><i class="fa fa-envelope fa-2x"></i>
+                  <p><a href="mailto:labjlc3.delhi@nic.in">labjlc3.delhi@nic.in</a></p>
+                </li>
+              </ul>
             </div>
-            <!--/Grid row-->
+            <!--Grid column-->
+
           </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-comments-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Active community</h5>
-                <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part of our family.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
-                <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest features which come along with
-                  it.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/First row-->
-
-        <!--Second row-->
-        <div class="row features-small mt-4 wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Modularity</h5>
-                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as
-                  well as modules for CSS (SASS files) and JS.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Technical support</h5>
-                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to contact us.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
-                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fa fa-file-code-o fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">SASS files</h5>
-                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/Second row-->
 
       </section>
       <!--Section: More-->
@@ -648,60 +573,62 @@
 
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
+      <hr class="my-4">
     <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
-        <i class="fa fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
-        <i class="fa fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
+    <div class="service-footer-wrapper">
+      <ul class="sub-sites" style="list-style: none">
+        <li style="display: inline;"><a title="Swachhbharat" alt="Swachhbharat" href="https://swachhbharat.mygov.in/" target="_blank">
+          <img title="Swachhbharat" alt="Swachhbharat" src="https://www.mygov.in/footer_service/images/swachh-bharat.png">
+          </a></li>
+        <li style="display: inline;"><a title="E-Greetings" alt="E-Greetings" href="https://egreetings.gov.in" target="_blank">
+          <img title="E-Greetings" alt="E-Greetings" src="https://www.mygov.in/footer_service/images/e-greating.png"></a>
+        </li>
 
+        <li style="display: inline;"><a title="MyGov Auth" alt="MyGov Auth" href="https://auth.mygov.in" target="_blank">
+          <img title="MyGov Auth" alt="MyGov Auth" src="https://www.mygov.in/footer_service/images/mygov_auth.png"></a></li>
+        <li style="display: inline;"><a title="MyGov Blog" alt="MyGov Blog" href="https://blog.mygov.in" target="_blank">
+          <img alt="" src="https://www.mygov.in/footer_service/images/blog-logo.png"></a></li>
+        <li style="display: inline;"><a title="MyGov Innovate" alt="MyGov Innovate" href="https://innovate.mygov.in" target="_blank">
+          <img title="MyGov Innovate" alt="MyGov Innovate" src="https://www.mygov.in/footer_service/images/innovation-logo.png"></a></li>
+        <li style="display: inline;"><a title="MyGov Quiz" alt="MyGov Quiz" href="https://quiz.mygov.in" target="_blank">
+          <img title="MyGov Quiz" alt="MyGov Quiz" src="https://www.mygov.in/footer_service/images/mygov_quiz.png"></a></li>
+        <li style="display: inline;"><a title="Transforming India" alt="Transforming India" href="https://transformingindia.mygov.in" target="_blank">
+          <img title="Transforming India" alt="Transforming India" src="https://www.mygov.in/footer_service/images/Transforming-india-logo.png"></a></li>
+        <li style="display: inline;"><a title="MyGov Pledge" alt="MyGov Pledge" href="https://pledge.mygov.in" target="_blank">
+          <img title="MyGov Pledge" alt="MyGov Pledge" src="https://www.mygov.in/footer_service/images/mygov_pledge.png"></a></li>
+      </ul>  <div class="footer-logo">
+
+      <ul style="list-style: none;">
+      <li style="display: inline;"><a target="_blank" href="http://www.digitalindia.gov.in">
+        <img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="https://www.mygov.in/footer_service/images/digital-india-logo.png"></a></li>
+        <li style="display: inline;"><a target="_blank" href="http://data.gov.in">
+          <img title="Data Portal (External Site that opens in a new window)" alt="Data Portal" src="https://www.mygov.in/footer_service/images/data-gov-logo.png"></a></li>
+          <li style="display: inline;"><a target="_blank" href="https://india.gov.in"><img title="National Portal of India (External Site that opens in a new window)" alt="National Portal of India" src="https://www.mygov.in/footer_service/images/india-gov-logo.png"></a></li>
+          <li style="display: inline;"><a target="_blank" href="https://www.mygov.in"><img title="MyGov (External Site that opens in a new window)" alt="MyGov" src="https://www.mygov.in/footer_service/images/mygov-footer-logo.png"></a></li>
+          <li style="display: inline;"><a title="MeitY (External Site that opens in a new window)" alt="MeitY" target="_blank" href="http://meity.gov.in/"><img title="Meity(External Site that opens in a new window)" alt="Meity" src="https://www.mygov.in/footer_service/images/Meity_logo.png"></a></li>
+          <li style="display: inline;"><a target="_blank" href="http://pmindia.gov.in"><img title="PMINDIA(External Site that opens in a new window)" alt="PMINDIA" src="https://www.mygov.in/footer_service/images/pm-india-logo.png"></a></li></ul>  </div></div>
     <hr class="my-4">
 
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fa fa-facebook mr-3"></i>
-      </a>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fa fa-twitter mr-3"></i>
-      </a>
+        <!--Facebook-->
+        <a href="https://www.facebook.com/Labour-Department-of-Government-of-National-Capital-Territory-of-Delhi-1793622977627039/" target="_blank">
+        <button type="button" href="" class="btn btn-fb facebook"><i class="fa fa-facebook pr-1"></i> Facebook</button> </a>
+        <!--Twitter-->
+        <a href="https://twitter.com/labour_gnctd" target="_blank">
+            <button type="button" class="btn btn-tw twitter"><i class="fa fa-twitter pr-1"></i> Twitter</button>
+        </a>
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fa fa-youtube mr-3"></i>
-      </a>
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fa fa-google-plus mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fa fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fa fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fa fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fa fa-codepen mr-3"></i>
-      </a>
     </div>
     <!-- Social icons -->
 
+    <!--/.Social buttons-->
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      © 2018 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+     &copy; 2018 Copyright:
+      <a href="/"> Delhi Labour Website </a>
     </div>
     <!--/.Copyright-->
 
@@ -721,7 +648,49 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+
+    function validateForm() {
+        var name =  document.getElementById('name').value;
+        if (name == "") {
+            document.getElementById('status').innerHTML = "Name cannot be empty";
+            return false;
+        }
+        var email =  document.getElementById('email').value;
+        if (email == "") {
+            document.getElementById('status').innerHTML = "Email cannot be empty";
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                document.getElementById('status').innerHTML = "Email format invalid";
+                return false;
+            }
+        }
+        var subject =  document.getElementById('subject').value;
+        if (subject == "") {
+            document.getElementById('status').innerHTML = "Subject cannot be empty";
+            return false;
+        }
+        var message =  document.getElementById('message').value;
+        if (message == "") {
+            document.getElementById('status').innerHTML = "Message cannot be empty";
+            return false;
+        }
+        document.getElementById('status').innerHTML = "Sending...";
+        document.getElementById('contact-form').submit();
+
+    }
+
+
   </script>
+<style type="text/css">
+    .facebook{
+        color:#3b5998 !important;
+    }
+    .twitter{
+        color:#55acee !important;
+    }
+</style>
 </body>
 
 </html>

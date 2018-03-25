@@ -16,7 +16,7 @@
     <link href="dashboard/css/style.min.css" rel="stylesheet">
 </head>
 
-<body class="grey lighten-3">
+<body class="fixed-sn navy-blue-skin">
 
 <!--Main Navigation-->
 <header>
