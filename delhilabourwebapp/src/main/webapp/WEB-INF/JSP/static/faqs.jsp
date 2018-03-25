@@ -17,7 +17,7 @@
     <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
 </head>
 
-<body>
+<body background="homepage/img/labourFaqs.jpg">
 
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -78,8 +78,17 @@
     </div>
 </nav>
 <!-- Navbar -->
+<main>
+    <div class="container">
 
-<section class="mbr-section article mbr-section__container" id="content2-3" data-rv-view="8" style="background-image: url('homepage/img/faqsPic.jpg'); padding-top: 50px; padding-bottom: 20px;">
+        <!--Section: Main info-->
+        <section class="mt-5 wow fadeIn" style=" padding-top: 50px; padding-bottom: 20px;">
+
+            <!--Grid row-->
+            <div class="row">
+
+<div class="card card-body">
+<section class="mbr-section article mbr-section__container" id="content2-3" data-rv-view="8" >
 
     <div class="container">
 
@@ -91,26 +100,38 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What are Points and Should I pay them?</a>
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How to apply for approval of factory building plan under Factory Act, 1948</a>
                     </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in">
+                <ul id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
-                        Paying points is a way to reduce your interest rate when you purchase or refinance your home. You are paying points up front to get a reduction on your interest rate to reduce your monthly payment over the life of your loan term. One point is equivalent to one percent of your loan amount, one point on a $100,000 loan amount is equal to $1,000.
-                        As a general rule of thumb it really doesn’t make sense to pay over 1% or 1-1/2% in points to reduce your interest rate.
+                        <ul>
+                        <li>Already registered factory owner will visit the website and login to his/her id.<br/></li>
+                        <li>After login there is an option of Factory Building Plan at the top of the page<br/></li>
+                        <li>After logging the user has to fill the FORM 1.<br/></li>
+                        <li>After filling the form 1, the user has to fill the Form-1A.<br/></li>
+                        <li>After filling the form 1A, the user has to fill the Form-1B.<br/></li>
+                        <li>Blue Prints hard copy will be submitted to the department by hand or by courier.<br/></li>
+                        Documents required<br/>
+                    <li>Flow chart of manufacturing process<br/></li>
+                    <li>Site of factory and surroundings<br/></li>
+                        <li>Plan and elevation and necessary cross-sections of the various buildings indicating all relevant
+                            details</li>
+                </ul>
                     </div>
-                </div>
+                </ul>
             </div>
             <br/>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What does Loan to Value Mean?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">How do I send to the department the layout and detailed plan blue print and track the
+                            same?</a>
                     </h4>
                 </div>
                 <div id="collapseTen" class="panel-collapse collapse">
                     <div class="panel-body">
-                        Loan to Value refers to the amount of the loan as a percentage of the current market value of your home. You can calculate your LTV fairly by dividing your existing loan amount by current value of your home. If you borrow $100,000 and your home is worth $200,000 your loan to value is 50%. This is an extremely important calculation in the mortgage underwriting process. If your loan to value exceeds 80% you will be required to pay PMI. See PMI.
+                        Applicant have to provide the blue print by hand or can send to department through courier.
                     </div>
                 </div>
             </div>
@@ -118,12 +139,35 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsen">What is a rate lock?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsen">How to apply for registration of establishment engaged in Building and Other Construction activities under the Building and Other Construction Workers (RE & CS) Act, 1996 ?</a>
                     </h4>
                 </div>
                 <div id="collapsen" class="panel-collapse collapse">
                     <div class="panel-body">
-                        What is a rate A rate lock is a lender's guarantee of an interest rate for a set time period? A lock period ranges between 12 to 90 days. During this time period if your loan officer locks your loan you will be protected from market driven rate fluctuations.
+                        <ul>
+                            <li>The User has to create his/her Login ID on the Department's Web Portal by Using his/her   operational e-mail ID and password.</li>
+
+                            <li>After using his/her login ID , the user has to fill the Basic Information Performa(BIP).This performa  contains all the basic information of the factory like address, workers, amount of power used, details of the occupier/manager, manufacturing process & declaration etc.</li>
+
+                            <li>Applicant has to fill Form 1 for registration certificate</li>
+
+                            <li>The system at these steps shows the calculation of fee and enables you to make the payment of the balance fee online using Debit/Credit cards.</li>
+
+                            <li>Applicant has to fill the form where he/she has to provide details of  commencement</li>
+
+                            <li>Applicant has to fill Form 1 CESS rules.</li><br/>
+
+                            Documents<br/>
+
+                            <li>Project report
+                            <li>Article of association/ MOA/ Partnership deed</li>
+                            <li>List of partners</li>
+                            <li>Approval of factory building plan</li>
+                            <li>Allotment letter</li>
+                            <li>Copy of agreement of contractor</li>
+                            <li>Notice of commencement</li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -131,12 +175,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsek">What is a reverse mortgage?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsek">Can the applicant pay the fee through online payment mode or treasury challan to apply for registration and license under the Motor Transport Workers Act, 1961 ?</a>
                     </h4>
                 </div>
                 <div id="collapsek" class="panel-collapse collapse">
                     <div class="panel-body">
-                        A reverse mortgage is a home loan that you do not have to pay back for as long as you live in your home. It can be paid to you in one lump sum, as a regular monthly income, or at the times and in the amounts you want. The loan and interest are repaid only when you sell your home, permanently move away, or die. All homeowners must be at least be 62 years old, at least one homeowner must live in the house most of the year. Eligible homes are the single family, one unit dwellings, two to four units, owner occupied dwellings and some condominiums. Please check with one of our qualified lenders or more information.
+                        Yes, the applicant can use online/ offline payment mode.
                     </div>
                 </div>
             </div>
@@ -144,12 +188,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseh">What is an Agreement of Sale?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseh">Can third party verify the certificate issued by the Department ?</a>
                     </h4>
                 </div>
                 <div id="collapseh" class="panel-collapse collapse">
                     <div class="panel-body">
-                        A contract signed by buyer and seller stating the terms and conditions under which a property will be sold.
+                        Yes, the third party can verify the certificate by visiting the department's website www.labour.delhi.gov.in and enter the details of license at “Verify License Details”
                     </div>
                 </div>
             </div>
@@ -157,16 +201,19 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseop">What is Mortgage Amortization?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseop">Is there any fine for delay in the submission of fee or application ?</a>
                     </h4>
                 </div>
                 <div id="collapseop" class="panel-collapse collapse">
                     <div class="panel-body">
-                        An amortization is the repayment of principal from scheduled mortgage payments that exceed the interest due. The scheduled payment less the interest equals amortization. The loan balance declines by the amount of the scheduled payment, plus the amount of any extra payment.
+                        Yes.
                     </div>
                 </div>
             </div>
             <br/>
+            <h3>
+                <strong> Labour  </strong>
+            </h3>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -332,8 +379,8 @@
     </style>
 
 </section>
-
-
+</div>
+            </div></section></div></main>
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <hr class="my-4">
@@ -428,110 +475,6 @@
         color:#55acee !important;
     }
 
-
-    // Custom shit
-       body {
-           margin-top: 30px;
-           background-color: #eee;
-       }
-
-    .list-group.help-group {
-        margin-bottom: 20px;
-        padding-left: 0;
-        margin: 0;
-    .faq-list {
-        display: block;
-        top: auto;
-        margin: 0 0 32px;
-        border-radius: 2px;
-        border: 1px solid #ddd;
-        box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
-    .list-group-item {
-        position: relative;
-        display: block;
-        margin: 0;
-        padding: 13px 16px;
-        background-color: #fff;
-        border: 0;
-        border-bottom: 1px solid #ddd;
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
-        color: #616161;
-        transition: background-color .2s;
-    i.mdi {
-        margin-right: 5px;
-        font-size: 18px;
-        position: relative;
-        top: 2px;
-    }
-    &:hover {
-         background-color: #f6f6f6;
-     }
-    &.active {
-         background-color: #f6f6f6;
-         font-weight: 700;
-         color: rgba(0,0,0,.87);
-     }
-    &:last-of-type {
-         border-bottom-left-radius: 2px;
-         border-bottom-right-radius: 2px;
-         border-bottom: 0;
-     }
-    }
-    }
-    }
-
-    .tab-content.panels-faq {
-        padding: 0;
-        border: 0;
-    }
-
-    .panel.panel-help {
-        box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
-        padding-bottom: 0;
-        border-radius: 2px;
-        overflow: hidden;
-        background-color: #fff;
-        margin: 0 0 16px;
-    a[href^="#"],
-    a[href^="#"]:hover,
-    a[href^="#"]:focus {
-        outline: none;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .panel-heading {
-        background-color: #f6f6f6;
-        padding: 0 16px;
-        line-height: 48px;
-        border-top-right-radius: 2px;
-        border-top-left-radius: 2px;
-        color: rgba(0,0,0,.87);
-    h2 {
-        margin: 0;
-        padding: 14px 0 14px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0;
-        text-transform: none;
-    }
-    }
-    .panel-body {
-        background-color: #fff;
-        border-top: 1px solid #ddd;
-        border-radius: 2px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        margin-top: 0;
-    p {
-        margin: 0 0 16px;
-    &:last-of-type {
-         margin: 0;
-     }
-    }
-    }
-    }
 </style>
 </body>
 
