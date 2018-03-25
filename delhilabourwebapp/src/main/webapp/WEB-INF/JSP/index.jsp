@@ -597,7 +597,7 @@
         <li style="display: inline;"><a title="MyGov Pledge" alt="MyGov Pledge" href="https://pledge.mygov.in" target="_blank">
           <img title="MyGov Pledge" alt="MyGov Pledge" src="https://www.mygov.in/footer_service/images/mygov_pledge.png"></a></li>
       </ul>  <div class="footer-logo">
-
+h
       <ul style="list-style: none;">
       <li style="display: inline;"><a target="_blank" href="http://www.digitalindia.gov.in">
         <img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="https://www.mygov.in/footer_service/images/digital-india-logo.png"></a></li>
