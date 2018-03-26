@@ -13,7 +13,8 @@ public class DelhiLabourWebAppApplication extends SpringBootServletInitializer{
 		return application.sources(SpringBootApplication.class);
 	}
 	public static void main(String[] args) {
-		SpringApplication.run(DelhiLabourWebAppApplication.class, args);
+
+	    SpringApplication.run(DelhiLabourWebAppApplication.class, args);
 	}
 
 }
