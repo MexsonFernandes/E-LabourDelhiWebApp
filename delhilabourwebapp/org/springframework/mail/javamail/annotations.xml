@@ -1,0 +1,5 @@
+<root>
+    <item name='org.springframework.mail.javamail.JavaMailSender'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
