@@ -155,7 +155,7 @@
                   <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
                 </div>
                 <div class="md-form form-sm mb-5">
-                  <i class="fa fa-envelope prefix"></i>
+                  <i class="fa fa-phone prefix"></i>
                   <input type="number" id="modalLRInput16" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput12">Phone No</label>
                 </div>
@@ -338,7 +338,6 @@
           <div class="col-md-6 mb-4">
 
             <img src="homepage/img/Labour.jpg" class="img-fluid z-depth-1-half" alt="">
-
           </div>
           <!--Grid column-->
 
@@ -378,9 +377,9 @@
       <hr class="my-5">
 
       <!--Section: Main features & Quick Start-->
-      <section>
-
-        <h3 class="h3 text-center mb-5" id="aboutus"><div style="height:70px"></div>
+      <section id="aboutus">
+        <div style="height:90px"></div>
+        <h3 class="h3 text-center mb-5">
             ABOUT US</h3>
 
         <!--Grid row-->

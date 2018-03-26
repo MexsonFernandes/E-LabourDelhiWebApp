@@ -157,7 +157,7 @@
                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
                             </div>
                             <div class="md-form form-sm mb-5">
-                                <i class="fa fa-envelope prefix"></i>
+                                <i class="fa fa-phone prefix"></i>
                                 <input type="number" id="modalLRInput16" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Phone No</label>
                             </div>
