@@ -12,24 +12,16 @@ import java.util.List;
 public class HibernateUtil
 {
 
-
-
-
-    SessionFactory sf=new Configuration().configure().buildSessionFactory();
-
-
+    SessionFactory sf=new Configuration().buildSessionFactory();
 
     public void register(RegisterPOJO obj)
     {
         System.out.print("inside register method");
-
-
         Session session=sf.openSession();
         session.beginTransaction();
         session.save(obj);
         session.getTransaction().commit();
         session.close();
-
 
     }
 
@@ -44,19 +36,12 @@ public class HibernateUtil
 
          if(!list.isEmpty())
          {
-            System.out.println("sanchit");
-
-             System.out.println("ok");
-             System.out.println("ok");
-             System.out.print("ok");
-             System.out.print("ok");
-             System.out.print("ok");
+             //dashboard
         }
         else
         {
 
-            System.out.print("invalid user");
-            System.out.println(list);
+            //error page
         }
 
         sess.getTransaction().commit();
