@@ -609,8 +609,8 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input type="text" id="name" name="name" class="form-control">
-                      <label for="name" class="">Your name</label>
+                      <input type="text" id="cName" name="cName" class="form-control">
+                      <label for="cName" class="">Your name</label>
                     </div>
                   </div>
                   <!--Grid column-->
@@ -618,8 +618,8 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input type="text" id="email" name="email" class="form-control">
-                      <label for="email" class="">Your email</label>
+                      <input type="text" id="cEmail" name="cEmail" class="form-control">
+                      <label for="cEmail" class="">Your email</label>
                     </div>
                   </div>
                   <!--Grid column-->
@@ -631,8 +631,8 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form">
-                      <input type="text" id="subject" name="subject" class="form-control">
-                      <label for="subject" class="">Subject</label>
+                      <input type="text" id="cSubject" name="cSubject" class="form-control">
+                      <label for="cSubject" class="">Subject</label>
                     </div>
                   </div>
                 </div>
@@ -645,8 +645,8 @@
                   <div class="col-md-12">
 
                     <div class="md-form">
-                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                      <label for="message">Your message</label>
+                      <textarea type="text" id="cMessage" name="cMessage" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="cMessage">Your message</label>
                     </div>
 
                   </div>
@@ -656,10 +656,23 @@
               </form>
 
               <div class="center-on-small-only">
-                <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                <a class="btn btn-primary" id="submitContact" onclick="validateForm();">Send</a>
               </div>
               <div id="status" style="color:red;"></div>
+                <div >
+                    <hr/>
+                    <h4 id="resultContainer" style="color: green;"></h4>
+                    <pre style="color: green;">
+            <code></code>
+                 </pre>
+                </div>
             </div>
+
+
+            <!-- Result Container  -->
+
+
+
             <!--Grid column-->
 
             <!--Grid column-->
@@ -682,7 +695,6 @@
               </ul>
             </div>
             <!--Grid column-->
-
           </div>
 
       </section>
@@ -718,7 +730,7 @@
         <li style="display: inline;"><a title="MyGov Pledge" alt="MyGov Pledge" href="https://pledge.mygov.in" target="_blank">
           <img title="MyGov Pledge" alt="MyGov Pledge" src="https://www.mygov.in/footer_service/images/mygov_pledge.png"></a></li>
       </ul>  <div class="footer-logo">
-h
+
       <ul style="list-style: none;">
       <li style="display: inline;"><a target="_blank" href="http://www.digitalindia.gov.in">
         <img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="https://www.mygov.in/footer_service/images/digital-india-logo.png"></a></li>
@@ -771,12 +783,12 @@ h
     new WOW().init();
 
     function validateForm() {
-        var name =  document.getElementById('name').value;
+        var name =  document.getElementById('cName').value;
         if (name == "") {
             document.getElementById('status').innerHTML = "Name cannot be empty";
             return false;
         }
-        var email =  document.getElementById('email').value;
+        var email =  document.getElementById('cEmail').value;
         if (email == "") {
             document.getElementById('status').innerHTML = "Email cannot be empty";
             return false;
@@ -787,19 +799,46 @@ h
                 return false;
             }
         }
-        var subject =  document.getElementById('subject').value;
+        var subject =  document.getElementById('cSubject').value;
         if (subject == "") {
             document.getElementById('status').innerHTML = "Subject cannot be empty";
             return false;
         }
-        var message =  document.getElementById('message').value;
+        var message =  document.getElementById('cMessage').value;
         if (message == "") {
             document.getElementById('status').innerHTML = "Message cannot be empty";
             return false;
         }
         document.getElementById('status').innerHTML = "Sending...";
-        document.getElementById('contact-form').submit();
+        formData = {
+            'name'     : $('input[name=cName]').val(),
+            'email'    : $('input[name=cEmail]').val(),
+            'subject'  : $('input[name=cSubject]').val(),
+            'message'  : $('textarea[name=cMessage]').val()
+        };
 
+
+        $.ajax({
+            url : "/contactUs",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+                $('#status').text(data.message);
+                if (data=="Data Saved") {  //If mail was sent successfully, reset the form.
+                    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+                    $('#resultContainer').text("Your response has been recorded on our system.");
+                    $('#status').text("");
+                }else{
+                    $('#status').text("There was some error while sending your message to server.");
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#status').text("There was some error while sending your message to server.");
+            }
+        });
     }
 
 
