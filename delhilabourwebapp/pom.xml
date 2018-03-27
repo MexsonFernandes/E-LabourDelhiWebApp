@@ -100,13 +100,15 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.3.0.Final</version>
+            <version>3.6.4.Final</version>
         </dependency>
+
+
 
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>4.3.0.Final</version>
+            <version>3.6.4.Final</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -116,10 +118,16 @@
             <optional>true</optional>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
+            <!--<artifactId>hibernate-jpa-2.0-api</artifactId>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.persistence/javax.persistence -->
         <dependency>
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <optional>true</optional>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.1.0</version>
         </dependency>
 		<!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
 		<dependency>
@@ -136,6 +144,10 @@
 
 
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
