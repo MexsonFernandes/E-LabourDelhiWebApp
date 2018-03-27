@@ -656,23 +656,10 @@
               </form>
 
               <div class="center-on-small-only">
-                <a class="btn btn-primary" id="submitContact" onclick="validateForm();">Send</a>
+                <a class="btn btn-primary" onclick="validateForm();">Send</a>
               </div>
               <div id="status" style="color:red;"></div>
-                <div id="resultContainer" style="display: none;">
-                    <hr/>
-                    <h4 style="color: green;">JSON Response From Server</h4>
-                    <pre style="color: green;">
-            <code></code>
-                 </pre>
-                </div>
             </div>
-
-
-            <!-- Result Container  -->
-
-
-
             <!--Grid column-->
 
             <!--Grid column-->
@@ -695,7 +682,6 @@
               </ul>
             </div>
             <!--Grid column-->
-
 
           </div>
 
@@ -732,7 +718,7 @@
         <li style="display: inline;"><a title="MyGov Pledge" alt="MyGov Pledge" href="https://pledge.mygov.in" target="_blank">
           <img title="MyGov Pledge" alt="MyGov Pledge" src="https://www.mygov.in/footer_service/images/mygov_pledge.png"></a></li>
       </ul>  <div class="footer-logo">
-
+h
       <ul style="list-style: none;">
       <li style="display: inline;"><a target="_blank" href="http://www.digitalindia.gov.in">
         <img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="https://www.mygov.in/footer_service/images/digital-india-logo.png"></a></li>
@@ -785,43 +771,37 @@
     new WOW().init();
 
     function validateForm() {
-
+        var name =  document.getElementById('name').value;
+        if (name == "") {
+            document.getElementById('status').innerHTML = "Name cannot be empty";
+            return false;
+        }
+        var email =  document.getElementById('email').value;
+        if (email == "") {
+            document.getElementById('status').innerHTML = "Email cannot be empty";
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                document.getElementById('status').innerHTML = "Email format invalid";
+                return false;
+            }
+        }
+        var subject =  document.getElementById('subject').value;
+        if (subject == "") {
+            document.getElementById('status').innerHTML = "Subject cannot be empty";
+            return false;
+        }
+        var message =  document.getElementById('message').value;
+        if (message == "") {
+            document.getElementById('status').innerHTML = "Message cannot be empty";
+            return false;
+        }
         document.getElementById('status').innerHTML = "Sending...";
         document.getElementById('contact-form').submit();
 
     }
 
-
-    $(function() {
-        /*  Submit form using Ajax */
-        $('contact-form').submit(function(e) {
-
-            //Prevent default submission of form
-            e.preventDefault();
-
-            //Remove all errors
-            $('input').next().remove();
-
-            $.post({
-                url : 'contactUS',
-                data : $('form[name=saveContactUs]').serialize(),
-                success : function(res) {
-
-                    if(res.validated){
-                        //Set response
-                        $('#resultContainer pre code').text(JSON.stringify(res.employee));
-                        $('#resultContainer').show();
-
-                    }else{
-                        //Set error messages
-                        $.each(res.errorMessages,function(key,value){
-                            $('input[name='+key+']').after('<span class="error">'+value+'</span>');
-                        });
-                    }
-                }
-            })
-        });
-    });
 
   </script>
 <style type="text/css">
