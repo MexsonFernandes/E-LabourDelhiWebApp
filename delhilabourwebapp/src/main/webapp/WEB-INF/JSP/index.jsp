@@ -819,24 +819,24 @@
 
 
         $.ajax({
-            url : "/contactUS",
+            url : "/contactUs",
             type: "POST",
             data : formData,
             success: function(data)
             {
-
+                console.log(data)
                 $('#status').text(data.message);
-                if (data!=null){ //If mail was sent successfully, reset the form.
+                if (data=="Data Saved") {  //If mail was sent successfully, reset the form.
                     $('#contact-form').closest('form').find("input[type=text], textarea").val("");
                     $('#resultContainer').text("Your response has been recorded on our system.");
                     $('#status').text("");
                 }else{
-                    $('#status').text("There was some error while sending your message.");
+                    $('#status').text("There was some error while sending your message to server.");
                 }
             },
-            error: function (errorMessage)
-            {
-                $('#status').text("There was some error  while sending your message.");
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#status').text("There was some error while sending your message to server.");
             }
         });
     }

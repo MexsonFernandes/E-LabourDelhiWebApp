@@ -1,6 +1,7 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "ContactForm")
@@ -9,7 +10,7 @@ public class ContactUs {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     int id;
-
+    @NotNull
     private String name, subject, email, message;
     public ContactUs(String name, String subject, String email, String message){
         this.name = name;

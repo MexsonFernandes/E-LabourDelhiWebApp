@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ContactUsController {
 
-    @RequestMapping(value = "/contactUS", method = RequestMethod.POST)
+    @RequestMapping(value = "/contactUs", method = RequestMethod.POST)
     public String contactform(@RequestParam("name") String name,@RequestParam("email") String email, @RequestParam("subject") String sub, @RequestParam("message") String message){
         //object of contactUs model
         try{
@@ -18,7 +18,7 @@ public class ContactUsController {
             //call hibernate to save contact form data
             HibernateUtil hu = new HibernateUtil();
             hu.contactForm(obj);
-            return "";
+            return "Data Saved";
         } catch (Exception e){
             return "";
         }
