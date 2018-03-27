@@ -100,43 +100,35 @@
           <!-- Tab panels -->
           <div class="tab-content">
             <!--Panel 7-->
-              <form action="ServletLogin" method="POST">
             <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
               <!--Body-->
               <div class="modal-body mb-1">
 
                 <div class="md-form form-sm mb-5">
-                  <i class="fa fa-phone prefix"></i>
-                  <input type="number" disabled id="modalLRInput10" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your mobile number</label>
+                  <i class="fa fa-user prefix"></i>
+                  <input type="text" id="lData" name="lData" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="lData">Your mobile number / Email ID</label>
                 </div>
-                  <div align="center">Or</div>
-                  <div class="md-form form-sm mb-5">
-                      <i class="fa fa-envelope prefix"></i>
-                      <input type="email" name="username" id="modalLRInput18" class="form-control form-control-sm validate">
-                      <label data-error="wrong" data-success="right" for="modalLRInput10" >Your email id</label>
-                  </div>
+
                 <div class="md-form form-sm mb-4">
                   <i class="fa fa-lock prefix"></i>
-                  <input type="number" id="modalLRInput11" class="form-control form-control-sm validate" disabled>
-                  <label data-error="wrong" data-success="right" for="modalLRInput11">OTP</label>
+                  <input type="number" id="lOTP" name="lOTP" class="form-control form-control-sm validate" disabled>
+                  <label data-error="wrong" data-success="right" for="lOTP">OTP</label>
                 </div>
+                  <div id="loginStatus" style="color:red;">
+
+                  </div>
                 <div class="text-center mt-2">
-                  <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                  <button class="btn btn-info" onClick="sendLogin();">Log in <i class="fa fa-sign-in ml-1"></i></button>
                 </div>
               </div>
 
-              <!--Footer-->
-              <div class="modal-footer">
 
-                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-              </div>
 
             </div>
-              </form>
             <!--/.Panel 7-->
-                <form class="form-control" action="ServletRegister" method="POST">
+
 
 
             <!--Panel 8-->
@@ -146,38 +138,37 @@
               <div class="modal-body">
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-user-circle-o prefix"></i>
-                      <input type="text" name="username" id="modalLRInput19" class="form-control form-control-sm validate">
-                      <label data-error="wrong" data-success="right" for="modalLRInput12">Username</label>
+                      <input type="text" name="rUsername" id="modalLRInput19" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput19">Username</label>
                   </div>
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-address-book prefix"></i>
-                      <input type="text" name="fullname" id="modalLRInput20" class="form-control form-control-sm validate">
-                      <label data-error="wrong" data-success="right" for="modalLRInput12">Full Name</label>
+                      <input type="text" name="rFullname" id="modalLRInput20" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="modalLRInput20">Full Name</label>
                   </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-envelope prefix"></i>
-                  <input type="email" name="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <input type="email" name="rEmail" id="modalLRInput12" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
                 </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-phone prefix"></i>
-                  <input type="number" name="number" id="modalLRInput16" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput12">Phone No</label>
+                  <input type="number" name="rNumber" id="modalLRInput16" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput16">Phone No</label>
                 </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" disabled>
+                  <input type="number" id="modalLRInput13" name="rOTP" class="form-control form-control-sm validate" disabled>
                   <label data-error="wrong" data-success="right" for="modalLRInput13">OTP</label>
                 </div>
 
 
                 <div class="text-center form-sm mt-2">
-                  <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                  <button class="btn btn-info" onClick="sendRegister();">Sign up <i class="fa fa-sign-in ml-1"></i></button>
                 </div>
 
               </div>
             </div>
-                </form>
               <!--Footer-->
               <div class="modal-footer">
                 <div class="options text-right">
@@ -784,12 +775,12 @@
 
     function validateForm() {
         var name =  document.getElementById('cName').value;
-        if (name == "") {
+        if (name.trim() == "") {
             document.getElementById('status').innerHTML = "Name cannot be empty";
             return false;
         }
         var email =  document.getElementById('cEmail').value;
-        if (email == "") {
+        if (email.trim() == "") {
             document.getElementById('status').innerHTML = "Email cannot be empty";
             return false;
         } else {
@@ -800,12 +791,112 @@
             }
         }
         var subject =  document.getElementById('cSubject').value;
-        if (subject == "") {
+        if (subject.trim() == "") {
             document.getElementById('status').innerHTML = "Subject cannot be empty";
             return false;
         }
         var message =  document.getElementById('cMessage').value;
-        if (message == "") {
+        if (message.trim() == "") {
+            document.getElementById('status').innerHTML = "Message cannot be empty";
+            return false;
+        }
+        document.getElementById('status').innerHTML = "Sending...";
+        formData = {
+            'name'     : $('input[name=cName]').val(),
+            'email'    : $('input[name=cEmail]').val(),
+            'subject'  : $('input[name=cSubject]').val(),
+            'message'  : $('textarea[name=cMessage]').val()
+        };
+
+
+        $.ajax({
+            url : "/contactUs",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+                $('#status').text(data.message);
+                if (data=="Data Saved") {  //If mail was sent successfully, reset the form.
+                    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+                    $('#resultContainer').text("Your response has been recorded on our system.");
+                    $('#status').text("");
+                }else{
+                    $('#status').text("There was some error while sending your message to server.");
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#status').text("There was some error while sending your message to server.");
+            }
+        });
+    }
+
+    function sendLogin() {
+        var loginData = document.getElementById('lData').value;
+        if(loginData.trim() == ""){
+            $(document.getElementById("lData")).addClass("invalid");
+            return false;
+        }
+        if(isNaN(loginData)==true){
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(loginData)){
+                $(document.getElementById("lData")).addClass("invalid");
+                return false;
+            }
+        }
+        if(loginData.length != 10 && isNaN(loginData)!=true){
+            $(document.getElementById("lData")).addClass("invalid");
+            return false;
+        }
+        formData = {
+            'lData' : $('input[name=lData]').val(),
+        };
+
+        $.ajax({
+            url : "/ServletLogin",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+
+                if (data=="User Exist") {  //If mail was sent successfully, reset the form.
+                    $('#loginStatus').text("You have been successfully verified");
+                }else{
+                    $('#status').text("We cannot find you!!!");
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#status').text("There was some error while sending your message to server.");
+            }
+        });
+    }
+    function sendRegister() {
+        var name =  document.getElementById('cName').value;
+        if (name.trim() == "") {
+            document.getElementById('status').innerHTML = "Name cannot be empty";
+            return false;
+        }
+        var email =  document.getElementById('cEmail').value;
+        if (email.trim() == "") {
+            document.getElementById('status').innerHTML = "Email cannot be empty";
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                document.getElementById('status').innerHTML = "Email format invalid";
+                return false;
+            }
+        }
+        var subject =  document.getElementById('cSubject').value;
+        if (subject.trim() == "") {
+            document.getElementById('status').innerHTML = "Subject cannot be empty";
+            return false;
+        }
+        var message =  document.getElementById('cMessage').value;
+        if (message.trim() == "") {
             document.getElementById('status').innerHTML = "Message cannot be empty";
             return false;
         }
