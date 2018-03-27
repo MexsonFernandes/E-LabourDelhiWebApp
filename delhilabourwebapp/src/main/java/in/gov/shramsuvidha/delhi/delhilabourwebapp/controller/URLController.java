@@ -15,8 +15,8 @@ public class URLController {
     @RequestMapping("/")
     public String home(Map<String, Object> model){
 
-        MailSend ms = new MailSend();
-        ms.sendEmail("robomex2020@gmail.com","TEST","TEST");
+        //MailSend ms = new MailSend();
+        //ms.sendEmail("robomex2020@gmail.com","TEST","TEST");
         model.put("message", "HowToDoInJava Reader !!");
         return "index";
     }
