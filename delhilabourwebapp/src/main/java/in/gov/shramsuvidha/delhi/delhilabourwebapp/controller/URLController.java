@@ -7,7 +7,7 @@ import in.gov.shramsuvidha.delhi.delhilabourwebapp.MailSend;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.mail.internet.AddressException;
+
 
 @Controller
 public class URLController {
