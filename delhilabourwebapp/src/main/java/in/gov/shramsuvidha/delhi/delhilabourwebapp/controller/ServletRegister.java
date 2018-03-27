@@ -18,15 +18,6 @@ public class ServletRegister{
 
     @PostMapping("/ServletRegister")
     public void Register(@RequestParam("username") String unm,@RequestParam("email") String email,@RequestParam("number") int number,@RequestParam("fullname") String fullname) {
-//        String unm, pwd, email, number, fullname;
-//        int intnumber;
-//        unm = request.getParameter("username");
-//        pwd = request.getParameter("password");
-//        email = request.getParameter("email");
-//        number = request.getParameter("number");
-//        fullname = request.getParameter("fullname");
-//
-//        intnumber = Integer.parseInt(number);
 
         RegisterPOJO obj = new RegisterPOJO(unm, email, fullname, number);
         HibernateUtil hu = new HibernateUtil();
@@ -35,8 +26,7 @@ public class ServletRegister{
     }
     @PostMapping("/ServletLogin")
 
-    public void Login(@RequestParam("username") String data)
-    {
+    public void Login(@RequestParam("username") String data) {
 
         HibernateUtil obj=new HibernateUtil();
         obj.verify(data);

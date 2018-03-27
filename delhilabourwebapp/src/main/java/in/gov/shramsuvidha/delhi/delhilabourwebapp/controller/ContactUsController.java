@@ -2,9 +2,7 @@ package in.gov.shramsuvidha.delhi.delhilabourwebapp.controller;
 
 import java.util.Map;
 import java.util.stream.Collectors;
-
 import javax.validation.Valid;
-
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUs;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUsJSONResponse;
 import org.springframework.http.MediaType;
@@ -18,15 +16,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class ContactUsController {
 
-
-
     @PostMapping(value = "/contactUS", produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
     public ContactUsJSONResponse saveContactUs(@ModelAttribute @Valid ContactUs contactus,
                                               BindingResult result) {
-
         ContactUsJSONResponse response = new ContactUsJSONResponse();
-
         if(result.hasErrors()){
 
             //Get error message
@@ -44,7 +38,6 @@ public class ContactUsController {
             response.setValidated(true);
             response.setEmployee(contactus);
         }
-
         return response;
     }
 }
