@@ -142,6 +142,136 @@
 
 
 
+<!--Section: Testimonials v.1-->
+<section class="pb-3 text-center">
+
+    <!--Section heading-->
+    <h1 class="font-weight-bold h1 py-5">ANNUAL RETURN PORTAL</h1>
+    <!--Section description-->
+    <p class="grey-text pb-5">This is online portal for e-labour</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+            <!--Card-->
+            <div class="card testimonial-card">
+
+                <!--Background color-->
+                <div class="card-up info-color"></div>
+
+                <!--Avatar-->
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
+                </div>
+
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="mt-1">
+                        <strong>RETURNS SUBMITTED </strong>
+                    </h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p class="dark-grey-text">HO RHE SUBMITT.</p>
+                </div>
+
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+            <!--Card-->
+            <div class="card testimonial-card">
+
+                <!--Background color-->
+                <div class="card-up blue-gradient">
+                </div>
+
+                <!--Avatar-->
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid">
+                </div>
+
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="mt-1">
+                        <strong>GENERATED</strong>
+                    </h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p class="dark-grey-text">Neque cupiditate assumenda in maiores repudiandae mollitia architecto.</p>
+                </div>
+
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+            <!--Card-->
+            <div class="card testimonial-card">
+
+                <!--Background color-->
+                <div class="card-up indigo"></div>
+
+                <!--Avatar-->
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid">
+                </div>
+
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="mt-1">
+                        <strong>INSPECTION REPORT</strong>
+                    </h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p class="dark-grey-text">Delectus impedit saepe officiis ab aliquam repellat, rem totam unde ducimus.</p>
+                </div>
+
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Testimonials v.1-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
