@@ -48,13 +48,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About ANNUAL RETURN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/getting-started/" target="_blank">DELHI LABOUR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
+                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">FACEBOOK</a>
                     </li>
                 </ul>
 
@@ -73,7 +73,7 @@
                     <li class="nav-item">
                         <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
                            target="_blank">
-                            <i class="fa fa-github mr-2"></i>MDB GitHub
+                            <i class="fa fa-github mr-2"></i>LOGOUT
                         </a>
                     </li>
                 </ul>
@@ -96,13 +96,13 @@
                 <i class="fa fa-pie-chart mr-3"></i>Dashboard
             </a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-user mr-3"></i>Profile</a>
+                <i class="fa fa-user mr-3"></i>HOME</a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-table mr-3"></i>Tables</a>
+                <i class="fa fa-table mr-3"></i>ANNUAL RETURN</a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-map mr-3"></i>Maps</a>
+                <i class="fa fa-map mr-3"></i>TRACK STATUS</a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-money mr-3"></i>Orders</a>
+                <i class="fa fa-money mr-3"></i>SERVICES</a>
         </div>
 
     </div>
@@ -122,7 +122,7 @@
             <div class="card-body d-sm-flex justify-content-between">
 
                 <h4 class="mb-2 mb-sm-0 pt-1">
-                    <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Home Page</a>
+                    <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Dashboard</a>
                     <span>/</span>
                     <span>Dashboard</span>
                 </h4>
@@ -138,493 +138,20 @@
 
             </div>
 
-        </div>
+
         <!-- Heading -->
 
-        <!--Grid row-->
-        <div class="row wow fadeIn">
 
-            <!--Grid column-->
-            <div class="col-md-9 mb-4">
 
-                <!--Card-->
-                <div class="card">
 
-                    <!--Card content-->
-                    <div class="card-body">
 
-                        <canvas id="myChart"></canvas>
 
-                    </div>
 
-                </div>
-                <!--/.Card-->
 
-            </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-md-3 mb-4">
 
-                <!--Card-->
-                <div class="card mb-4">
 
-                    <!-- Card header -->
-                    <div class="card-header text-center">
-                        Pie chart
-                    </div>
 
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="pieChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-                <!--Card-->
-                <div class="card mb-4">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!-- List group links -->
-                        <div class="list-group list-group-flush">
-                            <a class="list-group-item list-group-item-action waves-effect">Sales
-                                <span class="badge badge-success badge-pill pull-right">22%
-                                        <i class="fa fa-arrow-up ml-1"></i>
-                                    </span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Traffic
-                                <span class="badge badge-danger badge-pill pull-right">5%
-                                        <i class="fa fa-arrow-down ml-1"></i>
-                                    </span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Orders
-                                <span class="badge badge-primary badge-pill pull-right">14</span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Issues
-                                <span class="badge badge-primary badge-pill pull-right">123</span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Messages
-                                <span class="badge badge-primary badge-pill pull-right">8</span>
-                            </a>
-                        </div>
-                        <!-- List group links -->
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!-- Table  -->
-                        <table class="table table-hover">
-                            <!-- Table head -->
-                            <thead class="blue-grey lighten-4">
-                            <tr>
-                                <th>#</th>
-                                <th>Lorem</th>
-                                <th>Ipsum</th>
-                                <th>Dolor</th>
-                            </tr>
-                            </thead>
-                            <!-- Table head -->
-
-                            <!-- Table body -->
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td>Cell 6</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Cell 7</td>
-                                <td>Cell 8</td>
-                                <td>Cell 9</td>
-                            </tr>
-                            </tbody>
-                            <!-- Table body -->
-                        </table>
-                        <!-- Table  -->
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!-- Table  -->
-                        <table class="table table-hover">
-                            <!-- Table head -->
-                            <thead class="blue lighten-4">
-                            <tr>
-                                <th>#</th>
-                                <th>Lorem</th>
-                                <th>Ipsum</th>
-                                <th>Dolor</th>
-                            </tr>
-                            </thead>
-                            <!-- Table head -->
-
-                            <!-- Table body -->
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td>Cell 6</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Cell 7</td>
-                                <td>Cell 8</td>
-                                <td>Cell 9</td>
-                            </tr>
-                            </tbody>
-                            <!-- Table body -->
-                        </table>
-                        <!-- Table  -->
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Line chart</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="lineChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Radar Chart</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="radarChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Doughnut Chart</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="doughnutChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Google map</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!--Google map-->
-                        <div id="map-container" class="z-depth-1" style="height: 500px"></div>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!--Section: Modals-->
-                    <section>
-
-                        <!-- Frame Modal Top Info-->
-                        <div class="modal fade top" id="frameModalTopInfoDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-                             data-backdrop="false">
-                            <div class="modal-dialog modal-frame modal-top modal-notify modal-info" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Body-->
-                                    <div class="modal-body">
-                                        <div class="row d-flex justify-content-center align-items-center">
-
-                                            <p class="pt-3 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo
-                                                provident fugiat reprehenderit nostrum quos..</p>
-
-                                            <a role="button" class="btn btn-info">Get it now
-                                                <i class="fa fa-diamond ml-1"></i>
-                                            </a>
-                                            <a role="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, thanks</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Content-->
-                            </div>
-                        </div>
-                        <!-- Frame Modal Bottom Success-->
-
-                        <!-- Frame Modal Bottom Success-->
-                        <div class="modal fade bottom" id="frameModalBottomSuccessDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                             aria-hidden="true" data-backdrop="false">
-                            <div class="modal-dialog modal-frame modal-bottom modal-notify modal-success" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Body-->
-                                    <div class="modal-body">
-                                        <div class="row d-flex justify-content-center align-items-center">
-
-                                            <p class="pt-3 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo
-                                                provident fugiat reprehenderit nostrum quos..</p>
-
-                                            <a role="button" class="btn btn-success">Get it now
-                                                <i class="fa fa-diamond ml-1"></i>
-                                            </a>
-                                            <a role="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Content-->
-                            </div>
-                        </div>
-                        <!-- Frame Modal Bottom Success-->
-
-                        <!-- Side Modal Top Right Success-->
-                        <div class="modal fade right" id="sideModalTRSuccessDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-                             data-backdrop="false">
-                            <div class="modal-dialog modal-side modal-top-right modal-notify modal-success" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Header-->
-                                    <div class="modal-header">
-                                        <p class="heading lead">Modal Success</p>
-
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="white-text">&times;</span>
-                                        </button>
-                                    </div>
-
-                                    <!--Body-->
-                                    <div class="modal-body">
-                                        <div class="text-center">
-                                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla
-                                                aperiam blanditiis ad consequatur in dolores culpa, dignissimos, eius
-                                                non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!--Footer-->
-                                    <div class="modal-footer justify-content-center">
-                                        <a role="button" class="btn btn-success">Get it now
-                                            <i class="fa fa-diamond ml-1"></i>
-                                        </a>
-                                        <a role="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
-                                    </div>
-                                </div>
-                                <!--/.Content-->
-                            </div>
-                        </div>
-                        <!-- Side Modal Top Right Success-->
-
-                        <!-- Side Modal Top Left Info-->
-                        <div class="modal fade left" id="sideModalTLInfoDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-                             data-backdrop="false">
-                            <div class="modal-dialog modal-side modal-top-left modal-notify modal-info" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Header-->
-                                    <div class="modal-header">
-                                        <p class="heading lead">Modal Info</p>
-
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="white-text">&times;</span>
-                                        </button>
-                                    </div>
-
-                                    <!--Body-->
-                                    <div class="modal-body">
-
-                                        <img src="https://mdbootstrap.com/wp-content/uploads/2016/11/admin-dashboard-bootstrap.jpg" alt="Material Design for Bootstrap - dashboard"
-                                             class="img-fluid">
-
-                                        <div class="text-center">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo
-                                                error eveniet cum.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!--Footer-->
-                                    <div class="modal-footer justify-content-center">
-                                        <a role="button" class="btn btn-info">Get it now
-                                            <i class="fa fa-diamond ml-1"></i>
-                                        </a>
-                                        <a role="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, thanks</a>
-                                    </div>
-                                </div>
-                                <!--/.Content-->
-                            </div>
-                        </div>
-                        <!-- Side Modal Top Left Info-->
-
-                        <!-- Side Modal Bottom Right Danger-->
-                        <div class="modal fade right" id="sideModalBRDangerDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-                             data-backdrop="false">
-                            <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-danger" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Header-->
-                                    <div class="modal-header">
-                                        <p class="heading">Modal Danger</p>
-
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="white-text">&times;</span>
-                                        </button>
-                                    </div>
-
-                                    <!--Body-->
-                                    <div class="modal-body">
-
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <p></p>
-                                                <p class="text-center">
-                                                    <i class="fa fa-shopping-cart fa-4x"></i>
-                                                </p>
-                                            </div>
-
-                                            <div class="col-9">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestiae
-                                                    provident temporibus sunt earum.</p>
-                                                <h2>
-                                                    <span class="badge">v52gs1</span>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Footer-->
-                                    <div class="modal-footer justify-content-center">
-                                        <a role="button" class="btn btn-danger">Get it now
-                                            <i class="fa fa-diamond ml-1"></i>
-                                        </a>
-                                        <a role="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
-                                    </div>
-                                </div>
-                                <!--/.Content-->
-                            </div>
-                        </div>
                         <!-- Side Modal Bottom Right Danger-->
 
                         <!-- Side Modal Bottom Left Warning-->
