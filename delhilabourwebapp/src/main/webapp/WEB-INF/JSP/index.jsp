@@ -864,12 +864,12 @@
                 if (data=="User Exist") {  //If mail was sent successfully, reset the form.
                     $('#loginStatus').text("You have been successfully verified");
                 }else{
-                    $('#status').text("We cannot find you!!!");
+                    $('#loginStatus').text("We cannot find you!!!");
                 }
             },
             error: function(xhr, status, error) {
                 //alert(xhr.responseText);
-                $('#status').text("There was some error while sending your message to server.");
+                $('#loginStatus').text("There was some error while sending your message to server.");
             }
         });
     }

@@ -11,6 +11,7 @@ import java.util.List;
 
 public class HibernateUtil
 {
+    //Ignore this!!!It is used as of now. But will be changed to settings from application.properties.
     @Deprecated
     SessionFactory sf = new Configuration()
             .configure("hibernate.cfg.xml")
