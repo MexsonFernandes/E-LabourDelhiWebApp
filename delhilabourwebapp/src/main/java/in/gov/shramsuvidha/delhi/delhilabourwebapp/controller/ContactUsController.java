@@ -1,43 +1,27 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.controller;
 
-import java.util.Map;
-import java.util.stream.Collectors;
-import javax.validation.Valid;
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.Database.HibernateUtil;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUs;
-import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUsJSONResponse;
-import org.springframework.http.MediaType;
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.RegisterPOJO;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class ContactUsController {
 
-    @PostMapping(value = "/contactUS", produces = { MediaType.APPLICATION_JSON_VALUE })
-    @ResponseBody
-    public ContactUsJSONResponse saveContactUs(@ModelAttribute @Valid ContactUs contactus,
-                                              BindingResult result) {
-        ContactUsJSONResponse response = new ContactUsJSONResponse();
-        if(result.hasErrors()){
-
-            //Get error message
-            Map<String, String> errors = result.getFieldErrors().stream()
-                    .collect(
-                            Collectors.toMap(FieldError::getField, FieldError::getDefaultMessage)
-                    );
-
-            response.setValidated(false);
-            response.setErrorMessages(errors);
-
-        }else{
-            // Implement business logic to save employee into database
-            //..
-            response.setValidated(true);
-            response.setEmployee(contactus);
+    @RequestMapping(value = "/contactUS", method = RequestMethod.POST)
+    public String contactform(@RequestParam("name") String name,@RequestParam("email") String email, @RequestParam("subject") String sub, @RequestParam("message") String message){
+        //object of contactUs model
+        try{
+            System.out.println("" + email + " test:" + message);
+            ContactUs obj = new ContactUs(name,sub, email, message);
+            //call hibernate to save contact form data
+            HibernateUtil hu = new HibernateUtil();
+            hu.contactForm(obj);
+            return "";
+        } catch (Exception e){
+            return "";
         }
-        return response;
     }
+
 }

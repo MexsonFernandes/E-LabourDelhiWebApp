@@ -1,20 +1,65 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.model;
 
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "ContactForm")
 public class ContactUs {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    int id;
 
-    @NotEmpty(message="Enter name.")
-    private String name;
+    private String name, subject, email, message;
+    public ContactUs(String name, String subject, String email, String message){
+        this.name = name;
+        this.subject = subject;
+        this.email = email;
+        this.message = message;
+    }
 
-    @NotEmpty(message="Enter subject.")
-    private String subject;
+    public ContactUs() {
+    }
 
-    @Email(message="Enter a valid email.")
-    private String email;
+    public int getId() {
+        return id;
+    }
 
-    @NotEmpty(message="Enter your message.")
-    private String message;
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+
+
 }

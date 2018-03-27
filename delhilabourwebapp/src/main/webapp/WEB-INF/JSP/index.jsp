@@ -609,8 +609,8 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input type="text" id="name" name="name" class="form-control">
-                      <label for="name" class="">Your name</label>
+                      <input type="text" id="cName" name="cName" class="form-control">
+                      <label for="cName" class="">Your name</label>
                     </div>
                   </div>
                   <!--Grid column-->
@@ -618,8 +618,8 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input type="text" id="email" name="email" class="form-control">
-                      <label for="email" class="">Your email</label>
+                      <input type="text" id="cEmail" name="cEmail" class="form-control">
+                      <label for="cEmail" class="">Your email</label>
                     </div>
                   </div>
                   <!--Grid column-->
@@ -631,8 +631,8 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form">
-                      <input type="text" id="subject" name="subject" class="form-control">
-                      <label for="subject" class="">Subject</label>
+                      <input type="text" id="cSubject" name="cSubject" class="form-control">
+                      <label for="cSubject" class="">Subject</label>
                     </div>
                   </div>
                 </div>
@@ -645,8 +645,8 @@
                   <div class="col-md-12">
 
                     <div class="md-form">
-                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                      <label for="message">Your message</label>
+                      <textarea type="text" id="cMessage" name="cMessage" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="cMessage">Your message</label>
                     </div>
 
                   </div>
@@ -659,9 +659,9 @@
                 <a class="btn btn-primary" id="submitContact" onclick="validateForm();">Send</a>
               </div>
               <div id="status" style="color:red;"></div>
-                <div id="resultContainer" style="display: none;">
+                <div >
                     <hr/>
-                    <h4 style="color: green;">JSON Response From Server</h4>
+                    <h4 id="resultContainer" style="color: green;"></h4>
                     <pre style="color: green;">
             <code></code>
                  </pre>
@@ -695,8 +695,6 @@
               </ul>
             </div>
             <!--Grid column-->
-
-
           </div>
 
       </section>
@@ -785,43 +783,64 @@
     new WOW().init();
 
     function validateForm() {
-
+        var name =  document.getElementById('cName').value;
+        if (name == "") {
+            document.getElementById('status').innerHTML = "Name cannot be empty";
+            return false;
+        }
+        var email =  document.getElementById('cEmail').value;
+        if (email == "") {
+            document.getElementById('status').innerHTML = "Email cannot be empty";
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                document.getElementById('status').innerHTML = "Email format invalid";
+                return false;
+            }
+        }
+        var subject =  document.getElementById('cSubject').value;
+        if (subject == "") {
+            document.getElementById('status').innerHTML = "Subject cannot be empty";
+            return false;
+        }
+        var message =  document.getElementById('cMessage').value;
+        if (message == "") {
+            document.getElementById('status').innerHTML = "Message cannot be empty";
+            return false;
+        }
         document.getElementById('status').innerHTML = "Sending...";
-        document.getElementById('contact-form').submit();
+        formData = {
+            'name'     : $('input[name=cName]').val(),
+            'email'    : $('input[name=cEmail]').val(),
+            'subject'  : $('input[name=cSubject]').val(),
+            'message'  : $('textarea[name=cMessage]').val()
+        };
 
+
+        $.ajax({
+            url : "/contactUS",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+
+                $('#status').text(data.message);
+                if (data!=null){ //If mail was sent successfully, reset the form.
+                    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+                    $('#resultContainer').text("Your response has been recorded on our system.");
+                    $('#status').text("");
+                }else{
+                    $('#status').text("There was some error while sending your message.");
+                }
+            },
+            error: function (errorMessage)
+            {
+                $('#status').text("There was some error  while sending your message.");
+            }
+        });
     }
 
-
-    $(function() {
-        /*  Submit form using Ajax */
-        $('contact-form').submit(function(e) {
-
-            //Prevent default submission of form
-            e.preventDefault();
-
-            //Remove all errors
-            $('input').next().remove();
-
-            $.post({
-                url : 'contactUS',
-                data : $('form[name=saveContactUs]').serialize(),
-                success : function(res) {
-
-                    if(res.validated){
-                        //Set response
-                        $('#resultContainer pre code').text(JSON.stringify(res.employee));
-                        $('#resultContainer').show();
-
-                    }else{
-                        //Set error messages
-                        $.each(res.errorMessages,function(key,value){
-                            $('input[name='+key+']').after('<span class="error">'+value+'</span>');
-                        });
-                    }
-                }
-            })
-        });
-    });
 
   </script>
 <style type="text/css">
