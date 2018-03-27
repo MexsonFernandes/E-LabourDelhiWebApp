@@ -100,6 +100,7 @@
           <!-- Tab panels -->
           <div class="tab-content">
             <!--Panel 7-->
+              <form action="ServletLogin" method="POST">
             <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
               <!--Body-->
@@ -107,13 +108,13 @@
 
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-phone prefix"></i>
-                  <input type="number" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <input type="number" disabled id="modalLRInput10" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput10">Your mobile number</label>
                 </div>
                   <div align="center">Or</div>
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-envelope prefix"></i>
-                      <input type="email" id="modalLRInput18" class="form-control form-control-sm validate">
+                      <input type="email" name="username" id="modalLRInput18" class="form-control form-control-sm validate">
                       <label data-error="wrong" data-success="right" for="modalLRInput10" >Your email id</label>
                   </div>
                 <div class="md-form form-sm mb-4">
@@ -125,6 +126,7 @@
                   <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
                 </div>
               </div>
+
               <!--Footer-->
               <div class="modal-footer">
 
@@ -132,7 +134,10 @@
               </div>
 
             </div>
+              </form>
             <!--/.Panel 7-->
+                <form class="form-control" action="ServletRegister" method="POST">
+
 
             <!--Panel 8-->
             <div class="tab-pane fade" id="panel8" role="tabpanel">
@@ -141,22 +146,22 @@
               <div class="modal-body">
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-user-circle-o prefix"></i>
-                      <input type="text" id="modalLRInput19" class="form-control form-control-sm validate">
+                      <input type="text" name="username" id="modalLRInput19" class="form-control form-control-sm validate">
                       <label data-error="wrong" data-success="right" for="modalLRInput12">Username</label>
                   </div>
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-address-book prefix"></i>
-                      <input type="text" id="modalLRInput20" class="form-control form-control-sm validate">
+                      <input type="text" name="fullname" id="modalLRInput20" class="form-control form-control-sm validate">
                       <label data-error="wrong" data-success="right" for="modalLRInput12">Full Name</label>
                   </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <input type="email" name="email" id="modalLRInput12" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
                 </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-phone prefix"></i>
-                  <input type="number" id="modalLRInput16" class="form-control form-control-sm validate">
+                  <input type="number" name="number" id="modalLRInput16" class="form-control form-control-sm validate">
                   <label data-error="wrong" data-success="right" for="modalLRInput12">Phone No</label>
                 </div>
                 <div class="md-form form-sm mb-5">
@@ -171,6 +176,8 @@
                 </div>
 
               </div>
+            </div>
+                </form>
               <!--Footer-->
               <div class="modal-footer">
                 <div class="options text-right">
