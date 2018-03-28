@@ -8,11 +8,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 @Controller
 public class URLController {
-    @RequestMapping("/logout")
-    public String logout(){
-
+    @RequestMapping(value = "/logout")
+    public String logout(HttpServletRequest request){
+        HttpSession session =request.getSession();
+        session.invalidate();
         return "redirect:/";
     }
     @RequestMapping("/")
@@ -27,7 +31,7 @@ public class URLController {
         return "index";
     }
 
-    @RequestMapping("/dashboard")
+    @RequestMapping(value = "/dashboard")
     public String dashboard(){
         return "dashboard";
     }

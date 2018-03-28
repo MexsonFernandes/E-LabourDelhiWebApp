@@ -173,8 +173,6 @@
                     $('#lOTP').prop("disabled",false);
                     $('#loginButton').on('click',checkOTP);
                     document.getElementById('loginButton').onclick = checkOTP;
-                    //document.getElementById('loginButton').innerText = "Go to Dashboard";
-                    //$('#loginButtonA').attr('href','login');
 
                 }else{
                     $('#loginStatus').text("We cannot find you!!!");
@@ -203,17 +201,17 @@
             success: function(data)
             {
                 console.log(data)
-                if (data=="dashboard") {  //If mail was sent successfully, reset the form.
-
-                    $('#loginButton').prop('onclick',null);
-                    document.getElementById('loginButton').innerText = "Go to Dashboard";
-                    $('#loginButtonA').attr('href','dashboard');
-                    $('#loginStatus').text("You are in...");
-                    $('#loginStatus').css('color', 'green');
+                if (data!="dashboard") {  //If mail was sent successfully, reset the form.
+                        $('#loginStatus').text("OTP is invalid.");
+                        $('#loginStatus').css('color', 'red');
                 }
-                else {
-                    $('#loginStatus').text("OTP is invalid.");
-                    $('#loginStatus').css('color', 'red');
+                else{
+                        $('#loginButton').prop('onclick',null);
+                        document.getElementById('loginButton').innerText = "Redirecting to Dashboard";
+                        $('#loginButtonA').attr('href','dashboard');
+                        $('#loginStatus').text("You are in...");
+                        $('#loginStatus').css('color', 'green');
+                        document.location.href = "/dashboard";
                 }
             },
             error: function(xhr, status, error) {

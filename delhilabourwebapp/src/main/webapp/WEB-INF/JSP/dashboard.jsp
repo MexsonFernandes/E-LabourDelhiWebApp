@@ -72,18 +72,20 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="logout" target="_self" onclick="logout();" class="nav-link border border-light rounded waves-effect" target="_blank">
+                        <a  target="_self" onclick="logout();" class="nav-link border border-light rounded waves-effect" target="_blank">
                             <i class="fa fa-github mr-2"></i>LOGOUT
                         </a>
                     </li>
+                    <script>
+                        function logout() {
+                            if(confirm("Are you sure?")){
+                                document.location.href = "logout";
+                            }
+                        }
+                    </script>
                 </ul>
-                <script>
-                    function onclick() {
-                        <%
-                            session.invalidate();
-                        %>
-                    }
-                </script>
+
+
             </div>
 
         </div>

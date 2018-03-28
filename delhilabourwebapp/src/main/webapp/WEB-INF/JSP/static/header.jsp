@@ -63,11 +63,17 @@
             </ul>
 
             <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
+            <ul class="navbar-nav nav-flex-icons" id="ulLogin">
+                <div id="auth" hidden="hidden   "><%=request.getSession().getAttribute("session")%></div>
+                    <script type="text/javascript">
+                        if(document.getElementById('auth').innerText === "null"){
+                        document.getElementById('ulLogin').innerHTML ="<li class='nav-item'><a href='' class='btn btn-indigo btn-rounded my-3' data-toggle='modal' data-target='#modalLRForm'>LogIn/Register</a></li>";
+                        }
+                        else {
+                            document.getElementById('ulLogin').innerHTML ="<li class='nav-item'><a href='dashboard' class='btn btn-indigo btn-rounded my-3'>Dashboard</a></li>";
+                        }
+                    </script>
 
-                <li class="nav-item">
-                    <a href="" class="btn btn-indigo btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
-                </li>
             </ul>
 
         </div>
