@@ -261,10 +261,10 @@
 
                </br>
                 <p>
-                   <LI>Please click on the link Create a e-labour account to register a new representative. Following
-                form will come on your screen and you have to fill it with correct informations.</LI>
+                   <LI>Please click on the link <a href="http://localhost:8090/">http://localhost:8090/</a><br/> Create an e-labour account to register a new representative. Following
+                form will come on your screen and you have to fill it with correct information.</LI>
 
-                <LI>Once you submit the above signup form, system sends an OTP on registered mobile number for user
+                <LI>Once you submit the above sign up form, system sends an OTP on registered mobile number for user
                     verification. Fill the received OTP in below form:</LI>
 
                 <LI>Once your OTP is verified, you will see below message to check your mail.</LI>
@@ -298,7 +298,7 @@
 
               <li>  Here you can verify/reject modifications made to establishment identifiers by employer/ establishment representative.
                    View Verification Summary</li>
-                I. You can view the verification summary by choosing Establishment Verification option from menu at left hand side.</br>
+                I. You can view the verification summary by choosing Establishment Verification option from menu at left hand side.</br>
                 II. Click pending number to view the list of establishments whose data verification is pending.</br>
                 III. View Pending List</br>
                 Click on the Pending Status option to view the submitted data and approve or reject the same.</br>
@@ -318,7 +318,7 @@
                 <h3 class="h3 mb-3"> ONE STEP TO STOP CHILD LABOUR</h3>
                         <p>According to recent estimates, there are 168 million children around the world who are forced to work, and much of this work is hazardous or harmful to their physical and mental development. There are many ways to join in the fight to end child labor injustices. Whichever method you chose, know that you are making a difference and helping to make the world a better place!
                         </p>
-                        Use the internet to find out which organizations support anti-child labor initiatives. Browse their mission statements and events pages to get a sense of their stance on the issues, and how they plan to help exploited children workers. Here are a couple of websites to start with:
+                        Use the internet to find out which organizations support anti-child labour initiatives. Browse their mission statements and events pages to get a sense of their stance on the issues, and how they plan to help exploited children workers. Here are a couple of websites to start with:
                       <li>  United Nations Children's Fund UNICEF</li>
                         <li>The Stop Child Labor Coalition</li>
                         <li>International Initiative to End Child Labor</li>

@@ -228,7 +228,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">BBA has led the largest civil society initiative in the world against child labour in the form of the Global March Against Child Labour in 1998, leading to ILO Convention 182 on Worst Forms of Child Labour</h6>
                         <p class="card-text">One of the recent campaigns of BBA include:
 
-                        <li>Child Labour Free India Campaign: for an amendment in Child Labour (Prohibition & Regulation) Act, 1986 for total abolition on child labour till the age of 14 yrs., in line with ILO Convention 138.[6]</li>
+                        <li>Child Labour Free India Campaign: for an amendment in Child Labour (Prohibition & Regulation) Act, 1986 for total abolition on child labour till the age of 14 years, in line with ILO Convention 138.[6]</li>
 
                         <li> Right to Education Campaign: </li>
 
@@ -243,7 +243,7 @@
                         <li> Covered 158 villages in UP, Bihar, Delhi and Rajasthan</li>
                         <li>750 street plays, approx. 3500 wall writings, rallies, Public Vigilance Committees 70 formed, 250 schools reached</li>
                         <li>Follow up of 137 child labourers, 2 child marriages stopped</li>
-                        <li>Complaint received – 350 approx</li>
+                        <li>Complaints received : 350 approx</li>
                         <li>Missing Children Campaign: biggest ever research undertaken on missing children, resulting in Supreme Court issuing notice to all states and union territories on missing children.</li></p>
                         <a href="http://bba.org.in/mindtropes/how-we-work/" class="card-link">HOW-WE-WORK</a>
                         <a href="http://bba.org.in/mindtropes/get-involved/" class="card-link">GET-ENVOLVED</a>
@@ -260,7 +260,7 @@
 
                         <li>Contact to local police station.</li>
 
-                        <li>Contact local NGO’s for help.</li>
+                        <li>Contact local NGO's for help.</li>
 
                         <li>Complain to National Commission for the Protection of Child Rights (NCPCR) and State Commissions for the Protection of Child Rights (SCPCRs)</li>
 
@@ -270,7 +270,7 @@
 
                         <li>Even if there is failure on the part of the Superintendent of police to take action, or that even after registering it no proper investigation is held, the aggrieved party can file an application under Section 156(3) of CrPC before the learned Magistrate concerned. In such cases the Magistrate can direct the FIR to be registered and also can direct a proper investigation to be made, in a case where, according to the aggrieved person, no proper investigation was made. The Magistrate can also under the same provision monitor the investigation to ensure a proper investigation.</li>
 
-                        <li>An online complaint can be made at the website of the National Commission for Protection of Children’s Rights by clicking on the following link: </li></li></p>
+                        <li>An online complaint can be made at the website of the National Commission for Protection of Children's Rights by clicking on the following link: </li></li></p>
                         <a href="http://ncpcr.gov.in/" class="card-link">National-Commission-for-protection-of-child-right</a>
                         <a href="http://unicef.in/Story/190/Child-Protection-In-India" class="card-link">U-N-I-C-E-F I-N-D-I-A</a>
                     </div>
