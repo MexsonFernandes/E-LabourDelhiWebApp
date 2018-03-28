@@ -207,7 +207,7 @@
             <!--Grid row-->
             <div class="row">
 
-<div class="card card-body">
+                <div class="card card-body">
 <section class="mbr-section article mbr-section__container" id="content2-3" data-rv-view="8" >
 
     <div class="container">
