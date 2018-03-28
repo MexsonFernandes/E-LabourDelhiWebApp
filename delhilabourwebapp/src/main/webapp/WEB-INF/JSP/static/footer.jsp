@@ -211,7 +211,7 @@
                     $('#loginStatus').text("You are in...");
                     $('#loginStatus').css('color', 'green');
                 }
-                else{
+                else {
                     $('#loginStatus').text("OTP is invalid.");
                     $('#loginStatus').css('color', 'red');
                 }

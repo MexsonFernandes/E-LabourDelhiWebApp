@@ -72,12 +72,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="logout" target="_self" class="nav-link border border-light rounded waves-effect" target="_blank">
+                        <a href="logout" target="_self" onclick="logout();" class="nav-link border border-light rounded waves-effect" target="_blank">
                             <i class="fa fa-github mr-2"></i>LOGOUT
                         </a>
                     </li>
                 </ul>
-
+                <script>
+                    function onclick() {
+                        <%
+                            session.invalidate();
+                        %>
+                    }
+                </script>
             </div>
 
         </div>
@@ -93,7 +99,7 @@
 
         <div class="list-group list-group-flush">
             <a href="#" class="list-group-item active waves-effect">
-                <i class="fa fa-pie-chart mr-3"></i>Dashboard<%=request.getSession().getAttribute("username") %>
+                <i class="fa fa-pie-chart mr-3"></i>Dashboard<%=request.getSession().getAttribute("session") %>
             </a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
                 <i class="fa fa-user mr-3"></i>HOME</a>

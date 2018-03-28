@@ -12,6 +12,7 @@ import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 public class URLController {
     @RequestMapping("/logout")
     public String logout(){
+
         return "redirect:/";
     }
     @RequestMapping("/")
