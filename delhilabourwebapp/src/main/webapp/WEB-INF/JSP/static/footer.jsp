@@ -167,8 +167,12 @@
                 console.log(data)
 
                 if (data=="User Exist") {  //If mail was sent successfully, reset the form.
-                    $('#loginStatus').text("You have been successfully verified");
+                    $('#loginStatus').text("You have been successfully verified.");
                     $('#loginStatus').css('color', 'green');
+                    $('#loginButton').prop('onclick',null);
+                    document.getElementById('loginButton').innerText = "Go to Dashboard";
+                    $('#loginButtonA').attr('href','dashboard');
+
                 }else{
                     $('#loginStatus').text("We cannot find you!!!");
                     $('#loginStatus').css('color', 'red');

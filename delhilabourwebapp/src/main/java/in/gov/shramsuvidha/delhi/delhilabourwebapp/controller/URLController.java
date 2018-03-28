@@ -10,7 +10,10 @@ import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 
 @Controller
 public class URLController {
-
+    @RequestMapping("/logout")
+    public String logout(){
+        return "redirect:/";
+    }
     @RequestMapping("/")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");

@@ -198,6 +198,9 @@
             content: "\002b";
             color: #454444;
         }
+        body{
+            background: url("homepage/img/labourFaqs.jpg");
+        }
     </style>
 
 </section>

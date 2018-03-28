@@ -158,8 +158,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
-                           target="_blank">
+                        <a href="logout" target="_self" class="nav-link border border-light rounded waves-effect" target="_blank">
                             <i class="fa fa-github mr-2"></i>LOGOUT
                         </a>
                     </li>
