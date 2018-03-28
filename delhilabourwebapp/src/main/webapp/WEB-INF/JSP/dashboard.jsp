@@ -15,93 +15,7 @@
     <!-- Your custom styles (optional) -->
     <link href="dashboard/css/style.min.css" rel="stylesheet">
     <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
-    <style>
 
-
-        #wt {
-            width: 460px;
-            height: 60px;
-            background: #fff;
-            border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        #wt .wt0 {
-            width: 100px;
-            height: 60px;
-            background: #fff;
-            position: absolute;
-            left: 0;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-shadow: 15px 0 30px -5px rgba(0, 0, 0, 0.2);
-            box-shadow: 15px 0 30px -5px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            font-family: 'Roboto', sans-serif;
-            padding-left: 15px;
-            color: #5B8CFF;
-            opacity: 0;
-        }
-
-        #wt .wt0:first-child {
-            padding-left: 0;
-            z-index: 10;
-            opacity: 1;
-            width: 60px;
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-        }
-
-        #wt .wt0:after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 30px 0 30px 15px;
-            border-color: transparent transparent transparent #fff;
-            right: -15px;
-            top: 0;
-        }
-
-        #menu-button .bar {
-            width: 20px;
-            height: 2px;
-            background: #5B8CFF;
-            -webkit-transition: 0.3s linear;
-            transition: 0.3s linear;
-        }
-
-        #menu-button .bar:nth-child(2) { margin: 5px 0; }
-
-        #menu-button.active .bar:first-child {
-            -webkit-animation: barOne 0.4s ease-in-out forwards;
-            animation: barOne 0.4s ease-in-out forwards;
-        }
-
-
-        #menu-button.active .bar:nth-child(2) {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-        }
-
-        #menu-button.active .bar:last-child {
-            -webkit-animation: barTwo 0.4s ease-in-out forwards;
-            animation: barTwo 0.4s ease-in-out forwards;
-        }
-
-    </style>
 </head>
 
 <body class="grey lighten-3">
@@ -180,7 +94,7 @@
 
         <div class="list-group list-group-flush">
             <a href="#" class="list-group-item active waves-effect">
-                <i class="fa fa-pie-chart mr-3"></i>Dashboard
+                <i class="fa fa-pie-chart mr-3"></i>Dashboard<%=request.getSession().getAttribute("username") %>
             </a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
                 <i class="fa fa-user mr-3"></i>HOME</a>
@@ -212,23 +126,8 @@
                     <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Dashboard</a>
                 </h4>
 
+            </div>
 
-            </div>
-            <div class="wrapper">
-                <ul id="wt">
-                    <li class="wt0">
-                        <div id="menu-button">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </li>
-                    <li class="wt0">Act</li>
-                    <li class="wt0">Application</li>
-                    <li class="wt0">Payment</li>
-                    <li class="wt0">Contact</li>
-                </ul>
-            </div>
         </div>
     </div>
 
@@ -243,83 +142,127 @@
 
 
 
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="homepage/img/graph.png" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-</div>
 
 
+<!--Section: Testimonials v.1-->
+<section class="pb-3 text-center">
 
+    <!--Section heading-->
+    <h1 class="font-weight-bold h1 py-5">ANNUAL RETURN PORTAL</h1>
+    <!--Section description-->
+    <p class="grey-text pb-5">This is online portal for e-labour</p>
 
+    <div class="row">
 
-<div class="col-lg-4 col-md-12 mb-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
 
-    <!--Card-->
-    <div class="card">
+            <!--Card-->
+            <div class="card testimonial-card">
 
-        <!-- Card header -->
-        <div class="card-header">RETURN GENERATED</div>
+                <!--Background color-->
+                <div class="card-up info-color"></div>
 
-        <!--Card content-->
-        <div class="card-body">
+                <!--Avatar-->
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
+                </div>
 
-            <canvas id="lineChart"></canvas>
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="mt-1">
+                        <strong>RETURNS SUBMITTED </strong>
+                    </h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p class="dark-grey-text">HO RHE SUBMITT.</p>
+                </div>
 
-        </div>
-
-    </div>
-    <!--/.Card-->
-
-</div>
-
-
-
-
-
-<div class="col-lg-4 col-md-12 mb-4">
-
-    <!--Card-->
-    <div class="card">
-
-        <!-- Card header -->
-        <div class="card-header">RETURN INSPECTION</div>
-
-        <!--Card content-->
-        <div class="card-body">
-
-            <canvas id="lineChart"></canvas>
+            </div>
+            <!--Card-->
 
         </div>
+        <!--Grid column-->
 
-    </div>
-    <!--/.Card-->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
 
-</div>
+            <!--Card-->
+            <div class="card testimonial-card">
 
+                <!--Background color-->
+                <div class="card-up blue-gradient">
+                </div>
 
+                <!--Avatar-->
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid">
+                </div>
 
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="mt-1">
+                        <strong>GENERATED</strong>
+                    </h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p class="dark-grey-text">Neque cupiditate assumenda in maiores repudiandae mollitia architecto.</p>
+                </div>
 
-<div class="col-lg-4 col-md-12 mb-4">
-
-    <!--Card-->
-    <div class="card">
-
-        <!-- Card header -->
-        <div class="card-header">RETURN SUBMITTED</div>
-
-        <!--Card content-->
-        <div class="card-body">
-
-            <canvas id="lineChart"></canvas>
+            </div>
+            <!--Card-->
 
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+            <!--Card-->
+            <div class="card testimonial-card">
+
+                <!--Background color-->
+                <div class="card-up indigo"></div>
+
+                <!--Avatar-->
+                <div class="avatar mx-auto white">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid">
+                </div>
+
+                <div class="card-body">
+                    <!--Name-->
+                    <h4 class="mt-1">
+                        <strong>INSPECTION REPORT</strong>
+                    </h4>
+                    <hr>
+                    <!--Quotation-->
+                    <p class="dark-grey-text">Delectus impedit saepe officiis ab aliquam repellat, rem totam unde ducimus.</p>
+                </div>
+
+            </div>
+            <!--Card-->
+
+        </div>
+        <!--Grid column-->
 
     </div>
-    <!--/.Card-->
 
-</div>
+</section>
+<!--Section: Testimonials v.1-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -445,46 +388,6 @@
 <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-<script>
-    let menu = $('.wt0:first-child'),
-        menuButton = $('#menu-button'),
-        Act = $('.wt0:nth-child(2)'),
-        Application = $('.wt0:nth-child(3)'),
-        Payment = $('.wt0:nth-child(4)'),
-        contact = $('.wt0:nth-child(5)');
-
-    //Look at this mess, I'll have to refactor it
-    menu.on('click',() => {
-        menuButton.toggleClass('active');
-    if(menuButton.hasClass('active')){
-        Act.animate({'left':'110px','opacity':'1','z-index':'8'},500);
-        Application.animate({'left':'210px','opacity':'1','z-index':'6'},500);
-        Payment.animate({'left':'310px','opacity':'1','z-index':'4'},500);
-        contact.animate({'left':'410px','opacity':'1','z-index':'2'},500);
-    }
-    else {
-        Act.animate({'left':'0','opacity':'0'},500);
-        Application.animate({'left':'0','opacity':'0'},500);
-        Payment.animate({'left':'0','opacity':'0'},500);
-        contact.animate({'left':'0','opacity':'0'},500);
-    }
-    });
-</script>
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
 </script>
 
 
