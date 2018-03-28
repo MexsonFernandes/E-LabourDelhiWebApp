@@ -32,19 +32,45 @@ public class HibernateUtil
     }
 
 
-    public void register(RegisterPOJO obj)
+    public String register(RegisterPOJO obj)
     {
         Session session = sf.openSession();
         session.beginTransaction();
         System.out.println("RegisterForm is being processed");
-        session.save(obj);
-        session.getTransaction().commit();
-        session.close();
+        Query queryUser=session.createQuery("from RegisterPOJO where unm = ? ");
+        queryUser.setParameter(0,obj.getUnm());
+        List list=queryUser.list();
+        System.out.println(list);
+        try{
+        if(!list.isEmpty()) {
+            session.getTransaction().commit();
+            session.close();
+            return "Username Exist";
+        }
+        Query query=session.createQuery("from RegisterPOJO where email = ? or number = ?");
+        query.setParameter(0,obj.getEmail());
+            query.setParameter(1,obj.getNumber());
+        List listExist=query.list();
+        if(!listExist.isEmpty()) {
+            session.getTransaction().commit();
+            session.close();
+            return "exist";
+        }
+            //save data if user doesn't exist
+            //call to send message to mobile and email to user.
+            session.save(obj);
+            session.getTransaction().commit();
+            session.close();
+            return "Registered";
+
+        }catch (Exception e){
+            return "";
+        }
     }
 
     public String verify(String data)
     {
-        Session session = sf.openSession();
+
         Session sess=sf.openSession();
         sess.beginTransaction();
         System.out.println("sanchit      "+data);

@@ -45,7 +45,7 @@
     <div class="row mt-3">
         <div class="col-md-12 text-center mb-r">
             <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s" style="font-weight: 500; visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">Oops! This obviously isn't a page you were looking for.</h2>
-            <p class="wow fadeIn" data-wow-delay="0.4s" style="font-size: 1.25rem; visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">Please, let us know how you got here, and use <a href="/#contactUs">contact us</a> form to help us get back to safe harbor.</p>
+            <p class="wow fadeIn" data-wow-delay="0.4s" style="font-size: 1.25rem; visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">Please, let us know how you got here, and use <a href="/#contact">contact us</a> form to help us get back to safe harbor.</p>
  </div>
     </div>
     <!-- /.Second row -->

@@ -138,30 +138,28 @@
               <div class="modal-body">
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-user-circle-o prefix"></i>
-                      <input type="text" name="rUsername" id="modalLRInput19" class="form-control form-control-sm validate">
-                      <label data-error="wrong" data-success="right" for="modalLRInput19">Username</label>
+                      <input type="text" name="rUsername" required="required" id="rUsername" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="rUsername">Username</label>
                   </div>
                   <div class="md-form form-sm mb-5">
                       <i class="fa fa-address-book prefix"></i>
-                      <input type="text" name="rFullname" id="modalLRInput20" class="form-control form-control-sm validate">
-                      <label data-error="wrong" data-success="right" for="modalLRInput20">Full Name</label>
+                      <input type="text" name="rFullName" id="rFullName" required="required" class="form-control form-control-sm validate">
+                      <label data-error="wrong" data-success="right" for="rFullName">Full Name</label>
                   </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-envelope prefix"></i>
-                  <input type="email" name="rEmail" id="modalLRInput12" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput12">Email ID</label>
+                  <input type="text" name="rEmail" id="rEmail" required="required" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="rEmail">Email ID</label>
                 </div>
                 <div class="md-form form-sm mb-5">
                   <i class="fa fa-phone prefix"></i>
-                  <input type="number" name="rNumber" id="modalLRInput16" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput16">Phone No</label>
-                </div>
-                <div class="md-form form-sm mb-5">
-                  <i class="fa fa-lock prefix"></i>
-                  <input type="number" id="modalLRInput13" name="rOTP" class="form-control form-control-sm validate" disabled>
-                  <label data-error="wrong" data-success="right" for="modalLRInput13">OTP</label>
+                  <input type="text" name="rNumber" id="rNumber" required="required" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="rNumber">Phone No</label>
                 </div>
 
+                  <div id="registerStatus" style="color:red;">
+
+                  </div>
 
                 <div class="text-center form-sm mt-2">
                   <button class="btn btn-info" onClick="sendRegister();">Sign up <i class="fa fa-sign-in ml-1"></i></button>
@@ -582,7 +580,7 @@
 
       <!--Section: More-->
       <section id="contact">
-
+            <div style="height: 50px;"></div>
         <h2 class="my-5 h3 text-center" id="changeFormText">CONTACT US</h2>
 
           <p class="section-description">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
@@ -849,6 +847,7 @@
             $(document.getElementById("lData")).addClass("invalid");
             return false;
         }
+        $('#loginStatus').text("Sending...");
         formData = {
             'lData' : $('input[name=lData]').val(),
         };
@@ -863,71 +862,90 @@
 
                 if (data=="User Exist") {  //If mail was sent successfully, reset the form.
                     $('#loginStatus').text("You have been successfully verified");
+                    $('#loginStatus').css('color', 'green');
                 }else{
                     $('#loginStatus').text("We cannot find you!!!");
+                    $('#loginStatus').css('color', 'red');
                 }
             },
             error: function(xhr, status, error) {
                 //alert(xhr.responseText);
                 $('#loginStatus').text("There was some error while sending your message to server.");
+                $('#loginStatus').css('color', 'red');
             }
         });
     }
     function sendRegister() {
-        var name =  document.getElementById('cName').value;
+        var name =  document.getElementById('rUsername').value;
         if (name.trim() == "") {
-            document.getElementById('status').innerHTML = "Name cannot be empty";
+            $(document.getElementById("rUsername")).addClass("invalid");
             return false;
         }
-        var email =  document.getElementById('cEmail').value;
+        var fullname =  document.getElementById('rFullName').value;
+        if (fullname.trim() == "") {
+            $(document.getElementById("rFullName")).addClass("invalid");
+            return false;
+        }
+        var email =  document.getElementById('rEmail').value;
         if (email.trim() == "") {
-            document.getElementById('status').innerHTML = "Email cannot be empty";
+            $(document.getElementById("rEmail")).addClass("invalid");
             return false;
         } else {
             var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if(!re.test(email)){
-                document.getElementById('status').innerHTML = "Email format invalid";
+                $(document.getElementById("rEmail")).addClass("invalid");
                 return false;
             }
         }
-        var subject =  document.getElementById('cSubject').value;
-        if (subject.trim() == "") {
-            document.getElementById('status').innerHTML = "Subject cannot be empty";
+
+        var phone =  document.getElementById('rNumber').value;
+        if (phone.trim() == "") {
+            $(document.getElementById("rNumber")).addClass("invalid");
+            return false;
+        }else if(phone.length != 10){
+            $(document.getElementById("rNumber")).addClass("invalid");
             return false;
         }
-        var message =  document.getElementById('cMessage').value;
-        if (message.trim() == "") {
-            document.getElementById('status').innerHTML = "Message cannot be empty";
+        else if(isNaN(phone)==true){
+            $(document.getElementById("rNumber")).addClass("invalid");
             return false;
         }
-        document.getElementById('status').innerHTML = "Sending...";
+        $('#registerStatus').text("Sending...");
         formData = {
-            'name'     : $('input[name=cName]').val(),
-            'email'    : $('input[name=cEmail]').val(),
-            'subject'  : $('input[name=cSubject]').val(),
-            'message'  : $('textarea[name=cMessage]').val()
+            'rUsername'     : $('input[name=rUsername]').val(),
+            'rEmail'    : $('input[name=rEmail]').val(),
+            'rFullName'  : $('input[name=rFullName]').val(),
+            'rNumber'  : $('input[name=rNumber]').val()
         };
+        console.log(formData.String);
 
 
         $.ajax({
-            url : "/contactUs",
+            url : "/ServletRegister",
             type: "POST",
             data : formData,
             success: function(data)
             {
                 console.log(data)
                 $('#status').text(data.message);
-                if (data=="Data Saved") {  //If mail was sent successfully, reset the form.
-                    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-                    $('#resultContainer').text("Your response has been recorded on our system.");
-                    $('#status').text("");
+                if (data=="Registered") {  //If mail was sent successfully, reset the form.
+                    $('#registerStatus').text("Successfull registered, Mail and Message sent. You can login now.");
+                    $('#registerStatus').css('color', 'green');
+                }else if (data =="Username Exist"){
+                    $('#registerStatus').text("User Name already exist in our system.");
+                    $('#registerStatus').css('color', 'red');
+                }else if (data =="exist"){
+                    $('#registerStatus').text("User already exist in our system.");
+                    $('#registerStatus').css('color', 'red');
                 }else{
-                    $('#status').text("There was some error while sending your message to server.");
+                    $('#registerStatus').text("There was some error in Server. Try again.");
+                    $('#registerStatus').css('color', 'red');
                 }
             },
             error: function(xhr, status, error) {
                 //alert(xhr.responseText);
-                $('#status').text("There was some error while sending your message to server.");
+                $('#registerStatus').text("There was some error while sending your message to server.");
+                $('#registerStatus').css('color', 'red');
             }
         });
     }

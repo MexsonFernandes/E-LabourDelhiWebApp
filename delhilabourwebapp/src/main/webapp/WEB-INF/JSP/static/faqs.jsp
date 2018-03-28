@@ -265,7 +265,7 @@
                 </div>
                 <div id="collapseh" class="panel-collapse collapse">
                     <div class="panel-body">
-                        Yes, the third party can verify the certificate by visiting the department's website www.labour.delhi.gov.in and enter the details of license at “Verify License Details”
+                        Yes, the third party can verify the certificate by visiting the department's website www.labour.delhi.gov.in and enter the details of license at "Verify License Details".
                     </div>
                 </div>
             </div>
@@ -352,7 +352,7 @@
 
                                 <li>Applicant has to fill Form 1 CESS rules.</li><br/>
 
-                                Documents<br/>
+                                <u><b>Documents</b></u><br/>
 
                                 <li>Project report
                                 <li>Article of association/ MOA/ Partnership deed</li>
