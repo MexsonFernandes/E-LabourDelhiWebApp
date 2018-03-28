@@ -56,6 +56,8 @@ public class URLController {
     public String career(){
         return "static/career";
     }
+
+
 }
 
 
