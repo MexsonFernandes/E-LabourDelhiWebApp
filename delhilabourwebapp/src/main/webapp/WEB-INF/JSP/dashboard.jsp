@@ -180,7 +180,7 @@
 
         <div class="list-group list-group-flush">
             <a href="#" class="list-group-item active waves-effect">
-                <i class="fa fa-pie-chart mr-3"></i>Dashboard
+                <i class="fa fa-pie-chart mr-3"></i>Dashboard<%=request.getSession().getAttribute("username") %>
             </a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
                 <i class="fa fa-user mr-3"></i>HOME</a>
