@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+
 @Configuration
 @EnableWebMvc
 @ComponentScan
@@ -21,6 +22,5 @@ public class WebConfig extends WebMvcAutoConfiguration {
         resolver.setExposeContextBeansAsAttributes(true);
         return resolver;
     }
-
 
 }
