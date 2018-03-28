@@ -1,6 +1,6 @@
 <%@include file="header.jsp"%>
 
-
+<div style="height:50px;"></div>
 <main>
     <div class="container">
 
@@ -126,5 +126,13 @@
     </div>
 </main>
 
-
+<style>
+    body{
+        background:url("homepage/img/careerbackg.jpg") no-repeat center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
 <%@include file="footer.jsp"%>
