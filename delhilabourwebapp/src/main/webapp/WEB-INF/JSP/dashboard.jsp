@@ -243,127 +243,83 @@
 
 
 
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="homepage/img/graph.png" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
 
 
-<!--Section: Testimonials v.1-->
-<section class="pb-3 text-center">
 
-    <!--Section heading-->
-    <h1 class="font-weight-bold h1 py-5">ANNUAL RETURN PORTAL</h1>
-    <!--Section description-->
-    <p class="grey-text pb-5">This is online portal for e-labour</p>
 
-    <div class="row">
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
+<div class="col-lg-4 col-md-12 mb-4">
 
-            <!--Card-->
-            <div class="card testimonial-card">
+    <!--Card-->
+    <div class="card">
 
-                <!--Background color-->
-                <div class="card-up info-color"></div>
+        <!-- Card header -->
+        <div class="card-header">RETURN GENERATED</div>
 
-                <!--Avatar-->
-                <div class="avatar mx-auto white">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
-                </div>
+        <!--Card content-->
+        <div class="card-body">
 
-                <div class="card-body">
-                    <!--Name-->
-                    <h4 class="mt-1">
-                        <strong>RETURNS SUBMITTED </strong>
-                    </h4>
-                    <hr>
-                    <!--Quotation-->
-                    <p class="dark-grey-text">HO RHE SUBMITT.</p>
-                </div>
-
-            </div>
-            <!--Card-->
+            <canvas id="lineChart"></canvas>
 
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-
-            <!--Card-->
-            <div class="card testimonial-card">
-
-                <!--Background color-->
-                <div class="card-up blue-gradient">
-                </div>
-
-                <!--Avatar-->
-                <div class="avatar mx-auto white">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid">
-                </div>
-
-                <div class="card-body">
-                    <!--Name-->
-                    <h4 class="mt-1">
-                        <strong>GENERATED</strong>
-                    </h4>
-                    <hr>
-                    <!--Quotation-->
-                    <p class="dark-grey-text">Neque cupiditate assumenda in maiores repudiandae mollitia architecto.</p>
-                </div>
-
-            </div>
-            <!--Card-->
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-
-            <!--Card-->
-            <div class="card testimonial-card">
-
-                <!--Background color-->
-                <div class="card-up indigo"></div>
-
-                <!--Avatar-->
-                <div class="avatar mx-auto white">
-                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid">
-                </div>
-
-                <div class="card-body">
-                    <!--Name-->
-                    <h4 class="mt-1">
-                        <strong>INSPECTION REPORT</strong>
-                    </h4>
-                    <hr>
-                    <!--Quotation-->
-                    <p class="dark-grey-text">Delectus impedit saepe officiis ab aliquam repellat, rem totam unde ducimus.</p>
-                </div>
-
-            </div>
-            <!--Card-->
-
-        </div>
-        <!--Grid column-->
 
     </div>
+    <!--/.Card-->
 
-</section>
-<!--Section: Testimonials v.1-->
-
-
+</div>
 
 
 
 
 
+<div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Card-->
+    <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header">RETURN INSPECTION</div>
+
+        <!--Card content-->
+        <div class="card-body">
+
+            <canvas id="lineChart"></canvas>
+
+        </div>
+
+    </div>
+    <!--/.Card-->
+
+</div>
 
 
 
 
+<div class="col-lg-4 col-md-12 mb-4">
 
+    <!--Card-->
+    <div class="card">
 
+        <!-- Card header -->
+        <div class="card-header">RETURN SUBMITTED</div>
 
+        <!--Card content-->
+        <div class="card-body">
+
+            <canvas id="lineChart"></canvas>
+
+        </div>
+
+    </div>
+    <!--/.Card-->
+
+</div>
 
 
 
@@ -492,12 +448,12 @@
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 <script>
-    let menu = $('li:first-child'),
+    let menu = $('.wt0:first-child'),
         menuButton = $('#menu-button'),
-        Act = $('li:nth-child(2)'),
-        Application = $('li:nth-child(3)'),
-        Payment = $('li:nth-child(4)'),
-        contact = $('li:nth-child(5)');
+        Act = $('.wt0:nth-child(2)'),
+        Application = $('.wt0:nth-child(3)'),
+        Payment = $('.wt0:nth-child(4)'),
+        contact = $('.wt0:nth-child(5)');
 
     //Look at this mess, I'll have to refactor it
     menu.on('click',() => {
