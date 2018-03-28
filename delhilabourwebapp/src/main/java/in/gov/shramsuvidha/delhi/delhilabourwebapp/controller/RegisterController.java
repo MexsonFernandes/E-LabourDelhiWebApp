@@ -16,6 +16,7 @@ public class RegisterController{
         try{
         RegisterPOJO obj = new RegisterPOJO(unm, email, fullname, number);
         HibernateUtil hu = new HibernateUtil();
+
         return hu.register(obj);
         }
         catch (Exception e){

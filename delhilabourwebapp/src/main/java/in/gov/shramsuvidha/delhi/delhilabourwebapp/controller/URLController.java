@@ -10,13 +10,17 @@ import java.util.Map;
 
 @Controller
 public class URLController {
+    @RequestMapping("/logout")
+    public String logout(){
 
+        return "redirect:/";
+    }
     @RequestMapping("/")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
         EmailService send = new EmailService();
         try {
-            send.sendOtpMessage("robomex2020@gmail.com","Test","test");
+            //send.SendMail("robomex2020@gmail.com","Test","test");
         } catch (Exception e) {
             e.printStackTrace();
         }

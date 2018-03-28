@@ -120,7 +120,9 @@
 
                             </div>
                             <div class="text-center mt-2">
-                                <button class="btn btn-info" onClick="sendLogin();">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                <a id="loginButtonA" target="_self">
+                                    <button class="btn btn-info" onClick="sendLogin();" id="loginButton">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                </a>
                             </div>
                         </div>
 
@@ -156,7 +158,6 @@
                                 <input type="text" name="rNumber" id="rNumber" required="required" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="rNumber">Phone No</label>
                             </div>
-
                             <div id="registerStatus" style="color:red;">
 
                             </div>

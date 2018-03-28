@@ -1,5 +1,6 @@
 <%@include file="header.jsp"%>
 <!--Main layout-->
+<div style="height:50px;"></div>
 <main>
     <div class="container">
 
