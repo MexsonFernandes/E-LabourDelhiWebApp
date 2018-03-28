@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-//import in.gov.shramsuvidha.delhi.delhilabourwebapp.EmailServiceImpl;
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 
 @Controller
 public class URLController {
@@ -14,9 +14,9 @@ public class URLController {
     @RequestMapping("/")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
-        //EmailServiceImpl send = new EmailServiceImpl();
+        EmailService send = new EmailService();
         try {
-            //send.sendSimpleMessage("robomex2020@gmail.com","test","test");
+            send.sendOtpMessage("robomex2020@gmail.com","Test","test");
         } catch (Exception e) {
             e.printStackTrace();
         }
