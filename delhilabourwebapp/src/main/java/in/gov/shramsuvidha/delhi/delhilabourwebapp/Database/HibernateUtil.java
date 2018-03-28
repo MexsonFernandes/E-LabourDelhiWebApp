@@ -11,6 +11,8 @@ import java.util.List;
 
 public class HibernateUtil
 {
+    //Ignore this!!!It is used as of now. But will be changed to settings from application.properties.
+    @Deprecated
     SessionFactory sf = new Configuration()
             .configure("hibernate.cfg.xml")
             .buildSessionFactory();
@@ -40,7 +42,7 @@ public class HibernateUtil
         session.close();
     }
 
-    public void verify(String data)
+    public String verify(String data)
     {
         Session session = sf.openSession();
         Session sess=sf.openSession();
@@ -49,18 +51,18 @@ public class HibernateUtil
         Query query=sess.createQuery("from RegisterPOJO where email = ? ");
         query.setParameter(0,data);
         List list=query.list();
-
+        sess.getTransaction().commit();
+        sess.close();
          if(!list.isEmpty())
          {
-             //dashboard
+             return "User Exist";
         }
         else
         {
 
-            //error page
+            return "";
         }
 
-        sess.getTransaction().commit();
-        sess.close();
+
     }
 }
