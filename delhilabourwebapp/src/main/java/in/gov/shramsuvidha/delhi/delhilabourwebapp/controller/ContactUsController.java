@@ -16,8 +16,11 @@ public class ContactUsController {
             System.out.println("" + email + " test:" + message);
             ContactUs obj = new ContactUs(name,sub, email, message);
             //call hibernate to save contact form data
+            System.out.println("" + email + " test:" + message);
             HibernateUtil hu = new HibernateUtil();
+            System.out.println("" + email + " test:" + message);
             hu.contactForm(obj);
+            System.out.println("" + email + " test:" + message);
             return "Data Saved";
         } catch (Exception e){
             return "";

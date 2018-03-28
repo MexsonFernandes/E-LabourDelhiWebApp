@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class RegisterController{
 
     @RequestMapping(value = "/ServletRegister", method = RequestMethod.POST)
-    public void Register(@RequestParam("username") String unm,@RequestParam("email") String email,@RequestParam("number") int number,@RequestParam("fullname") String fullname) {
+    public void Register(@RequestParam("username") String unm,@RequestParam("email") String email,@RequestParam("number") String number,@RequestParam("fullname") String fullname) {
 
         RegisterPOJO obj = new RegisterPOJO(unm, email, fullname, number);
         HibernateUtil hu = new HibernateUtil();
