@@ -1,4 +1,4 @@
-<%@include file="header.jsp"%>
+<%@include file="static/header.jsp"%>
   <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -502,4 +502,4 @@
     </div>
   </main>
   <!--Main layout-->
-<%@include file="footer.jsp"%>
+<%@include file="static/footer.jsp"%>
