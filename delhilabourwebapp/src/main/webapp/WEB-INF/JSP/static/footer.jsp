@@ -166,12 +166,15 @@
             {
                 console.log(data)
 
-                if (data=="User Exist") {  //If mail was sent successfully, reset the form.
-                    $('#loginStatus').text("You have been successfully verified.");
+                if (data=="OTP sent") {  //If mail was sent successfully, reset the form.
+                    $('#loginStatus').text("OTP has been sent successfully.");
                     $('#loginStatus').css('color', 'green');
                     $('#loginButton').prop('onclick',null);
-                    document.getElementById('loginButton').innerText = "Go to Dashboard";
-                    $('#loginButtonA').attr('href','dashboard');
+                    $('#lOTP').prop("disabled",false);
+                    $('#loginButton').on('click',checkOTP);
+                    document.getElementById('loginButton').onclick = checkOTP;
+                    //document.getElementById('loginButton').innerText = "Go to Dashboard";
+                    //$('#loginButtonA').attr('href','login');
 
                 }else{
                     $('#loginStatus').text("We cannot find you!!!");
@@ -185,6 +188,52 @@
             }
         });
     }
+    function checkOTP(){
+        $('#loginStatus').text("Validating OTP");
+        $('#loginStatus').css('color', 'red');
+        formData = {
+            'username'     : $('input[name=lData]').val(),
+            'otp'    : $('input[name=lOTP]').val(),
+        };
+        console.log(formData.String);
+        $.ajax({
+            url : "/login",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+                if (data=="dashboard") {  //If mail was sent successfully, reset the form.
+
+                    $('#loginButton').prop('onclick',null);
+                    document.getElementById('loginButton').innerText = "Go to Dashboard";
+                    $('#loginButtonA').attr('href','dashboard');
+                    $('#loginStatus').text("You are in...");
+                    $('#loginStatus').css('color', 'green');
+                }
+                else{
+                    $('#loginStatus').text("OTP is invalid.");
+                    $('#loginStatus').css('color', 'red');
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#loginStatus').text("There was some error while sending your message to server.");
+                $('#loginStatus').css('color', 'red');
+            }
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+
     function sendRegister() {
         var name =  document.getElementById('rUsername').value;
         if (name.trim() == "") {
@@ -228,8 +277,6 @@
             'rNumber'  : $('input[name=rNumber]').val()
         };
         console.log(formData.String);
-
-
         $.ajax({
             url : "/ServletRegister",
             type: "POST",
@@ -239,7 +286,7 @@
                 console.log(data)
                 $('#status').text(data.message);
                 if (data=="Registered") {  //If mail was sent successfully, reset the form.
-                    $('#registerStatus').text("Successfull registered, Mail and Message sent. You can login now.");
+                    $('#registerStatus').text("Successfully registered, Mail/Message sent. You can login now.");
                     $('#registerStatus').css('color', 'green');
                 }else if (data =="Username Exist"){
                     $('#registerStatus').text("User Name already exist in our system.");
