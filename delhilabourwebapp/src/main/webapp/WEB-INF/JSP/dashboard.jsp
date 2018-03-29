@@ -133,8 +133,7 @@
                     <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Dashboard</a>
                 </h4>
 
-            </div>
-
+                <jsp:include page="static/dashboard_forms.jsp"></jsp:include>
         </div>
     </div>
 
@@ -142,6 +141,7 @@
 
     </main>
 <!--Main layout-->
+
 
 
 
