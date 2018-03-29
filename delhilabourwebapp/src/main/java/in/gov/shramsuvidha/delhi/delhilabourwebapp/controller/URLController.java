@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
@@ -32,13 +33,14 @@ public class URLController {
 
     @RequestMapping(value = "/dashboard")
     public String dashboard(HttpServletRequest request){
-        HttpSession session =request.getSession();
-        System.out.println("Session mexson" + session);
-        if (session.equals("null")){
-            return "redirect:error";
-        }
-        else
-            return "dashboard";
+        //HttpSession session = (HttpSession) request.getUserPrincipal();
+        //Cookie[] s = request.getCookies();
+        //System.out.println("Session mexson" + session + " cokk" +s.toString());
+        //if (session.equals("null")){
+        //    return "redirect:error";
+        //}
+        //else
+               return "dashboard";
     }
 
     @RequestMapping(value = "/ServletRegister", method = RequestMethod.GET)
