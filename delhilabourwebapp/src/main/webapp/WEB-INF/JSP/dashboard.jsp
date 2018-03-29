@@ -1,9 +1,9 @@
-<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>
-<script>
-    if(document.getElementById('auth').innerText == "null"){
-        document.location.href = "/";
-    }
-</script>
+<%--<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>--%>
+<%--<script>--%>
+    <%--if(document.getElementById('auth').innerText == "null"){--%>
+        <%--document.location.href = "/";--%>
+    <%--}--%>
+<%--</script>--%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>E-Labour Delhi</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -20,7 +20,7 @@
     <link href="dashboard/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="dashboard/css/style.min.css" rel="stylesheet">
-    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
+    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">+++++
 </head>
 
 <body class="fixed-sn navy-blue-skin">
@@ -49,18 +49,23 @@
                 <!-- Left -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link waves-effect" href="#">Home
-                            <span class="sr-only">(current)</span>
+                        <a class="nav-link waves-effect" href="/">Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+                        <a class="nav-link" href="/#aboutus">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+                        <a class="nav-link" href="faqs">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link waves-effect" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
+                        <a class="nav-link" href="help">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
                     </li>
                 </ul>
 
@@ -124,9 +129,9 @@
             <div class="card-body d-sm-flex justify-content-between">
 
                 <h4 class="mb-2 mb-sm-0 pt-1">
-                    <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Home Page</a>
+                    <a href="/" target="_self">Home Page</a>
                     <span>/</span>
-                    <span>Dashboard</span>
+                    <span id="topbar">Dashboard</span>
                 </h4>
 
                 <form class="d-flex justify-content-center">
@@ -143,204 +148,6 @@
         </div>
         <!-- Heading -->
 
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-            <!--Grid column-->
-            <div class="col-md-9 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="myChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-3 mb-4">
-
-                <!--Card-->
-                <div class="card mb-4">
-
-                    <!-- Card header -->
-                    <div class="card-header text-center">
-                        Pie chart
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="pieChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-                <!--Card-->
-                <div class="card mb-4">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!-- List group links -->
-                        <div class="list-group list-group-flush">
-                            <a class="list-group-item list-group-item-action waves-effect">Sales
-                                <span class="badge badge-success badge-pill pull-right">22%
-                                        <i class="fa fa-arrow-up ml-1"></i>
-                                    </span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Traffic
-                                <span class="badge badge-danger badge-pill pull-right">5%
-                                        <i class="fa fa-arrow-down ml-1"></i>
-                                    </span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Orders
-                                <span class="badge badge-primary badge-pill pull-right">14</span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Issues
-                                <span class="badge badge-primary badge-pill pull-right">123</span>
-                            </a>
-                            <a class="list-group-item list-group-item-action waves-effect">Messages
-                                <span class="badge badge-primary badge-pill pull-right">8</span>
-                            </a>
-                        </div>
-                        <!-- List group links -->
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!-- Table  -->
-                        <table class="table table-hover">
-                            <!-- Table head -->
-                            <thead class="blue-grey lighten-4">
-                            <tr>
-                                <th>#</th>
-                                <th>Lorem</th>
-                                <th>Ipsum</th>
-                                <th>Dolor</th>
-                            </tr>
-                            </thead>
-                            <!-- Table head -->
-
-                            <!-- Table body -->
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td>Cell 6</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Cell 7</td>
-                                <td>Cell 8</td>
-                                <td>Cell 9</td>
-                            </tr>
-                            </tbody>
-                            <!-- Table body -->
-                        </table>
-                        <!-- Table  -->
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <!-- Table  -->
-                        <table class="table table-hover">
-                            <!-- Table head -->
-                            <thead class="blue lighten-4">
-                            <tr>
-                                <th>#</th>
-                                <th>Lorem</th>
-                                <th>Ipsum</th>
-                                <th>Dolor</th>
-                            </tr>
-                            </thead>
-                            <!-- Table head -->
-
-                            <!-- Table body -->
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td>Cell 6</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Cell 7</td>
-                                <td>Cell 8</td>
-                                <td>Cell 9</td>
-                            </tr>
-                            </tbody>
-                            <!-- Table body -->
-                        </table>
-                        <!-- Table  -->
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-        </div>
         <!--Grid row-->
 
         <!--Grid row-->
@@ -1029,7 +836,6 @@
                                     <!--Header-->
                                     <div class="modal-header">
                                         <p class="heading lead">Modal Danger</p>
-
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true" class="white-text">&times;</span>
                                         </button>
@@ -1176,61 +982,63 @@
 <!--Main layout-->
 
 <!--Footer-->
-<footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
-
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    <hr class="my-4">
     <!--Call to action-->
-    <div class="pt-4">
-        <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
-            <i class="fa fa-download ml-2"></i>
-        </a>
-        <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
-            <i class="fa fa-graduation-cap ml-2"></i>
-        </a>
-    </div>
-    <!--/.Call to action-->
+    <div class="service-footer-wrapper">
+        <ul class="sub-sites" style="list-style: none">
+            <li style="display: inline;"><a title="Swachhbharat" alt="Swachhbharat" href="https://swachhbharat.mygov.in/" target="_blank">
+                <img title="Swachhbharat" alt="Swachhbharat" src="https://www.mygov.in/footer_service/images/swachh-bharat.png">
+            </a></li>
+            <li style="display: inline;"><a title="E-Greetings" alt="E-Greetings" href="https://egreetings.gov.in" target="_blank">
+                <img title="E-Greetings" alt="E-Greetings" src="https://www.mygov.in/footer_service/images/e-greating.png"></a>
+            </li>
 
+            <li style="display: inline;"><a title="MyGov Auth" alt="MyGov Auth" href="https://auth.mygov.in" target="_blank">
+                <img title="MyGov Auth" alt="MyGov Auth" src="https://www.mygov.in/footer_service/images/mygov_auth.png"></a></li>
+            <li style="display: inline;"><a title="MyGov Blog" alt="MyGov Blog" href="https://blog.mygov.in" target="_blank">
+                <img alt="" src="https://www.mygov.in/footer_service/images/blog-logo.png"></a></li>
+            <li style="display: inline;"><a title="MyGov Innovate" alt="MyGov Innovate" href="https://innovate.mygov.in" target="_blank">
+                <img title="MyGov Innovate" alt="MyGov Innovate" src="https://www.mygov.in/footer_service/images/innovation-logo.png"></a></li>
+            <li style="display: inline;"><a title="MyGov Quiz" alt="MyGov Quiz" href="https://quiz.mygov.in" target="_blank">
+                <img title="MyGov Quiz" alt="MyGov Quiz" src="https://www.mygov.in/footer_service/images/mygov_quiz.png"></a></li>
+            <li style="display: inline;"><a title="Transforming India" alt="Transforming India" href="https://transformingindia.mygov.in" target="_blank">
+                <img title="Transforming India" alt="Transforming India" src="https://www.mygov.in/footer_service/images/Transforming-india-logo.png"></a></li>
+            <li style="display: inline;"><a title="MyGov Pledge" alt="MyGov Pledge" href="https://pledge.mygov.in" target="_blank">
+                <img title="MyGov Pledge" alt="MyGov Pledge" src="https://www.mygov.in/footer_service/images/mygov_pledge.png"></a></li>
+        </ul>  <div class="footer-logo">
+
+        <ul style="list-style: none;">
+            <li style="display: inline;"><a target="_blank" href="http://www.digitalindia.gov.in">
+                <img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="https://www.mygov.in/footer_service/images/digital-india-logo.png"></a></li>
+            <li style="display: inline;"><a target="_blank" href="http://data.gov.in">
+                <img title="Data Portal (External Site that opens in a new window)" alt="Data Portal" src="https://www.mygov.in/footer_service/images/data-gov-logo.png"></a></li>
+            <li style="display: inline;"><a target="_blank" href="https://india.gov.in"><img title="National Portal of India (External Site that opens in a new window)" alt="National Portal of India" src="https://www.mygov.in/footer_service/images/india-gov-logo.png"></a></li>
+            <li style="display: inline;"><a target="_blank" href="https://www.mygov.in"><img title="MyGov (External Site that opens in a new window)" alt="MyGov" src="https://www.mygov.in/footer_service/images/mygov-footer-logo.png"></a></li>
+            <li style="display: inline;"><a title="MeitY (External Site that opens in a new window)" alt="MeitY" target="_blank" href="http://meity.gov.in/"><img title="Meity(External Site that opens in a new window)" alt="Meity" src="https://www.mygov.in/footer_service/images/Meity_logo.png"></a></li>
+            <li style="display: inline;"><a target="_blank" href="http://pmindia.gov.in"><img title="PMINDIA(External Site that opens in a new window)" alt="PMINDIA" src="https://www.mygov.in/footer_service/images/pm-india-logo.png"></a></li></ul>  </div></div>
     <hr class="my-4">
 
     <!-- Social icons -->
     <div class="pb-4">
-        <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-            <i class="fa fa-facebook mr-3"></i>
+
+        <!--Facebook-->
+        <a href="https://www.facebook.com/Labour-Department-of-Government-of-National-Capital-Territory-of-Delhi-1793622977627039/" target="_blank">
+            <button type="button" href="" class="btn btn-fb facebook"><i class="fa fa-facebook pr-1"></i> Facebook</button> </a>
+        <!--Twitter-->
+        <a href="https://twitter.com/labour_gnctd" target="_blank">
+            <button type="button" class="btn btn-tw twitter"><i class="fa fa-twitter pr-1"></i> Twitter</button>
         </a>
 
-        <a href="https://twitter.com/MDBootstrap" target="_blank">
-            <i class="fa fa-twitter mr-3"></i>
-        </a>
 
-        <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-            <i class="fa fa-youtube mr-3"></i>
-        </a>
-
-        <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-            <i class="fa fa-google-plus mr-3"></i>
-        </a>
-
-        <a href="https://dribbble.com/mdbootstrap" target="_blank">
-            <i class="fa fa-dribbble mr-3"></i>
-        </a>
-
-        <a href="https://pinterest.com/mdbootstrap" target="_blank">
-            <i class="fa fa-pinterest mr-3"></i>
-        </a>
-
-        <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-            <i class="fa fa-github mr-3"></i>
-        </a>
-
-        <a href="http://codepen.io/mdbootstrap/" target="_blank">
-            <i class="fa fa-codepen mr-3"></i>
-        </a>
     </div>
     <!-- Social icons -->
 
+    <!--/.Social buttons-->
     <!--Copyright-->
     <div class="footer-copyright py-3">
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+        &copy; 2018 Copyright:
+        <a href="/"> Delhi Labour Website </a>
     </div>
     <!--/.Copyright-->
 
@@ -1239,196 +1047,274 @@
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="dashboard/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="homepage/js/jquery-3.2.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="dashboard/js/popper.min.js"></script>
+<script type="text/javascript" src="homepage/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="dashboard/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="homepage/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="dashboard/js/mdb.min.js"></script>
+<script type="text/javascript" src="homepage/js/mdb.min.js"></script>
 <!-- Initializations -->
 <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-</script>
 
-<!-- Charts -->
-<script>
-
-    // Line
-    var ctx = document.getElementById("myChart").getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
+    function validateForm() {
+        var name =  document.getElementById('cName').value;
+        if (name.trim() == "") {
+            document.getElementById('status').innerHTML = "Name cannot be empty";
+            return false;
+        }
+        var email =  document.getElementById('cEmail').value;
+        if (email.trim() == "") {
+            document.getElementById('status').innerHTML = "Email cannot be empty";
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                document.getElementById('status').innerHTML = "Email format invalid";
+                return false;
             }
         }
-    });
-
-    //pie
-    var ctxP = document.getElementById("pieChart").getContext('2d');
-    var myPieChart = new Chart(ctxP, {
-        type: 'pie',
-        data: {
-            datasets: [
-                {
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }
-            ]
-        },
-        options: {
-            responsive: true
+        var subject =  document.getElementById('cSubject').value;
+        if (subject.trim() == "") {
+            document.getElementById('status').innerHTML = "Subject cannot be empty";
+            return false;
         }
-    });
-
-
-    //line
-    var ctxL = document.getElementById("lineChart").getContext('2d');
-    var myLineChart = new Chart(ctxL, {
-        type: 'line',
-        data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    fillColor: "rgba(220,220,220,0.2)",
-                    strokeColor: "rgba(220,220,220,1)",
-                    pointColor: "rgba(220,220,220,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: [65, 59, 80, 81, 56, 55, 40]
-                },
-                {
-                    label: "My Second dataset",
-                    fillColor: "rgba(151,187,205,0.2)",
-                    strokeColor: "rgba(151,187,205,1)",
-                    pointColor: "rgba(151,187,205,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19, 86, 27, 90]
-                }
-            ]
-        },
-        options: {
-            responsive: true
+        var message =  document.getElementById('cMessage').value;
+        if (message.trim() == "") {
+            document.getElementById('status').innerHTML = "Message cannot be empty";
+            return false;
         }
-    });
-
-
-    //radar
-    var ctxR = document.getElementById("radarChart").getContext('2d');
-    var myRadarChart = new Chart(ctxR, {
-        type: 'radar',
-        data: {
-            labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    fillColor: "rgba(220,220,220,0.2)",
-                    strokeColor: "rgba(220,220,220,1)",
-                    pointColor: "rgba(220,220,220,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: [65, 59, 90, 81, 56, 55, 40]
-                },
-                {
-                    label: "My Second dataset",
-                    fillColor: "rgba(151,187,205,0.2)",
-                    strokeColor: "rgba(151,187,205,1)",
-                    pointColor: "rgba(151,187,205,1)",
-                    pointStrokeColor: "#fff",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(151,187,205,1)",
-                    data: [28, 48, 40, 19, 96, 27, 100]
-                }
-            ]
-        },
-        options: {
-            responsive: true
-        }
-    });
-
-    //doughnut
-    var ctxD = document.getElementById("doughnutChart").getContext('2d');
-    var myLineChart = new Chart(ctxD, {
-        type: 'doughnut',
-        data: {
-            labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-            datasets: [
-                {
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }
-            ]
-        },
-        options: {
-            responsive: true
-        }
-    });
-
-</script>
-
-<!--Google Maps-->
-<script src="https://maps.google.com/maps/api/js"></script>
-<script>
-    // Regular map
-    function regular_map() {
-        var var_location = new google.maps.LatLng(40.725118, -73.997699);
-
-        var var_mapoptions = {
-            center: var_location,
-            zoom: 14
+        document.getElementById('status').innerHTML = "Sending...";
+        formData = {
+            'name'     : $('input[name=cName]').val(),
+            'email'    : $('input[name=cEmail]').val(),
+            'subject'  : $('input[name=cSubject]').val(),
+            'message'  : $('textarea[name=cMessage]').val()
         };
 
-        var var_map = new google.maps.Map(document.getElementById("map-container"),
-            var_mapoptions);
 
-        var var_marker = new google.maps.Marker({
-            position: var_location,
-            map: var_map,
-            title: "New York"
+        $.ajax({
+            url : "/contactUs",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+                $('#status').text(data.message);
+                if (data=="Data Saved") {  //If mail was sent successfully, reset the form.
+                    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+                    $('#resultContainer').text("Your response has been recorded on our system.");
+                    $('#status').text("");
+                }else{
+                    $('#status').text("There was some error while sending your message to server.");
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#status').text("There was some error while sending your message to server.");
+            }
         });
     }
 
-    // Initialize maps
-    google.maps.event.addDomListener(window, 'load', regular_map);
-</script>
+    function sendLogin() {
+        var loginData = document.getElementById('lData').value;
+        if(loginData.trim() == ""){
+            $(document.getElementById("lData")).addClass("invalid");
+            return false;
+        }
+        if(isNaN(loginData)==true){
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(loginData)){
+                $(document.getElementById("lData")).addClass("invalid");
+                return false;
+            }
+        }
+        if(loginData.length != 10 && isNaN(loginData)!=true){
+            $(document.getElementById("lData")).addClass("invalid");
+            return false;
+        }
+        $('#loginStatus').text("Sending...");
+        formData = {
+            'lData' : $('input[name=lData]').val(),
+        };
 
+        $.ajax({
+            url : "/ServletLogin",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+
+                if (data=="OTP sent") {  //If mail was sent successfully, reset the form.
+                    $('#loginStatus').text("OTP has been sent successfully.");
+                    $('#loginStatus').css('color', 'green');
+                    $('#loginButton').prop('onclick',null);
+                    $('#lOTP').prop("disabled",false);
+                    $('#loginButton').on('click',checkOTP);
+                    document.getElementById('loginButton').onclick = checkOTP;
+
+                }else{
+                    $('#loginStatus').text("We cannot find you!!!");
+                    $('#loginStatus').css('color', 'red');
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#loginStatus').text("There was some error while sending your message to server.");
+                $('#loginStatus').css('color', 'red');
+            }
+        });
+    }
+    function checkOTP(){
+        $('#loginStatus').text("Validating OTP");
+        $('#loginStatus').css('color', 'red');
+        formData = {
+            'username'     : $('input[name=lData]').val(),
+            'otp'    : $('input[name=lOTP]').val(),
+        };
+        console.log(formData.String);
+        $.ajax({
+            url : "/login",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+                if (data!="dashboard") {  //If mail was sent successfully, reset the form.
+                    $('#loginStatus').text("OTP is invalid.");
+                    $('#loginStatus').css('color', 'red');
+                }
+                else{
+                    $('#loginButton').prop('onclick',null);
+                    document.getElementById('loginButton').innerText = "Redirecting to Dashboard";
+                    $('#loginButtonA').attr('href','dashboard');
+                    $('#loginStatus').text("You are in...");
+                    $('#loginStatus').css('color', 'green');
+                    document.location.href = "/dashboard";
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#loginStatus').text("There was some error while sending your message to server.");
+                $('#loginStatus').css('color', 'red');
+            }
+        });
+    }
+
+
+
+
+
+    function sendRegister() {
+        var name =  document.getElementById('rUsername').value;
+        if (name.trim() == "") {
+            $(document.getElementById("rUsername")).addClass("invalid");
+            return false;
+        }
+        var fullname =  document.getElementById('rFullName').value;
+        if (fullname.trim() == "") {
+            $(document.getElementById("rFullName")).addClass("invalid");
+            return false;
+        }
+        var email =  document.getElementById('rEmail').value;
+        if (email.trim() == "") {
+            $(document.getElementById("rEmail")).addClass("invalid");
+            return false;
+        } else {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(!re.test(email)){
+                $(document.getElementById("rEmail")).addClass("invalid");
+                return false;
+            }
+        }
+
+        var phone =  document.getElementById('rNumber').value;
+        if (phone.trim() == "") {
+            $(document.getElementById("rNumber")).addClass("invalid");
+            return false;
+        }else if(phone.length != 10){
+            $(document.getElementById("rNumber")).addClass("invalid");
+            return false;
+        }
+        else if(isNaN(phone)==true){
+            $(document.getElementById("rNumber")).addClass("invalid");
+            return false;
+        }
+        $('#registerStatus').text("Sending...");
+        formData = {
+            'rUsername'     : $('input[name=rUsername]').val(),
+            'rEmail'    : $('input[name=rEmail]').val(),
+            'rFullName'  : $('input[name=rFullName]').val(),
+            'rNumber'  : $('input[name=rNumber]').val()
+        };
+        console.log(formData.String);
+        $.ajax({
+            url : "/ServletRegister",
+            type: "POST",
+            data : formData,
+            success: function(data)
+            {
+                console.log(data)
+                $('#status').text(data.message);
+                if (data=="Registered") {  //If mail was sent successfully, reset the form.
+                    $('#registerStatus').text("Successfully registered, Mail/Message sent. You can login now.");
+                    $('#registerStatus').css('color', 'green');
+                }else if (data =="Username Exist"){
+                    $('#registerStatus').text("User Name already exist in our system.");
+                    $('#registerStatus').css('color', 'red');
+                }else if (data =="exist"){
+                    $('#registerStatus').text("User already exist in our system.");
+                    $('#registerStatus').css('color', 'red');
+                }else{
+                    $('#registerStatus').text("There was some error in Server. Try again.");
+                    $('#registerStatus').css('color', 'red');
+                }
+            },
+            error: function(xhr, status, error) {
+                //alert(xhr.responseText);
+                $('#registerStatus').text("There was some error while sending your message to server.");
+                $('#registerStatus').css('color', 'red');
+            }
+        });
+    }
+
+
+</script>
+<style type="text/css">
+    .facebook{
+        color:#3b5998 !important;
+    }
+    .twitter{
+        color:#55acee !important;
+    }
+    .light-blue.darken-3 {
+        background-color: #a7bbc7!important;
+    }
+
+    element.style {
+    }
+    .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs {
+        margin: -1.5rem 1rem 0 1rem;
+    }
+    #toast-container>div, .badge, .btn, .btn.disabled:active, .btn.disabled:focus, .btn.disabled:hover, .btn:disabled:active, .btn:disabled:focus, .btn:disabled:hover, .card, .card-wrapper .back, .card-wrapper .front, .card.card-cascade.wider .card-body, .counter, .dropdown-content, .jumbotron, .md-form input[type=date].input-alternate, .md-form input[type=datetime-local].input-alternate, .md-form input[type=email].input-alternate, .md-form input[type=number].input-alternate, .md-form input[type=password].input-alternate, .md-form input[type=search-md].input-alternate, .md-form input[type=search].input-alternate, .md-form input[type=tel].input-alternate, .md-form input[type=text].input-alternate, .md-form input[type=time].input-alternate, .md-form input[type=url].input-alternate, .md-form textarea.md-textarea.input-alternate, .md-pills .nav-link.active, .md-pills .show>.nav-link, .mdb-autocomplete-wrap, .media .media-left img, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .page-item.active .page-link, .pricing-card .price .version, .side-nav, .z-depth-1 {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+    .modal-dialog.cascading-modal .nav-tabs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .page-footer, .top-nav-collapse {
+        background-color: #1C2331;
+    }.page-footer, .top-nav-collapse {
+         background-color: #1C2331;
+     }
+</style>
 </body>
 
 </html>
+

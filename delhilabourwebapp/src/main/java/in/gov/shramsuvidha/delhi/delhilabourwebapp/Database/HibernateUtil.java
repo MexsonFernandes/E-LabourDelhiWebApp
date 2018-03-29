@@ -72,9 +72,9 @@ public class HibernateUtil
             //save data if user doesn't exist
             //call to send message to mobile and email to user.
             EmailService es = new EmailService();
-            es.SendMail(obj.getEmail(),"Successfully registered on E-Delhi Labour Portal","Hello Sir/Ma'am,\n" +
+            es.SendMail(obj.getEmail(),"Successfully registered on E-Delhi Labour Portal","Hello "+obj.getFullname() +",\n" +
                     "\nYou have been successfully registered on our website.\nYour details:-\nUsername : " +obj.getUnm() +"\n" +
-                    "Full Name : " + obj.getFullname() + "\nPhone Number : " + obj.getNumber() + "\nRegistered Email ID : " +"" +
+                    "Phone Number : " + obj.getNumber() + "\nRegistered Email ID : " +"" +
                     obj.getEmail() +"\n\nYou can now login to our website.\n\nRegards,\nThe A4SM();");
             //SMS
             String line = null;
