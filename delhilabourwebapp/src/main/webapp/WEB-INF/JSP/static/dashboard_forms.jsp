@@ -1,38 +1,52 @@
-
-<script>
-    var acjs = undefined;
-
-
-    $(document ).ready(function() {
-        try {
-            acjs = $('#accordion').accordionjs();
-        }
-        catch(error) {
-            console.log("Error:" + error);
-            alert("Error: "+ error);
-        }
-    }); // End $(document).ready();
-</script>
-<style type="text/css">
-    body { font-family:'Roboto'; background-color:#fafafa;}
-    #container {
-        height:100%;
-        width: 100%;
-        margin: 250px auto;
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color:#fafafa;
     }
-</style><div id="container">
-    <h1>asdfghj</h1>
-    <ul id="accordion">
-        <li data-required="true"  data-status="incomplete" data-selected="true" data-title="North">Never</li>
-        <li data-required="true"  data-status="complete" data-title="East">Eat</li>
-        <li data-required="true"  data-status="disabled" data-title="South">Shredded</li>
-        <li data-required="false"  data-status="optional" data-title="West">Wheat</li>
-        <li data-required="false"  data-status="optional">
-            <h2>Content title</h2>
-            <input type="text" placeholder="DOM test" />
-        </li>
-    </ul>
+    .container {
+        max-width: 960px;
+        margin: 150px auto;
+    }
+    h3 {
+        font-weight: normal;
+        font-size: 16px;
+    }
+</style>
+
+<link href="dashboard/css/ziehharmonika.css" rel="stylesheet" type="text/css">
+
+
+
+<div class="container">
+
+    <div class="ziehharmonika">
+        <h3>Section One</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi commodi facere odit alias velit ducimus accusantium maiores, mollitia vitae eum quae maxime labore, quia non consequatur culpa similique, molestiae dicta.</p>
+        </div>
+        <h3>Section Two</h3>
+        <div>
+            <p>Consectetur adipisicing elit. Eligendi commodi facere odit alias velit ducimus accusantium maiores, mollitia vitae eum quae maxime labore, quia non consequatur culpa similique, molestiae dicta.</p>
+        </div>
+        <h3>Section Three</h3>
+        <div>
+            <p>Endi commodi facere odit alias velit ducimus accusantium maiores, mollitia vitae eum quae maxime labore, quia non consequatur culpa similique, molestiae dicta.</p>
+        </div>
+    </div>
 </div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="dashboard/js/ziehharmonika.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.ziehharmonika').ziehharmonika({
+            collapsible: true,
+            prefix: '★'
+        });
+    });
+</script>
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -47,9 +61,3 @@
     })();
 
 </script>
-<style href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"></style>
-<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-<link rel="stylesheet" type="text/css" href="css/jquery.accordionjs.css" />
-<script src="js/jquery.accordionjs.js"></script>

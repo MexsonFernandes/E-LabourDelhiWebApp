@@ -1,18 +1,22 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.controller;
 
-import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
+import java.util.Map;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.Map;
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class URLController {
-    @RequestMapping("/logout")
-    public String logout(){
-
+    @RequestMapping(value = "/logout")
+    public String logout(HttpServletRequest request){
+        HttpSession session =request.getSession();
+        session.invalidate();
         return "redirect:/";
     }
     @RequestMapping("/")
@@ -27,8 +31,8 @@ public class URLController {
         return "index";
     }
 
-    @RequestMapping("/dashboard")
-    public String dashboard() {
+    @RequestMapping(value = "/dashboard")
+    public String dashboard(){
         return "dashboard";
     }
 
@@ -42,38 +46,24 @@ public class URLController {
         return "redirect:error";
     }
     @RequestMapping("/admin")
-    public String admin() {
+    public String admin(){
         return "admin";
     }
 
     @RequestMapping("/faqs")
-    public String faqs() {
+    public String faqs(){
         return "static/faqs";
     }
 
     @RequestMapping("/help")
-    public String help() {
+    public String help(){
         return "static/help";
     }
 
     @RequestMapping("/careers")
-    public String career() {
+    public String career(){
         return "static/career";
     }
-
-
-    @RequestMapping("/fillannualreturn")
-        public String fillannualreturn () {
-        return "fillannualreturn";
-
-    }
-
-
-
-    }
-
-
-
-
+}
 
 
