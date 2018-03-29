@@ -63,11 +63,17 @@
             </ul>
 
             <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
+            <ul class="navbar-nav nav-flex-icons" id="ulLogin">
+                <div id="auth" hidden="hidden   "><%=request.getSession().getAttribute("session")%></div>
+                    <script type="text/javascript">
+                        if(document.getElementById('auth').innerText === "null"){
+                        document.getElementById('ulLogin').innerHTML ="<li class='nav-item'><a href='' class='btn btn-indigo btn-rounded my-3' data-toggle='modal' data-target='#modalLRForm'>LogIn/Register</a></li>";
+                        }
+                        else {
+                            document.getElementById('ulLogin').innerHTML ="<li class='nav-item'><a href='dashboard' class='btn btn-indigo btn-rounded my-3'>Dashboard</a></li>";
+                        }
+                    </script>
 
-                <li class="nav-item">
-                    <a href="" class="btn btn-indigo btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
-                </li>
             </ul>
 
         </div>
@@ -120,7 +126,9 @@
 
                             </div>
                             <div class="text-center mt-2">
-                                <button class="btn btn-info" onClick="sendLogin();">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                <a id="loginButtonA" target="_self">
+                                    <button class="btn btn-info" onClick="sendLogin();" id="loginButton">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                </a>
                             </div>
                         </div>
 
@@ -156,7 +164,6 @@
                                 <input type="text" name="rNumber" id="rNumber" required="required" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="rNumber">Phone No</label>
                             </div>
-
                             <div id="registerStatus" style="color:red;">
 
                             </div>

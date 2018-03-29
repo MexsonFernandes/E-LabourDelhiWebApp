@@ -8,22 +8,30 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 @Controller
 public class URLController {
-
+    @RequestMapping(value = "/logout")
+    public String logout(HttpServletRequest request){
+        HttpSession session =request.getSession();
+        session.invalidate();
+        return "redirect:/";
+    }
     @RequestMapping("/")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
         EmailService send = new EmailService();
         try {
-            send.sendOtpMessage("robomex2020@gmail.com","Test","test");
+            //send.SendMail("robomex2020@gmail.com","Test","test");
         } catch (Exception e) {
             e.printStackTrace();
         }
         return "index";
     }
 
-    @RequestMapping("/dashboard")
+    @RequestMapping(value = "/dashboard")
     public String dashboard(){
         return "dashboard";
     }
