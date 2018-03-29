@@ -103,13 +103,13 @@
                 <i class="fa fa-pie-chart mr-3"></i>Dashboard
             </a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-user mr-3"></i>Profile</a>
+                <i class="fa fa-user mr-3"></i>ACTS</a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-table mr-3"></i>Tables</a>
+                <i class="fa fa-table mr-3"></i>ESTABLISHMENT</a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-map mr-3"></i>Maps</a>
+                <i class="fa fa-map mr-3"></i>FILL ANNUAL RETURN</a>
             <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-money mr-3"></i>Orders</a>
+                <i class="fa fa-money mr-3"></i>PROFILE</a>
         </div>
 
     </div>
