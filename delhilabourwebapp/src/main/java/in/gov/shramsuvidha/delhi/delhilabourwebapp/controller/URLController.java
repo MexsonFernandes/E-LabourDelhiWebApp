@@ -1,15 +1,14 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.controller;
 
-import java.util.Map;
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 @Controller
 public class URLController {
@@ -32,8 +31,14 @@ public class URLController {
     }
 
     @RequestMapping(value = "/dashboard")
-    public String dashboard(){
-        return "dashboard";
+    public String dashboard(HttpServletRequest request){
+        HttpSession session =request.getSession();
+        System.out.println("Session mexson" + session);
+        if (session.equals("null")){
+            return "redirect:error";
+        }
+        else
+            return "dashboard";
     }
 
     @RequestMapping(value = "/ServletRegister", method = RequestMethod.GET)
@@ -63,6 +68,12 @@ public class URLController {
     @RequestMapping("/careers")
     public String career(){
         return "static/career";
+    }
+
+    @RequestMapping("/fillannualreturn")
+    public String fillannualreturn()
+    {
+        return "fillannualreturn";
     }
 
 
