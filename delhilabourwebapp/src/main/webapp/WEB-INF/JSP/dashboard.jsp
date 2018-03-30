@@ -25,22 +25,22 @@
     <script>
 
 
-        $( document ).ready(function() {
-            $.ajax({
-                url : "/userDashboard",
-                type: "GET",
-                data : "",
-                success: function(data)
-                {
-                    $('#content').text("");
-                    document.getElementById('content').innerHTML = data;
-                },
-                error: function(xhr, status, error) {
-                    alert(xhr.responseText);
-
-                }
-            });
-        });
+//        $( document ).ready(function() {
+//            $.ajax({
+//                url : "/userDashboard",
+//                type: "GET",
+//                data : "",
+//                success: function(data)
+//                {
+//                    $('#content').text("");
+//                    document.getElementById('content').innerHTML = data;
+//                },
+//                error: function(xhr, status, error) {
+//                    alert(xhr.responseText);
+//
+//                }
+//            });
+//        });
     </script>
 </head>
 
@@ -150,6 +150,7 @@
             {
 
                 $('#content').text("");
+                $('#dash').text("");
                 document.getElementById('content').innerHTML = data;
             },
             error: function(xhr, status, error) {
@@ -168,6 +169,7 @@
             {
 
                 $('#content').text("");
+                $('#dash').text("");
                 document.getElementById('content').innerHTML = data;
             },
             error: function(xhr, status, error) {
@@ -186,6 +188,8 @@
             {
 
                 $('#content').text("");
+                $('#dash').text("");
+
                 document.getElementById('content').innerHTML = data;
             },
             error: function(xhr, status, error) {
@@ -205,6 +209,7 @@
             {
 
                 $('#content').text("");
+                $('#dash').text("");
                 document.getElementById('content').innerHTML = data;
             },
             error: function(xhr, status, error) {
@@ -247,7 +252,187 @@
         <!--Grid row-->
         <div id="content"></div>
         <!--Grid row-->
+        <div id="dash" class="row wow fadeIn">
 
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header">Total Application of LIN
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <canvas id="total"></canvas>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header">Applications
+                        Submitted</div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <canvas id="submitted"></canvas>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header">Applications
+                        Authorized</div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <canvas id="authorized"></canvas>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header">Linked Establishment
+
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <canvas id="establish"></canvas>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header">Applications
+                        Rejected                  </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <canvas id="rejected"></canvas>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header">Applications
+                        Not Submitted
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <canvas id="notsubmitted"></canvas>
+
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            var canvas = document.getElementById("total");
+            var ctx=canvas.getContext("2d");
+            ctx.font="80px Comic Sans MS";
+            ctx.fillStyle = "#1C2331";
+            ctx.textAlign = "center";
+            ctx.fillText("0", canvas.width/2, canvas.height/2);
+
+            var canvas = document.getElementById("submitted");
+            var ctx=canvas.getContext("2d");
+            ctx.font="80px Comic Sans MS";
+            ctx.fillStyle = "#1C2331";
+            ctx.textAlign = "center";
+            ctx.fillText("0", canvas.width/2, canvas.height/2);
+
+            var canvas = document.getElementById("authorized");
+            var ctx=canvas.getContext("2d");
+            ctx.font="80px Comic Sans MS";
+            ctx.fillStyle = "#1C2331";
+            ctx.textAlign = "center";
+            ctx.fillText("0", canvas.width/2, canvas.height/2);
+
+            var canvas = document.getElementById("establish");
+            var ctx=canvas.getContext("2d");
+            ctx.font="80px Comic Sans MS";
+            ctx.fillStyle = "#1C2331";
+            ctx.textAlign = "center";
+            ctx.fillText("0", canvas.width/2, canvas.height/2);
+
+            var canvas = document.getElementById("rejected");
+            var ctx=canvas.getContext("2d");
+            ctx.font="80px Comic Sans MS";
+            ctx.fillStyle = "#1C2331";
+            ctx.textAlign = "center";
+            ctx.fillText("0", canvas.width/2, canvas.height/2);
+
+            var canvas = document.getElementById("notsubmitted");
+            var ctx=canvas.getContext("2d");
+            ctx.font="80px Comic Sans MS";
+            ctx.fillStyle = "#1C2331";
+            ctx.textAlign = "center";
+            ctx.fillText("0", canvas.width/2, canvas.height/2);
+        </script>
         <!--Grid row-->
 
         <!--Grid row-->
@@ -255,14 +440,7 @@
     </div>
 </main>
 <!--Main layout-->
-<script type="text/javascript">
-    var canvas = document.getElementById("total");
-    var ctx=canvas.getContext("2d");
-    ctx.font="80px Comic Sans MS";
-    ctx.fillStyle = "#1C2331";
-    ctx.textAlign = "center";
-    ctx.fillText("0", canvas.width/2, canvas.height/2);
-</script>
+
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <hr class="my-4">

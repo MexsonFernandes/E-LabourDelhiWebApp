@@ -13,7 +13,7 @@
                 <fieldset>
                     <div class="form-top">
                         <div class="form-top-left">
-                            <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>Lorem ipsum dolor sit amet</h3>
+                            <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>Annual Return</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
                             </p>
                         </div>
