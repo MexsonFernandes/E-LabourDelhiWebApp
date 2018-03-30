@@ -4,29 +4,29 @@
 <%@include file="dashboard_header.jsp" %>
 <div id="h">
 <div class="form-group">
-    <label class="control-label">Registration number of factory</label>
+    <label class="control-label"><b>Registration number of factory</b></label>
     <input type="text" name="" placeholder="Enter the registration number" class="form-control" required/>
 </div>
 <div class="form-group">
-    <label class="control-label">Name of Factory</label>
+    <label class="control-label"><b>Name of Factory<b></label>
     <input type="text" name="" placeholder="Enter the name of factory" class="form-control" required/>
 </div>
 <div class="form-group">
-    <label class="control-label">Name of Occupier</label>
+    <label class="control-label"><b>Name of Occupier<b></label>
     <input type="text" name="" placeholder="Enter the name of occupier" class="form-control" required/>
 </div>
 <div class="form-group">
-    <label class="control-label">Name of the Manager</label>
+    <label class="control-label"><b>Name of the Manager<b></label>
     <input type="text" name="" placeholder="Enter the name of manager" class="form-control" required/>
 </div><div class="form-group">
     <script type="text/javascript">
         document.getElementById('topmenu').innerText = " Apply for Factory Act";
     </script>
-    <label class="control-label">Full Postal Address</label>
+    <label class="control-label"><b>Full Postal Address<b></label>
     <textarea rows="5" name="" placeholder="Enter your address" class="form-control" required></textarea>
 </div>
     <div class="form-group">
-    <label class="control-label">Nature Of Industry</label>
+    <label class="control-label"><b>Nature Of Industry<b></label>
     <input type="text" name="" placeholder="Enter the nature of industry" class="form-control" required/>
 </div><div class="form-group"><label class="control-label">Average No of Workers Employed Daily</label>
     <div class="form-check"><label class="form-check-label">
