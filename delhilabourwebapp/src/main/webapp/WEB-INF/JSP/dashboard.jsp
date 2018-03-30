@@ -25,7 +25,28 @@
     <link href="dashboard/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="dashboard/css/style.min.css" rel="stylesheet">
-    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">+++++
+    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+
+
+        $( document ).ready(function() {
+            $.ajax({
+                url : "/userDashboard",
+                type: "GET",
+                data : "",
+                success: function(data)
+                {
+                    $('#content').text("");
+                    document.getElementById('content').innerHTML = data;
+                },
+                error: function(xhr, status, error) {
+                    alert(xhr.responseText);
+
+                }
+            });
+        });
+    </script>
 </head>
 
 <body class="fixed-sn navy-blue-skin">
@@ -82,6 +103,7 @@
                         </a>
                     </li>
                     <script>
+
                         function logout() {
                             if(confirm("Are you sure?")){
                                 document.location.href = "logout";
@@ -104,20 +126,99 @@
         </a>
 
         <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item active waves-effect">
+            <a href="/dashboard" class="list-group-item active waves-effect">
                 <i class="fa fa-pie-chart mr-3"></i>Dashboard
             </a>
-            <a href="#" class="list-group-item list-group-item-action waves-effect">
+
+            <a id="acts" onclick="acts();" class="list-group-item list-group-item-action waves-effect">
                 <i class="fa fa-user mr-3"></i>ACTS</a>
-            <a href="#" class="list-group-item list-group-item-action waves-effect">
+            <a id="establishment" onclick="establishment();" class="list-group-item list-group-item-action waves-effect">
                 <i class="fa fa-table mr-3"></i>ESTABLISHMENT</a>
-            <a href="#" class="list-group-item list-group-item-action waves-effect">
-                <i class="fa fa-map mr-3"></i>FILL ANNUAL RETURN</a>
-            <a href="#" class="list-group-item list-group-item-action waves-effect">
+            <a id="annual" onclick="annual();" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-map mr-3"></i>ANNUAL RETURN</a>
+            <a id="profile" onclick="profile();" class="list-group-item list-group-item-action waves-effect">
                 <i class="fa fa-money mr-3"></i>PROFILE</a>
         </div>
 
     </div>
+
+    <%--ajax to include dashboard forms--%>
+    <script type="text/javascript">
+
+    function acts() {
+
+        $.ajax({
+            url : "/acts",
+            type: "GET",
+            data : "",
+            success: function(data)
+            {
+
+                $('#content').text("");
+                document.getElementById('content').innerHTML = data;
+            },
+            error: function(xhr, status, error) {
+                alert(xhr.responseText);
+
+            }
+        });
+        }
+    function annual() {
+
+        $.ajax({
+            url : "/annual",
+            type: "GET",
+            data : "",
+            success: function(data)
+            {
+
+                $('#content').text("");
+                document.getElementById('content').innerHTML = data;
+            },
+            error: function(xhr, status, error) {
+                alert(xhr.responseText);
+
+            }
+        });
+    }
+    function establishment() {
+
+        $.ajax({
+            url : "/establishment",
+            type: "GET",
+            data : "",
+            success: function(data)
+            {
+
+                $('#content').text("");
+                document.getElementById('content').innerHTML = data;
+            },
+            error: function(xhr, status, error) {
+                alert(xhr.responseText);
+
+            }
+        });
+    }
+
+    function profile() {
+
+        $.ajax({
+            url : "/profile",
+            type: "GET",
+            data : "",
+            success: function(data)
+            {
+
+                $('#content').text("");
+                document.getElementById('content').innerHTML = data;
+            },
+            error: function(xhr, status, error) {
+                alert(xhr.responseText);
+
+            }
+        });
+    }
+    </script>
     <!-- Sidebar -->
 
 </header>
@@ -149,145 +250,9 @@
         <!-- Heading -->
 
         <!--Grid row-->
-
+        <div id="content"></div>
         <!--Grid row-->
-        <div class="row wow fadeIn">
 
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Total Applications
-                        of LIN</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="lineChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Submitted</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="radarChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Authorized</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="doughnutChart"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Linked Establishment
-
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="linkedEst"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Rejected                  </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="REJECTED"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Not Submitted
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="notsubmitted"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-
-        </div>
         <!--Grid row-->
 
         <!--Grid row-->
@@ -295,7 +260,14 @@
     </div>
 </main>
 <!--Main layout-->
-
+<script type="text/javascript">
+    var canvas = document.getElementById("total");
+    var ctx=canvas.getContext("2d");
+    ctx.font="80px Comic Sans MS";
+    ctx.fillStyle = "#1C2331";
+    ctx.textAlign = "center";
+    ctx.fillText("0", canvas.width/2, canvas.height/2);
+</script>
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <hr class="my-4">

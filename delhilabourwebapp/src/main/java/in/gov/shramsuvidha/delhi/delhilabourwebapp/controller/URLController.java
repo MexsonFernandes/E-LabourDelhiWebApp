@@ -6,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
@@ -22,7 +21,7 @@ public class URLController {
     @RequestMapping("/")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
-        EmailService send = new EmailService();
+        //EmailService send = new EmailService();
         try {
             //send.SendMail("robomex2020@gmail.com","Test","test");
         } catch (Exception e) {
@@ -40,6 +39,7 @@ public class URLController {
         //    return "redirect:error";
         //}
         //else
+
                return "dashboard";
     }
 
@@ -72,10 +72,10 @@ public class URLController {
         return "static/career";
     }
 
-    @RequestMapping("/fillannualreturn")
-    public String fillannualreturn()
+    @RequestMapping("/acts")
+    public String acts()
     {
-        return "fillannualreturn";
+        return "/acts";
     }
 
 

@@ -28,7 +28,6 @@ public class EmailService {
                         return new PasswordAuthentication(username, password);
                     }
                 });
-
         try {
 
             Message message = new MimeMessage(session);
