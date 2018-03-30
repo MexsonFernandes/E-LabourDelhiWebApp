@@ -1,6 +1,6 @@
 
-
-
+<%
+%>
 <div class="row wow fadeIn">
 
     <!--Grid column-->

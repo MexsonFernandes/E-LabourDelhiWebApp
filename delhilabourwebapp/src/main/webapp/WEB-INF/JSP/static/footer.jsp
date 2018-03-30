@@ -286,7 +286,7 @@
             data : formData,
             success: function(data)
             {
-                console.log(data)
+                console.log(data);
                 $('#status').text(data.message);
                 if (data=="Registered") {  //If mail was sent successfully, reset the form.
                     $('#registerStatus').text("Successfully registered, Mail/Message sent. You can login now.");

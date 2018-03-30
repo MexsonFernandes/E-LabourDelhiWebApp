@@ -1,9 +1,9 @@
-<%--<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>--%>
-<%--<script>--%>
-    <%--if(document.getElementById('auth').innerText == "null"){--%>
-        <%--document.location.href = "/";--%>
-    <%--}--%>
-<%--</script>--%>
+<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>
+<script>
+    if(document.getElementById('auth').innerText == "null"){
+        document.location.href = "/";
+    }
+</script>
 <!DOCTYPE html>
 <html lang="en">
 

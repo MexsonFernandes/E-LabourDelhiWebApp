@@ -18,10 +18,26 @@ public class URLController {
         session.invalidate();
         return "redirect:/";
     }
+    @RequestMapping(value = "/dashboard_factory",method = RequestMethod.GET)
+    public String factory(){
+        return "factory_form";
+    }
+
     @RequestMapping("/")
     public String home() {
 
         return "index";
+    }
+    @RequestMapping(value = "/dashboard_contract",method = RequestMethod.GET)
+    public String contract(){
+        return "Contractor_form";
+    }
+
+
+
+    @RequestMapping(value = "/dashboard_shop",method = RequestMethod.GET)
+    public String shop(){
+        return "Contact_form";
     }
 
     @RequestMapping(value = "/dashboard")

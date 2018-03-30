@@ -12,7 +12,13 @@ public class RegisterPOJO
     String email;
     String fullname;
     String number;
+
     String addhar;
+
+    @OneToOne(fetch = FetchType.LAZY,
+            cascade =  CascadeType.ALL,
+            mappedBy = "register")
+    private Factory factory;
 
     public String getAddhar() {
         return addhar;

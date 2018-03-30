@@ -16,5 +16,8 @@
 
         <mapping class="in.gov.shramsuvidha.delhi.delhilabourwebapp.model.RegisterPOJO"/>
         <mapping class="in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUs"/>
+        <mapping class="in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Factory"/>
+        <mapping class="in.gov.shramsuvidha.delhi.delhilabourwebapp.model.AADHAR"/>
+        <mapping class="in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Centralized_Database"/>
     </session-factory>
 </hibernate-configuration>

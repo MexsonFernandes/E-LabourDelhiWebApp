@@ -1,18 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: root
-  Date: 30/3/18
-  Time: 8:57 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="dashboard_header.jsp"%>
+<div id="h">
 <div class="form-group">
     <label class="control-label">Name of Establisment</label>
     <input type="text" name="" placeholder="Enter the Name of Establisment" class="form-control" required/>
 </div>
 <div class="form-group">
     <label class="control-label">Address of the Establishment</label>
-    <textarea rows="5" name="" placeholder="House no/Flat" class="form-control" required/>
+    <textarea rows="5" name="" placeholder="House no/Flat" class="form-control" required></textarea>
 </div>
 <div class="form-group">
     <label class="control-label">
@@ -44,7 +38,7 @@
 </div>
 <div class="form-group">
     <label class="control-label">Address of the Employer</label>
-    <textarea rows="5" name="" placeholder="House No/Flat No" class="form-control" required/></div>
+    <textarea rows="5" name="" placeholder="House No/Flat No" class="form-control" required></textarea></div>
 <div class="form-group">
     <label class="control-label"></label>
     <input type="text" name="" placeholder="district" class="form-control" /></div>
@@ -58,4 +52,12 @@
 <div>
     <table></table>
 </div>
-<button name="" type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="text-center py-4 mt-3">
+        <button class="btn btn-outline-purple" type="submit">Submit<i class="fa fa-paper-plane-o ml-2"></i></button>
+    </div>
+    <script type="text/javascript">
+    document.getElementById('topmenu').innerText = " Apply for Contract Labour Act";
+</script>
+</div>
+<%@include file="dashboard_footer.jsp"%>
