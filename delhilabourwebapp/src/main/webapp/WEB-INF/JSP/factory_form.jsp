@@ -28,7 +28,7 @@
     <div class="form-group">
     <label class="control-label"><b>Nature Of Industry</b></label>
     <input type="text" name="" placeholder="Enter the nature of industry" class="form-control" required/>
-</div><div class="form-group"><label class="control-label">Average No of Workers Employed Daily</label>
+    </div><div class="form-group"><label class="control-label"<b>Average No of Workers Employed Daily</b></label>
     <div class="form-check"><label class="form-check-label">
         <input type="radio" class="form-check-input" name="" value="Value">1-100</label>
     </div><div class="form-check"><label class="form-check-label">
