@@ -256,6 +256,7 @@
         }
 
         var phone =  document.getElementById('rNumber').value;
+        var aa = document.getElementById('aadhar').value;
         if (phone.trim() == "") {
             $(document.getElementById("rNumber")).addClass("invalid");
             return false;
@@ -266,13 +267,17 @@
         else if(isNaN(phone)==true){
             $(document.getElementById("rNumber")).addClass("invalid");
             return false;
+        }else if(aa.length!=12){
+            $(document.getElementById("aadhar")).addClass("invalid");
+            return false;
         }
         $('#registerStatus').text("Sending...");
         formData = {
             'rUsername'     : $('input[name=rUsername]').val(),
             'rEmail'    : $('input[name=rEmail]').val(),
             'rFullName'  : $('input[name=rFullName]').val(),
-            'rNumber'  : $('input[name=rNumber]').val()
+            'rNumber'  : $('input[name=rNumber]').val(),
+            'aadhar'  : $('input[name=aadhar]').val(),
         };
         console.log(formData.String);
         $.ajax({
@@ -286,7 +291,11 @@
                 if (data=="Registered") {  //If mail was sent successfully, reset the form.
                     $('#registerStatus').text("Successfully registered, Mail/Message sent. You can login now.");
                     $('#registerStatus').css('color', 'green');
-                }else if (data =="Username Exist"){
+                }else if (data =="Not from delhi"){
+                    $('#registerStatus').text("User not from Delhi");
+                    $('#registerStatus').css('color', 'red');
+                }
+                else if (data =="Username Exist"){
                     $('#registerStatus').text("User Name already exist in our system.");
                     $('#registerStatus').css('color', 'red');
                 }else if (data =="exist"){

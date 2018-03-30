@@ -13,84 +13,120 @@
                 <fieldset>
                     <div class="form-top">
                         <div class="form-top-left">
-                            <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>Lorem ipsum dolor sit amet</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                            </p>
+                            <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>General Part</h3>
+                            <%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit--%>
+                            <%--</p>--%>
                         </div>
                     </div>
                     <div class="form-bottom">
+
                         <div class="row">
                             <div class="form-group col-md-6 col-sm-6">
-                                <input type="text" class="form-control" placeholder="Firstname" id="fname">
+                                <input type="text" class="form-control" placeholder="Name of Establishment" name="name_of_establishment">
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="form-group col-md-6 col-sm-6">
-                                <input type="text" class="form-control" placeholder="Lastname" id="lname">
+                                <input type="textarea" class="form-control" placeholder="Postal Address of establishment" name="address">
                             </div>
                         </div>
-                        <div class="form-group" style="margin-bottom:3px;">
-                            <div class="row">
-                                <div class="form-group col-md-3 col-sm-3">
-                                    <select class="form-control">
-                                        <option>00</option>
-                                        <option>00</option>
-                                        <option>00</option>
-                                        <option>00</option>
-                                        <option>00</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-9 col-sm-9">
-                                    <input type="text" class="form-control" placeholder="Contact Number" id="contact_number">
-                                </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Pin Code" name="pincode">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" name="email" placeholder="Email" class="form-email form-control" id="email" required>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Name of Employer" name="name_of_employer">
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option>Gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                            </select>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Postal Address of employer" name="employer_address">
+                            </div>
                         </div>
-
-                        <button type="button" class="btn btn-next">Next</button>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Pin Code" name="employer_pincode">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="email" class="form-control" placeholder="Enter your email" name="employer_email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Telephone Number" name="employer_telephone_number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Mobile Number" name="employer_mobile_number">
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
+
+
+
                 <fieldset>
                     <div class="form-top">
                         <div class="form-top-left">
-                            <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span> Lorem ipsum dolor sit amet</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                            </p>
+                            <h3><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span></h3>
+                            <%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit--%>
+                            <%--</p>--%>
                         </div>
                     </div>
                     <div class="form-bottom">
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option>Location</option>
-                                <option>Location</option>
-                                <option>Location</option>
-                                <option>Location</option>
-                                <option>Locationa</option>
-                            </select>
+
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Name of Establishment" name="name_of_establishment">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="date" class="form-control" id="pref_date">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="textarea" class="form-control" placeholder="Postal Address of establishment" name="address">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <select class="form-control">
-                                <option>Preffered Time</option>
-                                <option>Location</option>
-                                <option>Location</option>
-                                <option>Location</option>
-                                <option>Location</option>
-                                <option>Locationa</option>
-                            </select>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Pin Code" name="pincode">
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-previous">Previous</button>
-                        <button type="submit" class="btn">Submit</button>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Name of Employer" name="name_of_employer">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Postal Address of employer" name="employer_address">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Pin Code" name="employer_pincode">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="email" class="form-control" placeholder="Enter your email" name="employer_email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Telephone Number" name="employer_telephone_number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-6">
+                                <input type="number" class="form-control" placeholder="Mobile Number" name="employer_mobile_number">
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
             </form>

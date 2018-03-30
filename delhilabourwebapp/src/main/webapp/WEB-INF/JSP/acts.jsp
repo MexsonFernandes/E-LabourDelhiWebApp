@@ -1,9 +1,9 @@
 
-<div class="col-md-12" style="width:100%;height:460px;overflow:auto; margin-bottom:0px;margin-top:10px;">
+<div class="col-md-12" style="width:100%;height:100%;overflow:auto; margin-bottom:0px;margin-top:10px;">
     <table id="dataTables-example" style="width: 100%;" class="table table-striped table-bordered table-hover dataTable">
         <tbody style="font-size:10pt">
         <tr style="background-color:#2BA6CD; font-weight:bold">
-            <td style="color:white; vertical-align:bottom"><img src="/Content/Images/factorylaws.png" height="20" width="25"> <b>  Factories Act, 1948 </b></td>
+            <td style="color:white; vertical-align:bottom"> <b>  Factories Act, 1948 </b></td>
         </tr>
         <tr style="background-color:white;">
             <td>
@@ -16,7 +16,7 @@
             </td>
         </tr>
         <tr style="background:#7885CB; font-weight:bold">
-            <td style="color:white; vertical-align:bottom"><img src="/Content/Images/shop.png" height="20" width="25"> <b>  Shops and Commercial Establishments Act, 1958</b></td>
+            <td style="color:white; vertical-align:bottom"> <b>  Shops and Commercial Establishments Act, 1958</b></td>
         </tr>
         <tr style="background-color:white;">
             <td>
@@ -29,7 +29,7 @@
             </td>
         </tr>
         <tr style="background:#00BFA5; font-weight:bold">
-            <td style="color:white; vertical-align:bottom"><img src="/Content/Images/tradeunion.png" height="20" width="25"> <b> Principal Employer(Contract Labour Act, 1970)</b></td>
+            <td style="color:white; vertical-align:bottom"> <b> Principal Employer(Contract Labour Act, 1970)</b></td>
         </tr>
         <tr style="background-color:white;">
             <td class="">
@@ -41,7 +41,7 @@
             </td>
         </tr>
         <tr style="background:#FFB74C; font-weight:bold">
-            <td style="color:white; vertical-align:bottom"><img src="/Content/Images/migrant.png" height="20" width="25"> <b> Contractor  (Contract Labour Act, 1970)</b></td>
+            <td style="color:white; vertical-align:bottom"> <b> Contractor  (Contract Labour Act, 1970)</b></td>
         </tr>
         <tr style="background-color:white;">
             <td class="">

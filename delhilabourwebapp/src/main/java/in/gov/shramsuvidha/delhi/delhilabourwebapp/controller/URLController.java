@@ -19,14 +19,8 @@ public class URLController {
         return "redirect:/";
     }
     @RequestMapping("/")
-    public String home(Map<String, Object> model) {
-        model.put("message", "HowToDoInJava Reader !!");
-        //EmailService send = new EmailService();
-        try {
-            //send.SendMail("robomex2020@gmail.com","Test","test");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public String home() {
+
         return "index";
     }
 

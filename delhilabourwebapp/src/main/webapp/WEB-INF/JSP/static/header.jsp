@@ -41,12 +41,12 @@
             <!-- Left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active" id="hometab">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="/">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutus">About Us</a>
+                    <a class="nav-link" href="/#aboutus">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="faqs">FAQs</a>
@@ -58,7 +58,7 @@
                     <a class="nav-link" href="careers">Careers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
+                    <a class="nav-link" href="/#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
                 </li>
             </ul>
 
@@ -163,6 +163,14 @@
                                 <i class="fa fa-phone prefix"></i>
                                 <input type="text" name="rNumber" id="rNumber" required="required" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="rNumber">Phone No</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" name="aadhar" id="aadhar" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="lData">Your AADHAR Number</label>
+                                <script>
+
+                                </script>
                             </div>
                             <div id="registerStatus" style="color:red;">
 

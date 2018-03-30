@@ -1,6 +1,7 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.Database;
 
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUs;
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Establishment;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.RegisterPOJO;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.OTP;
@@ -8,6 +9,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.awt.*;
 import java.io.BufferedReader;
@@ -50,6 +52,21 @@ public class HibernateUtil
         Session session = sf.openSession();
         session.beginTransaction();
         System.out.println("RegisterForm is being processed");
+
+        Query queryAADHAR=session.createSQLQuery("select * from AADHAR where id = ? and state= ?");
+        queryAADHAR.setParameter(0,obj.getAddhar());
+        queryAADHAR.setParameter(1,"DELHI");
+        List lis = queryAADHAR.list();
+        try{if(lis.isEmpty()){
+            session.getTransaction().commit();
+            session.close();
+            return "Not from delhi";
+        }
+
+        }catch (Exception e){
+
+        }
+
         Query queryUser=session.createQuery("from RegisterPOJO where unm = ? ");
         queryUser.setParameter(0,obj.getUnm());
         List list=queryUser.list();
@@ -125,5 +142,22 @@ public class HibernateUtil
         }
 
 
+    }
+
+    public void saveEstablishment(Establishment establishment){
+        try{
+            Session session = sf.openSession();
+            session.beginTransaction();
+            EmailService es = new EmailService();
+//            es.SendMail(obj.getEmail(),"Your feedback has been received","Hello "+obj.getName()+",\n" +
+//                    "\nWe have received your feedback.\n\nDetails are:-\nSubject : " +obj.getSubject() +"\n" +
+//                    "Message : " + obj.getMessage() + "\n\nOur team member will be in touch soon.\n\nRegards,\nThe A4SM();");
+            session.save(establishment);
+            System.out.println("Form is being processed");
+            session.getTransaction().commit();
+            session.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

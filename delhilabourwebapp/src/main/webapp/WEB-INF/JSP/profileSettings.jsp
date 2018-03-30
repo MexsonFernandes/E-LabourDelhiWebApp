@@ -21,7 +21,7 @@
 
             <!-- Default input name -->
             <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Current Email Id</label>
-            <input type="text" id="defaultFormCardNameEx" class="form-control">
+            <input type="text" content="<%=request.getSession().getAttribute("email")%>" id="defaultFormCardNameEx" class="form-control">
 
             <br>
 

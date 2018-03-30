@@ -12,11 +12,11 @@ public class dashboardController {
     public String acts(){
         return "acts";
     }
-
-    @RequestMapping(value = "/userDashboard",method = RequestMethod.GET)
-    public String userDashboard(){
-        return "dash";
-    }
+//
+//    @RequestMapping(value = "/userDashboard",method = RequestMethod.GET)
+//    public String userDashboard(){
+//        return "dash";
+//    }
     @RequestMapping(value = "/annual",method = RequestMethod.GET)
     public String annual(){
         return "annualReturn";

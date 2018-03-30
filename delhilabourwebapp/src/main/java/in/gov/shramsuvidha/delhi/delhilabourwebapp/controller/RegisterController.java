@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.*;
 public class RegisterController{
 
     @RequestMapping(value = "/ServletRegister", method = RequestMethod.POST)
-    public String Register(@RequestParam("rUsername") String unm, @RequestParam("rEmail") String email, @RequestParam("rFullName") String fullname, @RequestParam("rNumber") String number) {
+    public String Register(@RequestParam("rUsername") String unm, @RequestParam("rEmail") String email, @RequestParam("rFullName") String fullname, @RequestParam("rNumber") String number, @RequestParam("aadhar") String aadh) {
         System.out.println("I am here");
         try{
-        RegisterPOJO obj = new RegisterPOJO(unm, email, fullname, number);
+        RegisterPOJO obj = new RegisterPOJO(unm, email, fullname, number,aadh);
         HibernateUtil hu = new HibernateUtil();
 
         return hu.register(obj);
         }
         catch (Exception e){
-            System.out.println(e);
-            return "";
+            System.out.println("register error" +e);
+            return "error";
         }
     }
 
