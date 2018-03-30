@@ -6,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
@@ -72,10 +71,10 @@ public class URLController {
         return "static/career";
     }
 
-    @RequestMapping("/fillannualreturn")
-    public String fillannualreturn()
+    @RequestMapping("/acts")
+    public String acts()
     {
-        return "fillannualreturn";
+        return "/acts";
     }
 
 
