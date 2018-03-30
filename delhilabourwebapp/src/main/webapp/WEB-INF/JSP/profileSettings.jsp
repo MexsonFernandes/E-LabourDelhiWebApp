@@ -6,11 +6,24 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+<!-- Default form register -->
+<form>
+    <p class="h4 text-center mb-4">Profile</p>
+
+
+
+    <!-- Default input email -->
+    <label for="defaultFormRegisterEmailEx" class="grey-text">Current Email Id</label>
+    <input type="email" id="defaultFormRegisterEmailEx" class="form-control">
+
+    <br>
+
+
+
+    <div class="text-center mt-4">
+        <button class="btn btn-unique" type="submit">Update</button>
+    </div>
+
+</form>
+<!-- Default form register -->
