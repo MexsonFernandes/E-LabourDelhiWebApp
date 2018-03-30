@@ -10,7 +10,7 @@
         <div class="card">
 
             <!--Card image-->
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="">
+            <img class="img-fluid" src="homepage/img/svg/factory.jpg" alt="">
 
             <!--Card content-->
             <div class="card-body">
@@ -34,7 +34,7 @@
         <div class="card">
 
             <!--Card image-->
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="">
+            <img class="img-fluid" src="homepage/img/svg/shops.jpg" alt="">
 
             <!--Card content-->
             <div class="card-body">
@@ -58,7 +58,7 @@
         <div class="card">
 
             <!--Card image-->
-            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="">
+            <img class="img-fluid" src="homepage/img/svg/contractor.jpg" alt="">
 
             <!--Card content-->
             <div class="card-body">

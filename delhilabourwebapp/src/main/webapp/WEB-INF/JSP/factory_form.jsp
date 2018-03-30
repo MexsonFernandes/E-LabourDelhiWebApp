@@ -4,7 +4,7 @@
 <%@include file="dashboard_header.jsp" %>
 <div id="h">
 <div class="form-group">
-    <label class="control-label"><b>Registration number of factory</b></label>
+    <label class="control-label"><b><h2>Registration number of factory</h2></h2></b></label>
     <input type="text" name="" placeholder="Enter the registration number" class="form-control" required/>
 </div>
 <div class="form-group">
@@ -38,5 +38,7 @@
     </div>
 </div>
 </div>
+
+<button id="bt" name="" type="submit" class="btn btn-primary">Submit</button>
 
 <%@include file="dashboard_footer.jsp" %>
