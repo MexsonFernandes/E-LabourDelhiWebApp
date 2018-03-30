@@ -56,6 +56,48 @@
 <div class="form-group"><label class="control-label">Name of the Manager or Person Responsible for supervision and control of the Establishment</label>
     <input type="text" name="" placeholder="" class="form-control" /></div>
 <div>
-  <table></table>
+    <p><b>Employer's Registeration/License No. under the act mentioned in column 2 of table below:</b></p>
+  <table>
+      <tr>
+      <th>S.No.</th>
+
+          <th>name</th>
+          <th>Registration</th>
+          <th>If yes(Provide registraion No.)</th>
+          </tr>
+      <tr>
+          <td>1.</td>
+          <td>Building other construction workers Act, 1996</td>
+          <td></td>
+          <td></td>
+
+
+      </tr>
+      <tr>
+          <td>2.</td>
+
+          <td>Contract Labour Act, 1970</td>
+          <td></td>
+          <td></td>
+
+
+      </tr>
+      <tr>
+          <td>3.</td>
+
+          <td>Inter State Migrant Workmen Act,1979</td>
+          <td></td>
+          <td></td>
+
+      </tr>
+      <tr>
+          <td>4.</td>
+
+          <td>Employees Provident Funds and Miscellaneous Provision Act, 1952</td>
+          <td></td>
+          <td></td>
+
+      </tr>
+  </table>
 </div>
 <button name="" type="submit" class="btn btn-primary">Submit</button>
