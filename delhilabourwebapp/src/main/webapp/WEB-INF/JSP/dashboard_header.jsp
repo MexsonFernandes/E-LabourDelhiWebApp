@@ -157,6 +157,9 @@
                     $('#content').text("");
                     $('#dash').text("");
                     document.getElementById('content').innerHTML = data;
+                    var s =document.getElementById('h');
+                    if(s)
+                        s.innerText="";
                     $('#topmenu').text(" ACTS");
                 },
                 error: function(xhr, status, error) {
@@ -176,6 +179,9 @@
                     $('#content').text("");
                     $('#dash').text("");
                     document.getElementById('content').innerHTML = data;
+                    var s =document.getElementById('h');
+                    if(s)
+                        s.innerText="";
                     $('#topmenu').text(" Unified Annual Return Form Filling");
                 },
                 error: function(xhr, status, error) {
@@ -194,7 +200,9 @@
 
                     $('#content').text("");
                     $('#dash').text("");
-
+                    var s =document.getElementById('h');
+                    if(s)
+                        s.innerText="";
                     document.getElementById('content').innerHTML = data;
                     $('#topmenu').text("  Apply for Establishment");
                 },
@@ -206,7 +214,9 @@
         }
 
         function profile() {
-
+            var s =document.getElementById('h');
+            if(s)
+                s.innerText="";
             $.ajax({
                 url : "/profile",
                 type: "GET",
