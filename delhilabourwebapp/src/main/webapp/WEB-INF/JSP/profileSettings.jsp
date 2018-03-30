@@ -20,6 +20,11 @@
     <br>
 
 
+    <label for="defaultFormRegisterEmailEx" class="grey-text">OTP</label>
+    <input type="number" id="defaultFormRegisterEmailEx1" class="form-control">
+
+    <br>
+
 
     <div class="text-center mt-4">
         <button class="btn btn-unique" type="submit">Update</button>
