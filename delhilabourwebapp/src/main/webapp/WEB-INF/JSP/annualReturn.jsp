@@ -55,7 +55,6 @@
                             </select>
                         </div>
 
-                        <button type="button" class="btn btn-next">Next</button>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -89,8 +88,7 @@
                                 <option>Locationa</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-previous">Previous</button>
-                        <button type="submit" class="btn">Submit</button>
+                        <button type="submit" class="btn btn-outline-purple">Submit</button>
                     </div>
                 </fieldset>
             </form>

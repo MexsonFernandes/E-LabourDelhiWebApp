@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutus">About Us</a>
+                    <a class="nav-link" href="/#aboutus">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="faqs">FAQs</a>
@@ -58,7 +58,7 @@
                     <a class="nav-link" href="careers">Careers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
+                    <a class="nav-link" href="/#contact" onclick="document.getElementById('changeFormText').innerText='Contact Us';">Contact Us</a>
                 </li>
             </ul>
 
