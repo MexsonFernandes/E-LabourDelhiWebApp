@@ -157,6 +157,7 @@
                 $('#content').text("");
                 $('#dash').text("");
                 document.getElementById('content').innerHTML = data;
+                $('#topmenu').text(" ACTS");
             },
             error: function(xhr, status, error) {
                 alert(xhr.responseText);
@@ -176,6 +177,7 @@
                 $('#content').text("");
                 $('#dash').text("");
                 document.getElementById('content').innerHTML = data;
+                $('#topmenu').text(" Unified Annual Return Form Filling");
             },
             error: function(xhr, status, error) {
                 alert(xhr.responseText);
@@ -196,6 +198,7 @@
                 $('#dash').text("");
 
                 document.getElementById('content').innerHTML = data;
+                $('#topmenu').text("  Apply for Establishment");
             },
             error: function(xhr, status, error) {
                 alert(xhr.responseText);
@@ -216,6 +219,7 @@
                 $('#content').text("");
                 $('#dash').text("");
                 document.getElementById('content').innerHTML = data;
+                $('#topmenu').text(" Change Profile Settings");
             },
             error: function(xhr, status, error) {
                 alert(xhr.responseText);
@@ -240,9 +244,7 @@
             <div class="card-body d-sm-flex justify-content-between">
 
                 <h4 class="mb-2 mb-sm-0 pt-1">
-                    <a href="/" target="_self">Home Page</a>
-                    <span>/</span>
-                    <span id="topbar">Dashboard</span>
+                    <span id="topbar"><div id="topmenu">Dashboard</div></span>
                 </h4>
 
                 <h4>
