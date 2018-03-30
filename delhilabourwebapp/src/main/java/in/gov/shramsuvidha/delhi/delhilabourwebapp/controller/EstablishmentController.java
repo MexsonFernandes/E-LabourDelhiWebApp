@@ -18,6 +18,7 @@ public class EstablishmentController {
             hu.saveEstablishment(establishment);
             return "establishment created successfully";
         }catch(Exception e) {
+            e.printStackTrace();
             return e.toString();
         }
     }
