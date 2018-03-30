@@ -39,6 +39,7 @@ public class URLController {
         //    return "redirect:error";
         //}
         //else
+
                return "dashboard";
     }
 
