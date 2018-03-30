@@ -39,6 +39,7 @@ public class Acts_Controller {
                 if(list.isEmpty()) {
                     System.out.println("factory mexson");
                     hu.saveFactory(f);
+
                     session.getTransaction().commit();
                     session.close();
                     return "saved";
