@@ -8,27 +8,35 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!-- Default form register -->
-<form>
-    <p class="h4 text-center mb-4">Profile</p>
 
+<!-- Card -->
+<div class="card mx-xl-5">
 
+    <!-- Card body -->
+    <div class="card-body">
 
-    <!-- Default input email -->
-    <label for="defaultFormRegisterEmailEx" class="grey-text">Current Email Id</label>
-    <input type="email" id="defaultFormRegisterEmailEx" class="form-control">
+        <!-- Default form subscription -->
+        <form>
+            <p class="h4 text-center py-4">Profile</p>
 
-    <br>
+            <!-- Default input name -->
+            <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Current Email Id</label>
+            <input type="text" id="defaultFormCardNameEx" class="form-control">
 
+            <br>
 
-    <label for="defaultFormRegisterEmailEx" class="grey-text">OTP</label>
-    <input type="number" id="defaultFormRegisterEmailEx1" class="form-control">
+            <!-- Default input email -->
+            <label for="defaultFormCardEmailEx1" class="grey-text font-weight-light">OTP</label>
+            <input type="number" id="defaultFormCardEmailEx1" class="form-control">
 
-    <br>
+            <div class="text-center py-4 mt-3">
+                <button class="btn btn-outline-purple" type="submit">Update<i class="fa fa-paper-plane-o ml-2"></i></button>
+            </div>
+        </form>
+        <!-- Default form subscription -->
 
-
-    <div class="text-center mt-4">
-        <button class="btn btn-unique" type="submit">Update</button>
     </div>
+    <!-- Card body -->
 
-</form>
-<!-- Default form register -->
+</div>
+<!-- Card -->
