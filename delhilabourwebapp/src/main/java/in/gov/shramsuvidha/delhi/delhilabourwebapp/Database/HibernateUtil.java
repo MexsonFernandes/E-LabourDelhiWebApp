@@ -52,6 +52,21 @@ public class HibernateUtil
         Session session = sf.openSession();
         session.beginTransaction();
         System.out.println("RegisterForm is being processed");
+
+        Query queryAADHAR=session.createSQLQuery("select * from AADHAR where id = ? and state= ?");
+        queryAADHAR.setParameter(0,obj.getAddhar());
+        queryAADHAR.setParameter(1,"DELHI");
+        List lis = queryAADHAR.list();
+        try{if(lis.isEmpty()){
+            session.getTransaction().commit();
+            session.close();
+            return "Not from delhi";
+        }
+
+        }catch (Exception e){
+
+        }
+
         Query queryUser=session.createQuery("from RegisterPOJO where unm = ? ");
         queryUser.setParameter(0,obj.getUnm());
         List list=queryUser.list();

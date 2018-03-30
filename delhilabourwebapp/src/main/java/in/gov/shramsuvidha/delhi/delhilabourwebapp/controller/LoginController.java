@@ -22,6 +22,8 @@ public class LoginController {
     @Autowired
     OTP ot = new OTP();
 
+    HibernateUtil hu = new HibernateUtil();
+
     @RequestMapping(value = "/ServletLogin", method = RequestMethod.POST)
     public String Login(@RequestParam("lData") String data) {
         try {
@@ -70,6 +72,7 @@ public class LoginController {
         try {
             if (Integer.toString(ot.getOtp(User)).equals(OTP)) {
                 hs.setAttribute("username", User);
+                ///hs.setAttribute("email", getEmail());
                 hs.setAttribute("session", hs);
                 ot.clearOTP(User);
                 return "dashboard";

@@ -1,5 +1,5 @@
 
-<div class="col-md-12" style="width:100%;height:460px;overflow:auto; margin-bottom:0px;margin-top:10px;">
+<div class="col-md-12" style="width:100%;height:100%;overflow:auto; margin-bottom:0px;margin-top:10px;">
     <table id="dataTables-example" style="width: 100%;" class="table table-striped table-bordered table-hover dataTable">
         <tbody style="font-size:10pt">
         <tr style="background-color:#2BA6CD; font-weight:bold">

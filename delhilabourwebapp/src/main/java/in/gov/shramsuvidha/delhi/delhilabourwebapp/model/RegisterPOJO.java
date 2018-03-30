@@ -8,7 +8,20 @@ public class RegisterPOJO
 {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY )
     int id;
-    String unm,email,fullname, number;
+    String unm;
+    String email;
+    String fullname;
+    String number;
+    String addhar;
+
+    public String getAddhar() {
+        return addhar;
+    }
+
+    public void setAddhar(String addhar) {
+        this.addhar = addhar;
+    }
+
 
     public int getId() {
         return id;
@@ -22,12 +35,13 @@ public class RegisterPOJO
 
     }
 
-    public RegisterPOJO(String unm ,String email, String fullname, String number)
+    public RegisterPOJO(String unm ,String email, String fullname, String number,String aadhar)
     {
         this.email=email;
         this.number=number;
         this.fullname=fullname;
         this.unm=unm;
+        this.addhar = aadhar;
 
     }
     public String getUnm() {

@@ -164,6 +164,14 @@
                                 <input type="text" name="rNumber" id="rNumber" required="required" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="rNumber">Phone No</label>
                             </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" name="aadhar" id="aadhar" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="lData">Your AADHAR Number</label>
+                                <script>
+
+                                </script>
+                            </div>
                             <div id="registerStatus" style="color:red;">
 
                             </div>
