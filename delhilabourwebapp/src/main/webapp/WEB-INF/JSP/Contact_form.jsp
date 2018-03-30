@@ -56,5 +56,6 @@
 <div class="form-group"><label class="control-label">Name of the Manager or Person Responsible for supervision and control of the Establishment</label>
     <input type="text" name="" placeholder="" class="form-control" /></div>
 <div>
-    
+  <table></table>
 </div>
+<button name="" type="submit" class="btn btn-primary">Submit</button>
