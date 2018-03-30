@@ -1,4 +1,4 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.model;
 
-public class factory {
+public class Factory {
 }
