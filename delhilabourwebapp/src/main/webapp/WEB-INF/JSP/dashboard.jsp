@@ -149,19 +149,19 @@
         <div class="row wow fadeIn">
 
             <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
 
                 <!--Card-->
                 <div class="card">
 
                     <!-- Card header -->
-                    <div class="card-header">Total Applications
-                        of LIN</div>
+                    <div class="card-header">Total Application of LIN
+                    </div>
 
                     <!--Card content-->
                     <div class="card-body">
 
-                        <canvas id="lineChart"></canvas>
+                        <canvas id="total"></canvas>
 
                     </div>
 
@@ -290,7 +290,14 @@
     </div>
 </main>
 <!--Main layout-->
-
+<script type="text/javascript">
+    var canvas = document.getElementById("total");
+    var ctx=canvas.getContext("2d");
+    ctx.font="80px Comic Sans MS";
+    ctx.fillStyle = "#1C2331";
+    ctx.textAlign = "center";
+    ctx.fillText("0", canvas.width/2, canvas.height/2);
+</script>
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <hr class="my-4">

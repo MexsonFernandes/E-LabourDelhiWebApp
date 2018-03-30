@@ -22,7 +22,7 @@ public class URLController {
     @RequestMapping("/")
     public String home(Map<String, Object> model) {
         model.put("message", "HowToDoInJava Reader !!");
-        EmailService send = new EmailService();
+        //EmailService send = new EmailService();
         try {
             //send.SendMail("robomex2020@gmail.com","Test","test");
         } catch (Exception e) {
