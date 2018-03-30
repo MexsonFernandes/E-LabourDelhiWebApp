@@ -49,7 +49,7 @@
     </script>
 </head>
 
-<body class="fixed-sn navy-blue-skin">
+<body class="fixed-sn navy-blue-skin" style="overflow-x:hidden">
 
 <!--Main Navigation-->
 <header>
@@ -257,142 +257,13 @@
         <!--Grid row-->
         <div id="content"></div>
         <!--Grid row-->
-        <div id="dash" class="row wow fadeIn">
 
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
 
-                <!--Card-->
-                <div class="card">
+        <img src="homepage/img/svg/background.png" >
 
-                    <!-- Card header -->
-                    <div class="card-header">Total Application of LIN
-                    </div>
 
-                    <!--Card content-->
-                    <div class="card-body">
 
-                        <canvas id="total"></canvas>
 
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Submitted</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="submitted"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Authorized</div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="authorized"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Linked Establishment
-
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="establish"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Rejected                  </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="rejected"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <!--Card-->
-                <div class="card">
-
-                    <!-- Card header -->
-                    <div class="card-header">Applications
-                        Not Submitted
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body">
-
-                        <canvas id="notsubmitted"></canvas>
-
-                    </div>
-
-                </div>
-                <!--/.Card-->
-
-            </div>
-        </div>
 
 
         <script type="text/javascript">
