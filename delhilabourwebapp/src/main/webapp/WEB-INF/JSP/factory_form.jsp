@@ -1256,6 +1256,9 @@
 <script type="text/javascript">JotForm.ownerView=true;</script>
 
 
+<c:forEach items="${map.keySet()}" var="key">
+    <input type="hidden" name="${key}" value="${map[key]}"/>
+</c:forEach>
 
 <script type="text/javascript">
     new WOW().init();

@@ -1,13 +1,17 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.controller;
 
+import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Factory;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.text.Normalizer;
+import java.util.HashMap;
 import java.util.Map;
 
 @Controller
@@ -19,7 +23,11 @@ public class URLController {
         return "redirect:/";
     }
     @RequestMapping(value = "/dashboard_factory",method = RequestMethod.GET)
-    public String factory(){
+
+    public String factory(Model model, @ModelAttribute("map") HashMap<String, Object> map)
+    {
+        map.put("factoryform",new Factory());
+        model.addAttribute("factoryForm",new Factory());
         return "factory_form";
     }
 

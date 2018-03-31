@@ -55,14 +55,14 @@ public class HibernateUtil {
         session.beginTransaction();
         System.out.println("RegisterForm is being processed");
 
-        Query queryAADHAR = session.createSQLQuery("select * from RegisterPOJO where addhar = ?");
+        Query queryAADHAR = session.createSQLQuery("select * from Register where addhar = ?");
         queryAADHAR.setParameter(0, obj.getAddhar());
         List lis = queryAADHAR.list();
         try {
-            if (lis.isEmpty()) {
+            if (!lis.isEmpty()) {
                 session.getTransaction().commit();
                 session.close();
-                return "Why you are troubling me? AADHAR card exist. ";
+                return "Why you are troubling me? AADHAR card exist.";
             }
 
         } catch (Exception e) {
@@ -178,7 +178,11 @@ public class HibernateUtil {
     public RegisterPOJO getRegister(String unm) {
         try {
             Session session = sf.openSession();
-            Query query = session.createQuery("from RegisterPOJO where email = ?");
+            Query query=null;
+            if( unm.length()==10)
+                query = session.createQuery("from RegisterPOJO where number = ?");
+            else
+                query = session.createQuery("from RegisterPOJO where email = ?");
             query.setParameter(0, unm);
             List list = query.list();
             RegisterPOJO registerPOJO = (RegisterPOJO) list.get(0);

@@ -25,7 +25,7 @@
     <link href="dashboard/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="dashboard/css/style.min.css" rel="stylesheet">
-    <link rel="icon" href="homepage/img/labor-man.png" type="image/ico" sizes="16x16">
+    <link rel="icon" href="dashboard/img/labor-man.png" type="image/ico" sizes="16x16">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script>
 
