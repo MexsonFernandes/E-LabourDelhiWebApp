@@ -74,7 +74,7 @@
 
     }@import url('https://shots.jotform.com/elton/genericTheme.css');
     .form-all {
-        font-family: "Lucida Grande", sans-serif;
+     font-family: "Arial Black";
     }
     .form-all {
         width: 700px;

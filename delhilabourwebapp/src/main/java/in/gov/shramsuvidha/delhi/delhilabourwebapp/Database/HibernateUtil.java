@@ -1,7 +1,7 @@
 package in.gov.shramsuvidha.delhi.delhilabourwebapp.Database;
 
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.ContactUs;
-import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Establishment;
+//import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Establishment;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.Factory;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.model.RegisterPOJO;
 import in.gov.shramsuvidha.delhi.delhilabourwebapp.service.EmailService;
