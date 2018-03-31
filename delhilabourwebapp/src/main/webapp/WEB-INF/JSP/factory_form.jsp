@@ -2,7 +2,7 @@
 
 
 <%@include file="dashboard_header.jsp" %>
-
+<div id="form">
 
 
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
@@ -74,7 +74,7 @@
 
     }@import url('https://shots.jotform.com/elton/genericTheme.css');
     .form-all {
-     font-family: "Arial Black";
+     font-family:"Times  New Roman";
     }
     .form-all {
         width: 700px;
@@ -864,7 +864,7 @@
     .form-submit-reset,
     .form-submit-print {
         outline : none;
-        font-family : JennaSue, sans-serif;
+        font-family : "Times New Roman", sans-serif;
     }
 
     .form-error-message {
@@ -919,13 +919,13 @@
             *
           </span>
                 </label>
-                <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                <div id="cid_1955" class="form-input jf-required">
+                    <input type="text" id="input_122" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_20">
                 <label class="form-label form-label-left form-label-auto" id="label_20" for="input_20">
-                    Manager Name
+                    Employer Name
                     <span class="form-required">
             *
           </span>
@@ -949,7 +949,7 @@
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_22">
-                <label class="form-label form-label-left form-label-auto" id="label_22" for="input_22">
+                <label class="form-label form-label-left form-label-auto" name="industry_nature" id="label_22" for="input_22">
                     Industry Name
                     <span class="form-required">
             *
@@ -963,7 +963,7 @@
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_23">
-                <label class="form-label form-label-left form-label-auto" id="label_23" for="input_23">
+                <label class="form-label form-label-left form-label-auto" disabled="" id="label_23" for="input_23">
                     NATURE OF FACTORY
                     <span class="form-required">
             *
@@ -989,7 +989,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_25">
@@ -1007,7 +1007,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_26">
@@ -1022,7 +1022,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_27">
@@ -1043,7 +1043,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_28">
@@ -1060,7 +1060,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_29">
@@ -1076,7 +1076,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_30">
@@ -1091,7 +1091,7 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_31">
@@ -1109,11 +1109,11 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_32">
-                <label class="form-label form-label-left form-label-auto" id="label_32" for="input_32">
+                <label class="form-label form-label-left form-label-auto" id="label_32" for="input_32" disabled>
                     a)MEN
 
                     <span class="form-required">
@@ -1124,11 +1124,11 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_33">
-                <label class="form-label form-label-left form-label-auto" id="label_33" for="input_33">
+                <label class="form-label form-label-left form-label-auto" id="label_33" for="input_33" disabled="">
                     a)WOMEN
 
                     <span class="form-required">
@@ -1137,14 +1137,14 @@
         </br>
 
             <li class="form-line jf-required" data-type="control_textbox" id="id_89">
-                <label class="form-label form-label-left form-label-auto" id="label_89" for="input_89">
+                <label class="form-label form-label-left form-label-auto" id="label_89" for="input_89" disabled>
                     Does the factory carry out any process or operation declared as dengerous under section 87.
                     <span class="form-required">
             *
           </span>
 
             <li class="form-line jf-required" data-type="control_textbox" id="id_41">
-                <label class="form-label form-label-left form-label-auto" id="label_41" for="input_41">
+                <label class="form-label form-label-left form-label-auto" id="label_41" for="input_41" disabled>
                     Total No. of workers employed during the year<br>
                     a)MEN
 
@@ -1156,18 +1156,18 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_42">
-                <label class="form-label form-label-left form-label-auto" id="label_42" for="input_42">
+                <label class="form-label form-label-left form-label-auto" id="label_42" for="input_42" disabled>
                     b)WOMEN
 
                     <span class="form-required">
             *
           </span>
             <li class="form-line jf-required" data-type="control_textbox" id="id_43">
-                <label class="form-label form-label-left form-label-auto" id="label_43" for="input_43">
+                <label class="form-label form-label-left form-label-auto" id="label_43" for="input_43" disabled>
                     Number of workers who ware granted leave during the year
                     a)MEN
 
@@ -1179,18 +1179,18 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" disabled class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_44">
-                <label class="form-label form-label-left form-label-auto" id="label_44" for="input_44">
+                <label class="form-label form-label-left form-label-auto" id="label_44" disabled="" for="input_44">
                     b)WOMEN
 
                     <span class="form-required">
             *
           </span>
             <li class="form-line jf-required" data-type="control_textbox" id="id_39">
-                <label class="form-label form-label-left form-label-auto" id="label_39" for="input_39">
+                <label class="form-label form-label-left form-label-auto" disabled="" id="label_39" for="input_39">
                     Number of workers who were entitled to annual leave with wages during the year
                     a)MEN
 
@@ -1202,11 +1202,11 @@
                     <span>
                 </label>
                 <div id="cid_19" class="form-input jf-required">
-                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input type="text" disabled id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
             <li class="form-line jf-required" data-type="control_textbox" id="id_40">
-                <label class="form-label form-label-left form-label-auto" id="label_40" for="input_40">
+                <label disabled="" class="form-label form-label-left form-label-auto" id="label_40" for="input_40">
                     b)WOMEN
 
                     <span class="form-required">
@@ -1222,7 +1222,7 @@
 
                 </label>
                 <div id="cid_22" class="form-input jf-required">
-                    <input type="text" id="input_22" name="industry_nature" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                    <input disabled type="text" id="input_22" name="industry_nature" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
                 </div>
             </li>
 
@@ -1255,10 +1255,7 @@
 
 <script type="text/javascript">JotForm.ownerView=true;</script>
 
-
-<c:forEach items="${map.keySet()}" var="key">
-    <input type="hidden" name="${key}" value="${map[key]}"/>
-</c:forEach>
+<h3 id="sent"></h3>
 
 <script type="text/javascript">
     new WOW().init();
@@ -1284,9 +1281,13 @@
             success: function (data) {
                 console.log(data);
                 if(data =="saved"){
-                    $('#registerStatus').text("Data ");
-                    document.getElementById('h').innerText = "";
-                    document.getElementById('sent').innerText = "Your Annual Return Filling is completed. Your reference number is " + UIN;
+                    $('#registerStatus').text("Your Annual Return Filling is completed. Your reference number is " + UIN);
+                    var d = document.getElementById('h');
+                    d.innerText = "";
+                    var s = document.getElementById('form');
+                    s.innerText = "";
+                    var h = document.getElementById('sent');
+                    h.innerText = "Your Annual Return Filling is completed. Your reference number is " + UIN;
                 }else if(data == ""){
                     $('#registerStatus').text("Some error in sending..check your inputs.");
 
@@ -1304,4 +1305,5 @@
     }
 </script>
 <h3 id="sent"></h3>
+</div>
 <%@include file="dashboard_footer.jsp" %>

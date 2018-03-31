@@ -56,3 +56,8 @@
     </table>
 
 </div>
+<script type="text/javascript">
+    var f = document.getElementById('form');
+    if(f)
+        f.innerText = "";
+</script>

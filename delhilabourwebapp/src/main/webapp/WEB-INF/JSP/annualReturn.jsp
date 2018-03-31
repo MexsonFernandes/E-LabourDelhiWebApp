@@ -1,6 +1,5 @@
 
-<%
-%>
+<div
 <div class="row wow fadeIn">
 
     <!--Grid column-->
@@ -78,3 +77,10 @@
 
 
 </div>
+<script type="text/javascript">
+    function onload() {
+        var f = document.getElementById('form');
+        if (f)
+            f.innerText = "";
+    }
+</script>

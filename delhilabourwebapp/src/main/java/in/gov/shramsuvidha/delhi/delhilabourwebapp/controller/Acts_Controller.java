@@ -36,11 +36,11 @@ public class Acts_Controller {
                 Query query = session.createQuery("from Centralized_Database where aadhar = ?");
                 query.setParameter(0, aadhar);
                 List list = query.list();
+                session.close();
                 if(list.isEmpty()) {
                     System.out.println("factory mexson");
                     hu.saveFactory(f);
-                    session.getTransaction().commit();
-                    session.close();
+
                     return "saved";
                 }
                 else{

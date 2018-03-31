@@ -23,11 +23,8 @@ public class URLController {
         return "redirect:/";
     }
     @RequestMapping(value = "/dashboard_factory",method = RequestMethod.GET)
-
-    public String factory(Model model, @ModelAttribute("map") HashMap<String, Object> map)
+    public String factory()
     {
-        map.put("factoryform",new Factory());
-        model.addAttribute("factoryForm",new Factory());
         return "factory_form";
     }
 

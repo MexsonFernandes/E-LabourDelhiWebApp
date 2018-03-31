@@ -1,9 +1,9 @@
-<%--<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>--%>
-<%--<script>--%>
-<%--if(document.getElementById('auth').innerText == "null"){--%>
-<%--document.location.href = "/";--%>
-<%--}--%>
-<%--</script>--%>
+<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>
+<script>
+if(document.getElementById('auth').innerText == "null"){
+document.location.href = "/";
+}
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +59,7 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+            <a class="navbar-brand waves-effect">
                 <img src="homepage/img/labor-man.png" width="50px" height="50px"/>
             </a>
 
@@ -158,6 +158,9 @@
                     $('#dash').text("");
                     document.getElementById('content').innerHTML = data;
                     var s =document.getElementById('h');
+                    var f = document.getElementById('form');
+                    if(f)
+                        f.innerText = "";
                     if(s)
                         s.innerText="";
                     $('#topmenu').text(" ACTS");
@@ -182,6 +185,7 @@
                     var s =document.getElementById('h');
                     if(s)
                         s.innerText="";
+
                     $('#topmenu').text(" Unified Annual Return Form Filling");
                 },
                 error: function(xhr, status, error) {
@@ -201,6 +205,9 @@
                     $('#content').text("");
                     $('#dash').text("");
                     var s =document.getElementById('h');
+                    var f = document.getElementById('form');
+                    if(f)
+                        f.innerText = "";
                     if(s)
                         s.innerText="";
                     document.getElementById('content').innerHTML = data;
@@ -215,6 +222,9 @@
 
         function profile() {
             var s =document.getElementById('h');
+            var f = document.getElementById('form');
+            if(f)
+                f.innerText = "";
             if(s)
                 s.innerText="";
             $.ajax({

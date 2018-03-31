@@ -1,9 +1,9 @@
-<%--<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>--%>
-<%--<script>--%>
-    <%--if(document.getElementById('auth').innerText == "null"){--%>
-        <%--document.location.href = "/";--%>
-    <%--}--%>
-<%--</script>--%>
+<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>
+<script>
+    if(document.getElementById('auth').innerText == "null"){
+        document.location.href = "/";
+    }
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +59,7 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+            <a class="navbar-brand waves-effect">
                 <img src="homepage/img/labor-man.png" width="50px" height="50px"/>
             </a>
 
@@ -144,6 +144,11 @@
 
     <%--ajax to include dashboard forms--%>
     <script type="text/javascript">
+        var f = document.getElementById('form');
+        if(f)
+            f.innerText = "";
+    </script>
+    <script type="text/javascript">
 
     function acts() {
 
@@ -156,8 +161,10 @@
 
                 $('#content').text("");
                 $('#dash').text("");
+                $('#form').text("");
                 document.getElementById('content').innerHTML = data;
                 $('#topmenu').text(" ACTS");
+
             },
             error: function(xhr, status, error) {
                 alert(xhr.responseText);
@@ -175,6 +182,7 @@
             {
                 $('#content').text("");
                 $('#dash').text("");
+                $('#form').text("");
                 document.getElementById('content').innerHTML = data;
                 $('#topmenu').text(" Unified Annual Return Form Filling");
             },
@@ -216,6 +224,7 @@
 
                 $('#content').text("");
                 $('#dash').text("");
+                $('#form').text("");
                 document.getElementById('content').innerHTML = data;
                 $('#topmenu').text(" Change Profile Settings");
             },

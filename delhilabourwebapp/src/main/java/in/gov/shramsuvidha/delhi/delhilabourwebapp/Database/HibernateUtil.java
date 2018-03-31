@@ -73,18 +73,15 @@ public class HibernateUtil {
         Query queryAADHAR1 = session.createSQLQuery("select * from AADHAR where id = ? and state= ?");
         queryAADHAR1.setParameter(0, obj.getAddhar());
         queryAADHAR1.setParameter(1, "DELHI");
-        List lise = queryAADHAR.list();
+        List lise = queryAADHAR1.list();
         try {
             if (lise.isEmpty()) {
                 session.getTransaction().commit();
                 session.close();
                 return "Not from delhi";
             }
-
         } catch (Exception e) {
-
         }
-
         Query queryUser = session.createQuery("from RegisterPOJO where unm = ? ");
         queryUser.setParameter(0, obj.getUnm());
         List list = queryUser.list();
@@ -93,15 +90,17 @@ public class HibernateUtil {
             if (!list.isEmpty()) {
                 session.getTransaction().commit();
                 session.close();
+                System.out.println("user robomex");
                 return "Username Exist";
             }
-            Query query = session.createQuery("from RegisterPOJO where email = ? or number = ?");
+            Query query = session.createQuery("from RegisterPOJO where email = ?");
             query.setParameter(0, obj.getEmail());
-            query.setParameter(1, obj.getNumber());
+//            query.setParameter(1, obj.getNumber(  ));
             List listExist = query.list();
             if (!listExist.isEmpty()) {
                 session.getTransaction().commit();
                 session.close();
+                System.out.println("user robomex2");
                 return "exist";
             }
             //save data if user doesn't exist
