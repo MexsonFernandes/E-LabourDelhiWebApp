@@ -281,9 +281,28 @@
         <a href="https://shramsuvidha.gov.in/home"> SHRAM-SUVIDHA-PORTAL</a>
                    </blockquote>
 
+    <blockquote class="blockquote bq-warning">
+        <p class="bq-title">MISSION</p>
+        <p>This VISION to provide AUTHENTICATE USER, no user can file annual return without AADHAR card and OCCUPATION filled. EMPLOYER/LABOUR can only
+        fill another OCCUPATION in annual. If user want to change his OCCUPATION then he has to fill APPLICATION which will be sent to admin and will be further proceed to check authenticity.
+        </p>
+    </blockquote>
+
+    <blockquote class="blockquote bq-success">
+        <p class="bq-title">
+            DATABASE
+        </p>
+        <p>
+            GOVERNMENT admin gets the EXCEL files generated of annual returns.
+            Database is centralised where forms , UNIQUE IDENTIFICATION NUMBER and AADHAR DETAILS are stored.
+            Admin can acess and can see through users verification in case of filling new occupation.
+            
+        </p>
+    </blockquote>
 
 
-    
+
+
 
 
 
