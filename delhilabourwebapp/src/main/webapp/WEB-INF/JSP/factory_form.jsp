@@ -8,7 +8,7 @@
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
 <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.5398" type="text/javascript"></script>
 <script type="text/javascript">
-    JotForm.init(function(){
+                                JotForm.init(function(){
         JotForm.highlightInputs = false;
         /*INIT-END*/
     });
