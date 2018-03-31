@@ -23,7 +23,25 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=59fb4852cf3bfe589c6c6f21"/>
 <style type="text/css">
     @import url('https://shots.jotform.com/elton/genericTheme.css');
+    input.rounded2 {
+        border: 1px solid #ccc;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 2px 2px 3px #666;
+        -webkit-box-shadow: 2px 2px 3px #666;
+        box-shadow: 2px 2px 3px #666;
+        font-size: 20px;
+        padding: 4px 7px;
+        outline: 0;
+        -webkit-appearance: none;
 
+        float: left;
+        display: inline-block;
+        clear: left;
+        width: 150px;
+        text-align: right;
+    }
     .form-label-left{
         width:150px;
     }
@@ -756,6 +774,9 @@
         background-color: rgba(252, 251, 236, 0);
         border: 1px solid transparent;
     }
+    #wt{
+        tex
+    }
 
     .form-all {
         color: #555;
@@ -933,6 +954,272 @@
                     <span class="form-required">
             *
           </span>
+
+                    *
+                    </span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_23">
+                <label class="form-label form-label-left form-label-auto" id="label_23" for="input_23">
+                    NATURE OF FACTORY
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    *
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_24">
+                <label class="form-label form-label-left form-label-auto" id="label_24" for="input_24">
+                    Number of Workers and Particulars of Employment
+                    <span class="form-required">
+            *
+          </span>
+
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_25">
+                <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
+                    No. of days worked in the year
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+               </br>     No. of man-days worked during the year.
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_26">
+                <label class="form-label form-label-left form-label-auto" id="label_26" for="input_26">
+                 MAN
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_27">
+                <label class="form-label form-label-left form-label-auto" id="label_27" for="input_27">
+                WOMAN
+                    <span class="form-required">
+            *
+          </span>
+</br>
+
+                    Average No. of workers employed daily...............
+
+                    </br>
+                  a) ADULT
+                    </BR>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_28">
+                <label class="form-label form-label-left form-label-auto" id="label_28" for="input_28">
+                    a)Men
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_29">
+                <label class="form-label form-label-left form-label-auto" id="label_29" for="input_29">
+                  b)WOMEN
+                    <span class="form-required">
+            *
+          </span>
+
+        </br>
+                    b)Adolescent
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_30">
+                <label class="form-label form-label-left form-label-auto" id="label_30" for="input_30">
+                   a) MALE
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_31">
+                <label class="form-label form-label-left form-label-auto" id="label_31" for="input_31">
+                    b)FEMALE
+
+                    <span class="form-required">
+            *
+          </span>
+
+            </br>
+                    Total No. of man-hours worked including overtime
+
+        </br>
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_32">
+                <label class="form-label form-label-left form-label-auto" id="label_32" for="input_32">
+                    a)MEN
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_33">
+                <label class="form-label form-label-left form-label-auto" id="label_33" for="input_33">
+                    a)WOMEN
+
+                    <span class="form-required">
+            *
+          </span>
+        </br>
+
+            <li class="form-line jf-required" data-type="control_textbox" id="id_89">
+                <label class="form-label form-label-left form-label-auto" id="label_89" for="input_89">
+                    Does the factory carry out any process or operation declared as dengerous under section 87.
+                    <span class="form-required">
+            *
+          </span>
+
+            <li class="form-line jf-required" data-type="control_textbox" id="id_41">
+                <label class="form-label form-label-left form-label-auto" id="label_41" for="input_41">
+                    Total No. of workers employed during the year<br>
+                    a)MEN
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_42">
+                <label class="form-label form-label-left form-label-auto" id="label_42" for="input_42">
+                    b)WOMEN
+
+                    <span class="form-required">
+            *
+          </span>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_43">
+                <label class="form-label form-label-left form-label-auto" id="label_43" for="input_43">
+                    Number of workers who ware granted leave during the year
+                    a)MEN
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_44">
+                <label class="form-label form-label-left form-label-auto" id="label_44" for="input_44">
+                    b)WOMEN
+
+                    <span class="form-required">
+            *
+          </span>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_39">
+                <label class="form-label form-label-left form-label-auto" id="label_39" for="input_39">
+                    Number of workers who were entitled to annual leave with wages during the year
+                    a)MEN
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+                    <span>
+                </label>
+                <div id="cid_19" class="form-input jf-required">
+                    <input type="text" id="input_19" name="name_occupier" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_40">
+                <label class="form-label form-label-left form-label-auto" id="label_40" for="input_40">
+                    b)WOMEN
+
+                    <span class="form-required">
+            *
+          </span>
+
+
+
+
+
+
+
+
                 </label>
                 <div id="cid_22" class="form-input jf-required">
                     <input type="text" id="input_22" name="industry_nature" data-type="input-textbox" class="form-textbox validate[required]" size="16" value="" placeholder=" " data-component="textbox" required="" />
