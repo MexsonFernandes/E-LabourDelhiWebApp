@@ -1,9 +1,9 @@
-<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>
-<script>
-    if(document.getElementById('auth').innerText == "null"){
-        document.location.href = "/";
-    }
-</script>
+<%--<div id="auth" hidden="hidden"><%=request.getSession().getAttribute("session")%></div>--%>
+<%--<script>--%>
+    <%--if(document.getElementById('auth').innerText == "null"){--%>
+        <%--document.location.href = "/";--%>
+    <%--}--%>
+<%--</script>--%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -257,9 +257,18 @@
         <!--Grid row-->
         <div id="content"></div>
         <!--Grid row-->
+        <!-- Card -->
+        <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg');">
+
+            <!-- Content -->
 
 
-        <img src="homepage/img/svg/background.png" >
+        </div>
+            <!-- Content -->
+        </div>
+        <!-- Card -->
+            <br/>
+        <img align="center" src="homepage/img/graph.png" >
 
 
 

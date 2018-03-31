@@ -301,7 +301,11 @@
                 }else if (data =="exist"){
                     $('#registerStatus').text("User already exist in our system.");
                     $('#registerStatus').css('color', 'red');
-                }else{
+                }else if(data =="Why you are troubling me? AADHAR card exist."){
+                    $('#registerStatus').text("AADHAR Card exist in our database.");
+                    $('#registerStatus').css('color', 'red');
+                }
+                else{
                     $('#registerStatus').text("There was some error in Server. Try again.");
                     $('#registerStatus').css('color', 'red');
                 }
