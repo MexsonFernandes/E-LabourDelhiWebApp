@@ -267,8 +267,26 @@
             <!-- Content -->
         </div>
         <!-- Card -->
-            <br/>
-        <img align="center" src="homepage/img/graph.png" >
+
+
+
+
+    <blockquote class="blockquote bq-primary">
+        <p class="bq-title">About Portal</p>
+        <p>The annual returns can be filled under various ACTS by the employer. This portal lets the new user to REGISTER and fill his Occupation and AADHAR details which will let user to select the particular ACTS applicable on him and can proceed.
+        This portal is helpful for the GOVERNMENT OF DELHI which doesnt let the existing user or same person to file the annual return. This
+        prevents government from cheating of employer who fills annual return changing his states and filling. Linking Aadhar will provide Integrity and Authentiated user to this portal.
+        </p>
+        </br>
+        <a href="https://shramsuvidha.gov.in/home"> SHRAM-SUVIDHA-PORTAL</a>
+                   </blockquote>
+
+
+
+    
+
+
+
 
 
 
