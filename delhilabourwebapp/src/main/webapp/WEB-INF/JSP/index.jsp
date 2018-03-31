@@ -33,9 +33,8 @@
               <p class="mb-4 d-none d-md-block">
                 <strong>Use different options available on top bar to navigate to various pages available. Use HELP tab to know more.</strong>
               </p>
+             <a href='' class='btn btn-outline-white btn-lg' data-toggle='modal' data-target='#modalLRForm'>GET STARTED</a>
 
-              <a href="login" class="btn btn-outline-white btn-lg">GET STARTED
-              </a>
             </div>
             <!-- Content -->
 
@@ -67,7 +66,7 @@
                 <strong>We have used user-friendly form navigation so that any normal user will find ease in filling</strong>
               </p>
 
-              <a href="login" class="btn btn-outline-white btn-lg">START FILLING
+              <a href="login" class="btn btn-outline-white btn-lg"  data-toggle='modal' data-target='#modalLRForm'>START FILLING
               </a>
             </div>
             <!-- Content -->
@@ -169,8 +168,7 @@
             <!-- CTA -->
             <a href="#labouracts" class="btn btn-indigo btn-md">Labour Acts
             </a>
-            <a href="login" class="btn btn-indigo btn-md">Start Filling
-            </a>
+
           </div>
           <!--Grid column-->
 
