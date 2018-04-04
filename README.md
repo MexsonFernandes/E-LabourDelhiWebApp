@@ -6,17 +6,27 @@ A git repo for our Smart India Hackathon project. A Java web app to be synchroni
 
 
 Contributors:-
+
 Mexson Fernandes
+
 Anupama Mishra
+
 Archana Kumari
+
 Anunay Sharma
+
 Shiona Dutta
 
+
 #INSTALLATION
+
 Open Terminal and type following commands.
 
 cd E-LabourDelhiWebApp
+
 mvn clean install
+
 mvn spring-boot:run
+
 
 http://localhost:8090/
